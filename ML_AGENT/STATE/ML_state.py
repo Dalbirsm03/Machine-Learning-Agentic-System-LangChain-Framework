@@ -6,6 +6,9 @@ class State(TypedDict):
     question : str
     ml_problem_type : str
     target_column : str
+    target_series : List[pd.DataFrame]
+    target_encoded : List[pd.DataFrame]
+    target_label_encoder : str
     
     raw_data : List[pd.DataFrame]
     cleaned_data : List[pd.DataFrame]   
@@ -17,3 +20,9 @@ class State(TypedDict):
     extracted_features : List[pd.DataFrame] 
 
     X_selected : List[pd.DataFrame] 
+    selected_features : str
+    ml_config : str
+
+    trained_model : str
+    metrics : str
+    prediction_result : str

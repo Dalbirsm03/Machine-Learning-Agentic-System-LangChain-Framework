@@ -11,7 +11,7 @@ import re
 import pandas as pd
 import numpy as np
 
-class Data_Cleaning_Node:
+class Feature_Extraction_Node:
 
     def __init__(self, llm):
         self.llm = llm
