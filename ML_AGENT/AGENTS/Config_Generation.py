@@ -35,6 +35,6 @@ class Config_Generation_Node:
         response = chain.invoke({"user_query" : state["question"],
                                  "ml_type" : state["ml_problem_type"],
                                  "target_column" : state["target_column"],
-                                 "selected_features":state["X_selected"]})
+                                 "selected_features":state["selected_features"]})
         self.logger.info("Generated ML config")
         return{"ml_config":response}

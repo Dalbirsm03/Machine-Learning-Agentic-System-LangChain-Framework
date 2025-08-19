@@ -11,7 +11,7 @@ class Feature_Selection_Node:
         self.llm = llm
 
     def select_features_streamlit(self, state: State):
-        score_threshold=0.01
+        score_threshold = 0.01
         X = state['extracted_features']
         y = state['cleaned_data'][state['target_column']]
         task_type = state['ml_problem_type']
@@ -25,9 +25,13 @@ class Feature_Selection_Node:
             scores, _ = f_regression(X, y)
 
         feature_scores = pd.DataFrame({'feature': X.columns, 'score': scores})
+
+        # Auto-select features
         auto_selected = feature_scores[feature_scores['score'] >= score_threshold]['feature'].tolist()
         if len(auto_selected) == 0:
             auto_selected = [feature_scores.sort_values('score', ascending=False)['feature'].iloc[0]]
+
+        # Streamlit UI for user refinement
         st.write("### Feature Selection")
         st.write("Automatically selected features based on score threshold:")
         st.write(auto_selected)
@@ -36,7 +40,14 @@ class Feature_Selection_Node:
             options=list(X.columns),
             default=auto_selected
         )
+
         final_features = list(set(user_selected))
         X_selected = X[final_features]
+
         self.logger.info(f"Final selected features: {final_features}")
-        return {"X_selected" : X_selected}
+
+        return {
+            "X_selected": X_selected,             
+            "selected_features": final_features   
+        }
+
