@@ -1,5 +1,5 @@
 import streamlit as st
-from  ML_AGENT.UI.config import Config
+from ML_AGENT.UI.config import Config
 
 class SidebarUI:
     def __init__(self):
@@ -9,7 +9,6 @@ class SidebarUI:
     def Load_UI(self):
         st.set_page_config(page_title="🤖 " + self.config.get_page_title(), layout="wide")
         st.header("🤖 " + self.config.get_page_title())
-        st.sidebar.title("🛠️ Configuration")
         with st.sidebar:
             llm_options = self.config.get_llms()
             self.user_controls["selected_llm"] = st.selectbox("Select LLM", llm_options)
