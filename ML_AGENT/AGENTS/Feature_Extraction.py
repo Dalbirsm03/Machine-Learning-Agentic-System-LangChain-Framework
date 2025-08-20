@@ -43,7 +43,7 @@ class Feature_Extraction_Node:
         return {"column_types": col_types}
 
     def extract_features(self, state: State):
-        tfidf_max_features = 10
+        tfidf_max_features = 15
         target_column = state['target_column']
         df = state['cleaned_data']
         col_types = state['column_types']

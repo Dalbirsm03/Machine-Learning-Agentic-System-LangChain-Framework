@@ -31,12 +31,13 @@ class Query_Analyzer_Node:
         return {"ml_problem_type": response}
 
 
-    def target_column(self, state: dict):
+    def target_column(self, state: State):
         self.logger.info("Determining target column")
 
         query = state['question']
-        df = state['cleaned_data']
+        df: pd.DataFrame = state['cleaned_data']
         columns = list(df.columns)
+
         if 'suggested_target' not in state:
             target_prompt = PromptTemplate(
                 template="""
@@ -52,31 +53,37 @@ class Query_Analyzer_Node:
             state['suggested_target'] = suggested_column
         else:
             suggested_column = state['suggested_target']
+
+        # Validate suggested column
         if suggested_column not in columns:
-            self.logger.warning(f"Suggested column '{suggested_column}' not found in dataset. Defaulting to first column.")
+            self.logger.warning(
+                f"Suggested column '{suggested_column}' not found in dataset. Defaulting to first column."
+            )
             suggested_column = columns[0]
 
         target_col = suggested_column
         self.logger.info(f"Chosen target column: {target_col}")
-
         state['target_column'] = target_col
+
         target_series = df[target_col]
 
-        if target_series.dtype == object:
+        # Encode target if categorical
+        if target_series.dtype == object or str(target_series.dtype).startswith("category"):
             le_target = LabelEncoder()
-            target_encoded = le_target.fit_transform(target_series)
+            target_encoded = le_target.fit_transform(target_series.astype(str))
+
             state['target_label_encoder'] = le_target
             state['target_label_mapping'] = {
                 str(cls): int(idx) for cls, idx in zip(le_target.classes_, le_target.transform(le_target.classes_))
             }
 
-
             self.logger.info(f"Applied LabelEncoder to target column. Mapping: {state['target_label_mapping']}")
         else:
-            target_encoded = target_series
+            target_encoded = target_series.to_numpy()  # store as np.ndarray for consistency
+
+        state['target_encoded'] = target_encoded
 
         return {
             "target_column": target_col,
-            "target_series": target_series,
             "target_encoded": target_encoded
         }
