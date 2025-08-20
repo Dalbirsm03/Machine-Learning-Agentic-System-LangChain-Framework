@@ -4,7 +4,6 @@ from ML_AGENT.AGENTS.Feature_Extraction import Feature_Extraction_Node
 from ML_AGENT.logger import logger
 import pandas as pd
 
-
 class Prediction_Node:
     def __init__(self, llm):
         self.llm = llm
@@ -17,25 +16,19 @@ class Prediction_Node:
 
         self.logger.info("Generating prediction from user query")
 
-        # ✅ Wrap raw user query so TF-IDF encoder can transform it
+        # Wrap query in DataFrame
         raw_input_df = pd.DataFrame([{"message": user_query}])
-        parsed_input = {"message": user_query}  # keep original text for logging
 
-        # Run feature extraction (reuses encoders from training)
+        # Feature extraction (reuse encoders from training)
         feature_extractor = Feature_Extraction_Node(self.llm)
         extracted = feature_extractor.extract_features({
             "cleaned_data": raw_input_df,
             "column_types": state["column_types"],
-            "target_column": state["target_column"]
+            "target_column": state["target_column"],
+            "feature_encoders": state.get("feature_encoders", {}) 
         })
 
         extracted_features = extracted["extracted_features"]
-        feature_encoders = extracted.get("feature_encoders", {})
-
-        # Update encoders in state
-        if "feature_encoders" not in state:
-            state["feature_encoders"] = {}
-        state["feature_encoders"].update(feature_encoders)
 
         # Align with training columns
         input_aligned = extracted_features.reindex(columns=state["X_selected"].columns, fill_value=0)
@@ -45,30 +38,27 @@ class Prediction_Node:
         prediction = model.predict(input_aligned)[0]
         self.logger.info(f"Raw prediction: {prediction}")
 
-        # Handle classification vs regression
+        # Handle classification
         if task_type == "classification":
-            if "target_label_encoder" in state:
-                prediction_label = str(state["target_label_encoder"].inverse_transform([prediction])[0])
-            else:
-                prediction_label = str(prediction)
-
-            label_mapping = state["target_label_mapping"]
-
+            pred_index = int(prediction)
+            prediction_label = str(state["target_label_encoder"].inverse_transform([pred_index])[0])
+            label_mapping = state.get("target_label_mapping", None)
             result = {
                 "question": user_query,
-                "inputs": parsed_input,
+                "inputs": {"message": user_query},
                 "prediction_encoded": int(prediction),
                 "prediction_label": prediction_label,
                 "label_mapping": label_mapping
             }
 
+        # Handle regression
         elif task_type == "regression":
             result = {
                 "question": user_query,
-                "inputs": parsed_input,
+                "inputs": {"message": user_query},
                 "prediction": float(prediction)
             }
-            label_mapping = None  # ✅ keep defined
+            label_mapping = None
 
         else:
             raise ValueError("Unsupported ML task type")
@@ -76,7 +66,7 @@ class Prediction_Node:
         state["prediction_result"] = result
         self.logger.info(f"Final prediction result: {result}")
 
-        # Generate explanation
+        # Generate explanation via LLM
         explain_prompt = PromptTemplate(
             template=(
                 "The result is {prediction}. Explain this in short, simple bullet points. "
@@ -87,8 +77,8 @@ class Prediction_Node:
         )
         explain_chain = explain_prompt | self.llm
         response = explain_chain.invoke({
-            "prediction": result,
-            "accuracy": state["metrics"],
+            "prediction": prediction if task_type == "regression" else prediction_label,
+            "accuracy": state.get("metrics", {}),
             "mapping": label_mapping
         })
 
