@@ -1,0 +1,1853 @@
+2025-08-19 16:48:04,149 - INFO - Starting query analysis
+2025-08-19 16:48:04,169 - DEBUG - User query: predict swift selling price if manual and kmsdriven is 45000
+2025-08-19 16:48:10,300 - INFO - Identified ML problem type: regression
+2025-08-19 16:48:10,307 - INFO - Starting data cleaning process
+2025-08-19 16:48:10,315 - ERROR - Error during data cleaning: 'list' object has no attribute 'columns'
+2025-08-19 16:51:37,695 - INFO - Starting query analysis
+2025-08-19 16:51:37,695 - DEBUG - User query: predict swift selling price if manual and kmsdriven is 45000
+
+
+2025-08-19 16:51:48,319 - INFO - Identified ML problem type: 
+2025-08-19 16:51:48,328 - INFO - Starting data cleaning process
+2025-08-19 16:51:48,331 - ERROR - Error during data cleaning: 'list' object has no attribute 'columns'
+2025-08-19 16:52:57,620 - INFO - Starting query analysis
+2025-08-19 16:52:57,628 - DEBUG - User query: predict swift selling price if manual and kmsdriven is 45000
+
+
+2025-08-19 16:52:59,145 - INFO - Identified ML problem type: 
+2025-08-19 16:52:59,153 - INFO - Starting data cleaning process
+2025-08-19 16:52:59,301 - INFO - Data cleaning process completed successfully
+2025-08-19 16:52:59,325 - INFO - Generating validation report...
+2025-08-19 16:57:40,183 - INFO - Starting query analysis
+2025-08-19 16:57:40,183 - DEBUG - User query: predict swift selling price if manual and kmsdriven is 45000
+2025-08-19 16:57:40,965 - INFO - Identified ML problem type: regression
+2025-08-19 16:57:40,973 - INFO - Starting data cleaning process
+2025-08-19 16:57:41,061 - INFO - Data cleaning process completed successfully
+2025-08-19 16:57:41,086 - INFO - Generating validation report...
+2025-08-19 17:01:36,335 - INFO - Starting query analysis
+2025-08-19 17:01:36,343 - DEBUG - User query: predict swift selling price if manual and kmsdriven is 45000
+2025-08-19 17:01:37,210 - INFO - Identified ML problem type: regression
+2025-08-19 17:01:37,275 - INFO - Starting data cleaning process
+2025-08-19 17:01:37,470 - INFO - Data cleaning process completed successfully
+2025-08-19 17:01:37,490 - INFO - Generating validation report...
+2025-08-19 17:03:07,218 - INFO - Starting query analysis
+2025-08-19 17:03:07,226 - DEBUG - User query: predict swift selling price if manual and kmsdriven is 45000
+
+
+2025-08-19 17:03:08,341 - INFO - Identified ML problem type: regression
+2025-08-19 17:03:08,349 - INFO - Starting data cleaning process
+2025-08-19 17:03:08,455 - INFO - Data cleaning process completed successfully
+2025-08-19 17:03:08,468 - INFO - Generating validation report...
+2025-08-19 17:03:11,097 - INFO - [Routing Decision] Cleaned status = yes
+2025-08-19 17:03:11,104 - INFO - Determining target column
+2025-08-19 17:03:11,104 - DEBUG - Query: predict swift selling price if manual and kmsdriven is 45000
+
+
+2025-08-19 17:03:11,104 - DEBUG - Available columns: ['car_name', 'year', 'selling_price', 'present_price', 'kms_driven', 'fuel_type', 'seller_type', 'transmission', 'owner']
+2025-08-19 17:03:13,705 - INFO - Suggested target column: selling_price
+2025-08-19 17:03:13,713 - INFO - Final chosen target column: selling_price
+2025-08-19 17:03:13,726 - INFO - Detected column types: {'numeric': ['year', 'present_price', 'kms_driven', 'owner'], 'categorical': ['fuel_type', 'seller_type', 'transmission'], 'text': ['car_name'], 'datetime': [], 'boolean': []}
+2025-08-19 17:03:13,780 - INFO - Extracted features columns: ['car_name_tfidf_0', 'car_name_tfidf_1', 'car_name_tfidf_2', 'car_name_tfidf_3', 'car_name_tfidf_4', 'car_name_tfidf_5', 'car_name_tfidf_6', 'car_name_tfidf_7', 'car_name_tfidf_8', 'car_name_tfidf_9', 'year', 'present_price', 'kms_driven', 'fuel_type', 'seller_type', 'transmission', 'owner']
+2025-08-19 17:03:13,788 - INFO - Final selected features: ['car_name_tfidf_0', 'car_name_tfidf_5', 'transmission', 'fuel_type', 'car_name_tfidf_9', 'year', 'car_name_tfidf_2', 'car_name_tfidf_6', 'kms_driven', 'car_name_tfidf_4', 'car_name_tfidf_8', 'car_name_tfidf_1', 'car_name_tfidf_3', 'present_price', 'seller_type']
+2025-08-19 17:03:15,718 - INFO - Generated ML config
+2025-08-19 17:03:20,483 - INFO - Extracted features columns: ['car_name_tfidf_0', 'car_name_tfidf_5', 'transmission_tfidf_0', 'fuel_type', 'car_name_tfidf_9', 'year', 'car_name_tfidf_2', 'car_name_tfidf_6', 'kms_driven', 'car_name_tfidf_4', 'car_name_tfidf_8', 'car_name_tfidf_1', 'car_name_tfidf_3', 'present_price', 'seller_type']
+2025-08-19 17:05:14,440 - INFO - Starting query analysis
+2025-08-19 17:05:14,446 - DEBUG - User query: predict swift selling price if manual and kmsdriven is 45000
+2025-08-19 17:05:58,885 - INFO - Starting query analysis
+2025-08-19 17:05:58,885 - DEBUG - User query: predict swift selling price if manual and kmsdriven is 45000
+2025-08-19 17:06:04,126 - INFO - Identified ML problem type: regression
+2025-08-19 17:06:04,140 - INFO - Starting data cleaning process
+2025-08-19 17:06:04,195 - INFO - Data cleaning process completed successfully
+2025-08-19 17:06:04,217 - INFO - Generating validation report...
+2025-08-19 17:07:19,022 - INFO - Starting query analysis
+2025-08-19 17:07:19,022 - DEBUG - User query: predict swift selling price if manual and kmsdriven is 45000
+2025-08-19 17:07:24,540 - INFO - Identified ML problem type: 
+2025-08-19 17:07:24,554 - INFO - Starting data cleaning process
+2025-08-19 17:07:24,587 - INFO - Data cleaning process completed successfully
+2025-08-19 17:07:24,590 - INFO - Generating validation report...
+2025-08-19 17:07:38,329 - INFO - [Routing Decision] Cleaned status = no
+2025-08-19 17:07:40,638 - DEBUG - Executing smart cleaner code:
+2025-08-19 17:07:40,638 - DEBUG - 
+2025-08-19 17:07:40,638 - INFO - Smart data cleaning executed successfully
+2025-08-19 17:07:40,653 - INFO - Determining target column
+2025-08-19 17:07:40,653 - DEBUG - Query: predict swift selling price if manual and kmsdriven is 45000
+2025-08-19 17:07:40,653 - DEBUG - Available columns: ['car_name', 'year', 'selling_price', 'present_price', 'kms_driven', 'fuel_type', 'seller_type', 'transmission', 'owner']
+2025-08-19 17:07:48,222 - INFO - Suggested target column: selling_price
+2025-08-19 17:07:48,222 - INFO - Final chosen target column: selling_price
+2025-08-19 17:07:48,230 - INFO - Detected column types: {'numeric': ['year', 'present_price', 'kms_driven', 'owner'], 'categorical': ['fuel_type', 'seller_type', 'transmission'], 'text': ['car_name'], 'datetime': [], 'boolean': []}
+2025-08-19 17:07:48,255 - INFO - Extracted features columns: ['car_name_tfidf_0', 'car_name_tfidf_1', 'car_name_tfidf_2', 'car_name_tfidf_3', 'car_name_tfidf_4', 'car_name_tfidf_5', 'car_name_tfidf_6', 'car_name_tfidf_7', 'car_name_tfidf_8', 'car_name_tfidf_9', 'year', 'present_price', 'kms_driven', 'fuel_type', 'seller_type', 'transmission', 'owner']
+2025-08-19 17:28:27,360 - INFO - Starting query analysis
+2025-08-19 17:28:27,360 - DEBUG - User query: predict swift selling price if manual and kmsdriven is 45000
+2025-08-19 17:28:33,507 - INFO - Identified ML problem type: regression
+2025-08-19 17:28:33,570 - INFO - Starting data cleaning process
+2025-08-19 17:28:33,687 - INFO - Data cleaning process completed successfully
+2025-08-19 17:28:33,821 - INFO - Generating validation report...
+2025-08-19 17:28:44,788 - INFO - [Routing Decision] Cleaned status = no
+2025-08-19 17:28:48,465 - DEBUG - Executing smart cleaner code:
+2025-08-19 17:28:48,465 - DEBUG - 
+2025-08-19 17:28:48,465 - INFO - Smart data cleaning executed successfully
+2025-08-19 17:28:48,476 - INFO - Determining target column
+2025-08-19 17:28:48,482 - DEBUG - Query: predict swift selling price if manual and kmsdriven is 45000
+2025-08-19 17:28:48,482 - DEBUG - Available columns: ['car_name', 'year', 'selling_price', 'present_price', 'kms_driven', 'fuel_type', 'seller_type', 'transmission', 'owner']
+2025-08-19 17:28:54,915 - INFO - Suggested target column: selling_price
+2025-08-19 17:28:54,916 - INFO - Final chosen target column: selling_price
+2025-08-19 17:28:54,926 - INFO - Detected column types: {'numeric': ['year', 'present_price', 'kms_driven', 'owner'], 'categorical': ['fuel_type', 'seller_type', 'transmission'], 'text': ['car_name'], 'datetime': [], 'boolean': []}
+2025-08-19 17:28:54,970 - INFO - Extracted features columns: ['car_name_tfidf_0', 'car_name_tfidf_1', 'car_name_tfidf_2', 'car_name_tfidf_3', 'car_name_tfidf_4', 'car_name_tfidf_5', 'car_name_tfidf_6', 'car_name_tfidf_7', 'car_name_tfidf_8', 'car_name_tfidf_9', 'year', 'present_price', 'kms_driven', 'fuel_type', 'seller_type', 'transmission', 'owner']
+2025-08-19 17:28:54,984 - INFO - Final selected features: ['car_name_tfidf_1', 'car_name_tfidf_2', 'car_name_tfidf_0', 'car_name_tfidf_8', 'seller_type', 'transmission', 'present_price', 'fuel_type', 'car_name_tfidf_5', 'kms_driven', 'car_name_tfidf_4', 'car_name_tfidf_9', 'car_name_tfidf_3', 'year', 'car_name_tfidf_6']
+2025-08-19 17:29:07,281 - INFO - Generated ML config
+2025-08-19 17:30:42,063 - INFO - Starting query analysis
+2025-08-19 17:30:42,063 - DEBUG - User query: predict swift selling price if manual and kmsdriven is 45000
+2025-08-19 17:30:45,405 - INFO - Identified ML problem type: 
+2025-08-19 17:30:45,411 - INFO - Starting data cleaning process
+2025-08-19 17:30:45,456 - INFO - Data cleaning process completed successfully
+2025-08-19 17:30:45,462 - INFO - Generating validation report...
+2025-08-19 17:30:55,557 - INFO - [Routing Decision] Cleaned status = no
+2025-08-19 17:30:58,829 - DEBUG - Executing smart cleaner code:
+2025-08-19 17:30:58,829 - DEBUG - 
+2025-08-19 17:30:58,829 - INFO - Smart data cleaning executed successfully
+2025-08-19 17:30:58,838 - INFO - Determining target column
+2025-08-19 17:31:00,657 - INFO - Final chosen target column: car_name
+2025-08-19 17:31:00,663 - DEBUG - Applied LabelEncoder to target column
+2025-08-19 17:31:00,670 - INFO - Detected column types: {'numeric': ['year', 'selling_price', 'present_price', 'kms_driven', 'owner'], 'categorical': ['fuel_type', 'seller_type', 'transmission'], 'text': [], 'datetime': [], 'boolean': []}
+2025-08-19 17:31:00,686 - INFO - Extracted features columns: ['year', 'selling_price', 'present_price', 'kms_driven', 'fuel_type', 'seller_type', 'transmission', 'owner']
+2025-08-19 17:34:13,547 - INFO - Starting query analysis
+2025-08-19 17:34:13,547 - DEBUG - User query: predict swift selling price if manual and kmsdriven is 45000
+2025-08-19 17:34:15,741 - INFO - Identified ML problem type: 
+2025-08-19 17:34:15,763 - INFO - Starting data cleaning process
+2025-08-19 17:34:15,838 - INFO - Data cleaning process completed successfully
+2025-08-19 17:34:15,854 - INFO - Generating validation report...
+2025-08-19 17:34:29,262 - INFO - [Routing Decision] Cleaned status = no
+2025-08-19 17:34:32,331 - DEBUG - Executing smart cleaner code:
+2025-08-19 17:34:32,331 - DEBUG - 
+2025-08-19 17:34:32,331 - INFO - Smart data cleaning executed successfully
+2025-08-19 17:34:32,341 - INFO - Determining target column
+2025-08-19 17:34:32,341 - INFO - Final chosen target column: car_name
+2025-08-19 17:34:32,349 - INFO - Detected column types: {'numeric': ['year', 'selling_price', 'present_price', 'kms_driven', 'owner'], 'categorical': [], 'text': [], 'datetime': ['fuel_type', 'seller_type', 'transmission'], 'boolean': []}
+2025-08-19 17:34:32,404 - INFO - Extracted features columns: ['year', 'selling_price', 'present_price', 'kms_driven', 'fuel_type_year', 'fuel_type_month', 'fuel_type_day', 'fuel_type_weekday', 'seller_type_year', 'seller_type_month', 'seller_type_day', 'seller_type_weekday', 'transmission_year', 'transmission_month', 'transmission_day', 'transmission_weekday', 'owner']
+2025-08-19 17:39:49,047 - INFO - Starting query analysis
+2025-08-19 17:39:49,049 - DEBUG - User query: predict swift selling price if manual and kmsdriven is 45000
+2025-08-19 17:39:50,600 - INFO - Identified ML problem type: regression
+2025-08-19 17:39:50,608 - INFO - Starting data cleaning process
+2025-08-19 17:39:50,632 - INFO - Data cleaning process completed successfully
+2025-08-19 17:39:50,639 - INFO - Generating validation report...
+2025-08-19 17:39:52,097 - INFO - [Routing Decision] Cleaned status = no
+2025-08-19 17:39:54,292 - DEBUG - Executing smart cleaner code:
+2025-08-19 17:39:54,292 - DEBUG - import pandas as pd
+import numpy as np
+
+# Assuming df is already loaded with the data
+
+# Fill missing values
+df['car_name'] = df['car_name'].fillna(df['car_name'].mode()[0])
+df['fuel_type'] = df['fuel_type'].fillna(df['fuel_type'].mode()[0])
+df['seller_type'] = df['seller_type'].fillna(df['seller_type'].mode()[0])
+df['transmission'] = df['transmission'].fillna(df['transmission'].mode()[0])
+
+# Correct the datatypes
+df['car_name'] = df['car_name'].astype(str)
+df['fuel_type'] = df['fuel_type'].astype(str)
+df['seller_type'] = df['seller_type'].astype(str)
+df['transmission'] = df['transmission'].astype(str)
+2025-08-19 17:39:54,328 - ERROR - Error executing LLM cleaning code: 0
+2025-08-19 17:40:50,416 - INFO - Starting query analysis
+2025-08-19 17:40:50,416 - DEBUG - User query: predict swift's selling price if manual and kmsdriven is 45000
+2025-08-19 17:40:53,450 - INFO - Identified ML problem type: regression
+2025-08-19 17:40:53,457 - INFO - Starting data cleaning process
+2025-08-19 17:40:53,482 - INFO - Data cleaning process completed successfully
+2025-08-19 17:40:53,485 - INFO - Generating validation report...
+2025-08-19 17:40:54,910 - INFO - [Routing Decision] Cleaned status = no
+2025-08-19 17:40:57,058 - DEBUG - Executing smart cleaner code:
+2025-08-19 17:40:57,058 - DEBUG - import pandas as pd
+import numpy as np
+
+# Assuming df is already loaded with the data
+
+# Fill null values
+df['car_name'] = df['car_name'].fillna(df['car_name'].mode()[0])
+df['fuel_type'] = df['fuel_type'].fillna(df['fuel_type'].mode()[0])
+df['seller_type'] = df['seller_type'].fillna(df['seller_type'].mode()[0])
+df['transmission'] = df['transmission'].fillna(df['transmission'].mode()[0])
+
+# Correct the datatypes
+df['car_name'] = df['car_name'].astype('object')
+df['fuel_type'] = df['fuel_type'].astype('object')
+df['seller_type'] = df['seller_type'].astype('object')
+df['transmission'] = df['transmission'].astype('object')
+
+# Convert year and owner to integer
+df['year'] = df['year'].astype(int)
+df['owner'] = df['owner'].astype(int)
+2025-08-19 17:40:57,058 - ERROR - Error executing LLM cleaning code: 0
+2025-08-19 17:46:34,976 - INFO - Starting query analysis
+2025-08-19 17:46:34,980 - DEBUG - User query: predict swift selling price if manual and kmsdriven is 45000
+2025-08-19 17:46:35,683 - INFO - Identified ML problem type: regression
+2025-08-19 17:46:35,692 - INFO - Starting data cleaning process
+2025-08-19 17:46:35,721 - INFO - Data cleaning process completed successfully
+2025-08-19 17:46:35,727 - INFO - Generating validation report...
+2025-08-19 17:46:38,185 - INFO - [Routing Decision] Cleaned status = no
+2025-08-19 17:46:42,445 - DEBUG - Executing smart cleaner code:
+2025-08-19 17:46:42,445 - DEBUG - import pandas as pd
+import numpy as np
+
+# Assuming df is the DataFrame you're working with, loaded from your data source.
+# For demonstration, let's create a sample df resembling the description:
+data = {
+    'car_name': [None] * 299,
+    'year': np.random.randint(2006, 2019, size=299),
+    'selling_price': np.random.rand(299) * 14,
+    'present_price': np.random.rand(299) * 23,
+    'kms_driven': np.random.randint(500, 100000, size=299),
+    'fuel_type': [None] * 299,
+    'seller_type': [None] * 299,
+    'transmission': [None] * 299,
+    'owner': [0] * 299
+}
+df = pd.DataFrame(data)
+
+# Fill null values in 'car_name', 'fuel_type', 'seller_type', and 'transmission' with appropriate placeholders.
+df['car_name'] = df['car_name'].fillna('Unknown_Car')
+df['fuel_type'] = df['fuel_type'].fillna('Unknown_Fuel')
+df['seller_type'] = df['seller_type'].fillna('Unknown_Seller')
+df['transmission'] = df['transmission'].fillna('Unknown_Transmission')
+
+# Correct the datatypes for 'car_name', 'fuel_type', 'seller_type', and 'transmission' to object (string).
+df['car_name'] = df['car_name'].astype(str)
+df['fuel_type'] = df['fuel_type'].astype(str)
+df['seller_type'] = df['seller_type'].astype(str)
+df['transmission'] = df['transmission'].astype(str)
+
+# Convert year, kms_driven and owner to int
+df['year'] = df['year'].astype(int)
+df['kms_driven'] = df['kms_driven'].astype(int)
+df['owner'] = df['owner'].astype(int)
+2025-08-19 17:46:42,508 - INFO - Smart data cleaning executed successfully
+2025-08-19 17:46:42,524 - INFO - Determining target column
+2025-08-19 17:46:43,268 - INFO - Final chosen target column: selling_price
+2025-08-19 17:46:43,293 - INFO - Detected column types: {'numeric': ['year', 'present_price', 'kms_driven', 'owner'], 'categorical': ['car_name', 'fuel_type', 'seller_type', 'transmission'], 'text': [], 'datetime': [], 'boolean': []}
+2025-08-19 17:46:43,308 - INFO - Extracted features columns: ['car_name', 'year', 'present_price', 'kms_driven', 'fuel_type', 'seller_type', 'transmission', 'owner']
+2025-08-19 17:46:43,332 - INFO - Final selected features: ['kms_driven', 'present_price', 'year']
+2025-08-19 17:46:45,775 - INFO - Generated ML config
+2025-08-19 17:46:48,785 - INFO - Extracted features columns: ['kms_driven', 'present_price', 'year']
+2025-08-19 17:48:57,298 - INFO - Starting query analysis
+2025-08-19 17:48:57,298 - DEBUG - User query: predict swift selling price if manual and kmsdriven is 45000
+2025-08-19 17:48:59,258 - INFO - Identified ML problem type: regression
+2025-08-19 17:48:59,261 - INFO - Starting data cleaning process
+2025-08-19 17:48:59,291 - INFO - Data cleaning process completed successfully
+2025-08-19 17:48:59,299 - INFO - Generating validation report...
+2025-08-19 17:49:01,516 - INFO - [Routing Decision] Cleaned status = no
+2025-08-19 17:49:06,217 - DEBUG - Executing smart cleaner code:
+2025-08-19 17:49:06,217 - DEBUG - import pandas as pd
+import numpy as np
+
+# Assuming the dataframe is named df
+
+# Load the original dataset (replace 'your_dataset.csv' with the actual path)
+df = pd.read_csv('car data.csv')
+
+# Correct the column names
+df.rename(columns={'Car_Name': 'car_name', 'Selling_Price': 'selling_price', 'Present_Price': 'present_price',
+                   'Kms_Driven': 'kms_driven', 'Fuel_Type': 'fuel_type', 'Seller_Type': 'seller_type',
+                   'Transmission': 'transmission', 'Owner': 'owner'}, inplace=True)
+
+# Convert year to datetime
+df['year'] = pd.to_datetime(df['Year'], format='%Y')
+
+# Extract car name
+df['car_name'] = df['car_name'].str.split(' ').str[0]
+
+# Convert categorical features to object type
+for col in ['car_name', 'fuel_type', 'seller_type', 'transmission']:
+    df[col] = df[col].astype('object')
+
+# Convert owner to object type
+df['owner'] = df['owner'].astype('object')
+
+# Drop the 'Year' column
+df = df.drop('Year', axis=1)
+
+# Define a function to impute categorical features with the mode
+def impute_categorical(df, column_name):
+    mode_value = df[column_name].mode()[0]
+    df[column_name] = df[column_name].fillna(mode_value)
+    return df
+
+# Impute missing values in categorical columns
+for col in ['car_name', 'fuel_type', 'seller_type', 'transmission']:
+    df = impute_categorical(df, col)
+
+# Remove duplicate rows
+df.drop_duplicates(inplace=True)
+
+# There is no outlier handling since there are no specific issues related to outliers.
+
+# Reset index
+df = df.reset_index(drop=True)
+2025-08-19 17:49:06,217 - ERROR - Error executing LLM cleaning code: [Errno 2] No such file or directory: 'car data.csv'
+2025-08-19 17:49:06,217 - INFO - Smart data cleaning executed successfully
+2025-08-19 17:49:06,233 - INFO - Determining target column
+2025-08-19 17:49:06,233 - INFO - Final chosen target column: selling_price
+2025-08-19 17:49:06,254 - INFO - Detected column types: {'numeric': ['year', 'present_price', 'kms_driven', 'owner'], 'categorical': [], 'text': [], 'datetime': ['car_name', 'fuel_type', 'seller_type', 'transmission'], 'boolean': []}
+2025-08-19 17:49:06,277 - INFO - Extracted features columns: ['car_name_year', 'car_name_month', 'car_name_day', 'car_name_weekday', 'year', 'present_price', 'kms_driven', 'fuel_type_year', 'fuel_type_month', 'fuel_type_day', 'fuel_type_weekday', 'seller_type_year', 'seller_type_month', 'seller_type_day', 'seller_type_weekday', 'transmission_year', 'transmission_month', 'transmission_day', 'transmission_weekday', 'owner']
+2025-08-19 17:52:56,155 - INFO - Starting query analysis
+2025-08-19 17:52:56,155 - DEBUG - User query: predict swift selling price if manual and kmsdriven is 45000
+2025-08-19 17:52:57,326 - INFO - Identified ML problem type: regression
+2025-08-19 17:52:57,334 - INFO - Starting data cleaning process
+2025-08-19 17:52:57,397 - INFO - Data cleaning process completed successfully
+2025-08-19 17:52:57,410 - INFO - Generating validation report...
+2025-08-19 17:52:59,085 - INFO - [Routing Decision] Cleaned status = no
+2025-08-19 17:53:05,131 - DEBUG - Executing smart cleaner code:
+2025-08-19 17:53:05,131 - DEBUG - import pandas as pd
+import numpy as np
+
+# Assuming the dataframe is named 'df'
+
+# Fill missing values in 'car_name', 'fuel_type', 'seller_type', and 'transmission' with appropriate placeholders
+df['car_name'] = df['car_name'].fillna('Unknown')
+df['fuel_type'] = df['fuel_type'].fillna('Unknown')
+df['seller_type'] = df['seller_type'].fillna('Unknown')
+df['transmission'] = df['transmission'].fillna('Unknown')
+
+# Correct datatypes for all columns
+df['car_name'] = df['car_name'].astype('string')
+df['year'] = df['year'].astype('int64')
+df['selling_price'] = df['selling_price'].astype('float64')
+df['present_price'] = df['present_price'].astype('float64')
+df['kms_driven'] = df['kms_driven'].astype('int64')
+df['fuel_type'] = df['fuel_type'].astype('string')
+df['seller_type'] = df['seller_type'].astype('string')
+df['transmission'] = df['transmission'].astype('string')
+df['owner'] = df['owner'].astype('int64')
+
+# Remove duplicate rows
+df.drop_duplicates(inplace=True)
+
+# Handle outliers in 'kms_driven' using IQR method
+Q1 = df['kms_driven'].quantile(0.25)
+Q3 = df['kms_driven'].quantile(0.75)
+IQR = Q3 - Q1
+lower_bound = Q1 - 1.5 * IQR
+upper_bound = Q3 + 1.5 * IQR
+df = df[(df['kms_driven'] >= lower_bound) & (df['kms_driven'] <= upper_bound)]
+
+# Handle outliers in 'present_price' using IQR method
+Q1 = df['present_price'].quantile(0.25)
+Q3 = df['present_price'].quantile(0.75)
+IQR = Q3 - Q1
+lower_bound = Q1 - 1.5 * IQR
+upper_bound = Q3 + 1.5 * IQR
+df = df[(df['present_price'] >= lower_bound) & (df['present_price'] <= upper_bound)]
+
+# Handle outliers in 'selling_price' using IQR method
+Q1 = df['selling_price'].quantile(0.25)
+Q3 = df['selling_price'].quantile(0.75)
+IQR = Q3 - Q1
+lower_bound = Q1 - 1.5 * IQR
+upper_bound = Q3 + 1.5 * IQR
+df = df[(df['selling_price'] >= lower_bound) & (df['selling_price'] <= upper_bound)]
+
+# Create categorical summary
+categorical_cols = df.select_dtypes(include=['object', 'string']).columns
+categorical_summary = {}
+for col in categorical_cols:
+    categorical_summary[col] = {
+        'unique_count': df[col].nunique(),
+        'most_frequent': df[col].mode().to_list(),
+        'frequency': df[col].value_counts().to_dict()
+    }
+2025-08-19 17:53:05,195 - INFO - Smart data cleaning executed successfully
+2025-08-19 17:53:05,195 - INFO - Determining target column
+2025-08-19 17:53:05,195 - INFO - Final chosen target column: selling_price
+2025-08-19 17:53:05,210 - INFO - Detected column types: {'numeric': ['year', 'present_price', 'kms_driven', 'owner'], 'categorical': ['car_name', 'fuel_type', 'seller_type', 'transmission'], 'text': [], 'datetime': [], 'boolean': []}
+2025-08-19 17:53:05,210 - INFO - Extracted features columns: ['car_name', 'year', 'present_price', 'kms_driven', 'fuel_type', 'seller_type', 'transmission', 'owner']
+2025-08-19 17:53:05,228 - INFO - Final selected features: ['kms_driven', 'present_price', 'year']
+2025-08-19 17:53:06,988 - INFO - Generated ML config
+2025-08-19 17:53:07,008 - INFO - Starting model fitting
+2025-08-19 17:53:08,516 - DEBUG - Generated training code:
+2025-08-19 17:53:08,516 - DEBUG - import pandas as pd
+from sklearn.model_selection import train_test_split
+from sklearn.ensemble import RandomForestRegressor
+from sklearn.metrics import mean_absolute_error, mean_squared_error, r2_score
+import numpy as np
+
+model = RandomForestRegressor(n_estimators=100, max_depth=None, min_samples_split=2, min_samples_leaf=1, random_state=42)
+model.fit(X, y)
+2025-08-19 17:53:08,631 - INFO - Model training completed successfully
+2025-08-19 17:53:08,639 - INFO - Computing model metrics
+2025-08-19 17:53:08,639 - DEBUG - Task type: regression
+2025-08-19 17:53:08,639 - DEBUG - Evaluation data shape: (299, 3), (299,)
+2025-08-19 17:53:08,644 - INFO - Metrics computed successfully: {'MAE': 0.19823745819398017, 'MSE': 0.1383432137959866, 'RMSE': np.float64(0.3719451757934045), 'R2': 0.990007609881252}
+2025-08-19 17:53:09,953 - INFO - Extracted features columns: ['kms_driven', 'present_price', 'year']
+2025-08-19 18:01:12,623 - INFO - Starting query analysis
+2025-08-19 18:01:12,634 - DEBUG - User query: predict wagon r selling price if manual and kmsdriven is 45000
+2025-08-19 18:01:13,387 - INFO - Identified ML problem type: regression
+2025-08-19 18:01:13,395 - INFO - Starting data cleaning process
+2025-08-19 18:01:13,427 - INFO - Data cleaning process completed successfully
+2025-08-19 18:01:13,436 - INFO - Generating validation report...
+2025-08-19 18:01:15,115 - INFO - [Routing Decision] Cleaned status = no
+2025-08-19 18:01:17,336 - DEBUG - Executing smart cleaner code:
+2025-08-19 18:01:17,337 - DEBUG - import pandas as pd
+import numpy as np
+
+# Assuming df is already loaded with the data
+
+# Fill null values in 'car_name', 'fuel_type', 'seller_type', and 'transmission' columns with appropriate placeholders
+df['car_name'] = df['car_name'].fillna('Unknown')
+df['fuel_type'] = df['fuel_type'].fillna('Unknown')
+df['seller_type'] = df['seller_type'].fillna('Unknown')
+df['transmission'] = df['transmission'].fillna('Unknown')
+
+# Change the datatypes of the object columns
+df = df.astype({'car_name': 'object', 'fuel_type': 'object', 'seller_type': 'object', 'transmission': 'object'})
+
+# Correct the datatype of 'year' and 'owner'
+df['year'] = df['year'].astype(int)
+df['owner'] = df['owner'].astype(int)
+2025-08-19 18:01:17,345 - INFO - Smart data cleaning executed successfully
+2025-08-19 18:01:17,357 - INFO - Determining target column
+2025-08-19 18:01:17,362 - INFO - Final chosen target column: selling_price
+2025-08-19 18:01:17,378 - INFO - Detected column types: {'numeric': ['year', 'present_price', 'kms_driven', 'owner'], 'categorical': ['car_name', 'fuel_type', 'seller_type', 'transmission'], 'text': [], 'datetime': [], 'boolean': []}
+2025-08-19 18:01:17,402 - INFO - Extracted features columns: ['car_name', 'year', 'present_price', 'kms_driven', 'fuel_type', 'seller_type', 'transmission', 'owner']
+2025-08-19 18:01:17,427 - INFO - Final selected features: ['kms_driven', 'present_price', 'year']
+2025-08-19 18:01:18,922 - INFO - Generated ML config
+2025-08-19 18:01:18,928 - INFO - Starting model fitting
+2025-08-19 18:01:20,226 - DEBUG - Generated training code:
+2025-08-19 18:01:20,226 - DEBUG - import pandas as pd
+from sklearn.ensemble import RandomForestRegressor
+from sklearn.model_selection import train_test_split
+from sklearn.metrics import mean_absolute_error, mean_squared_error, r2_score
+import numpy as np
+
+model = RandomForestRegressor(n_estimators=100, max_depth=None, min_samples_split=2, min_samples_leaf=1, random_state=42)
+model.fit(X, y)
+2025-08-19 18:01:20,327 - INFO - Model training completed successfully
+2025-08-19 18:01:20,337 - INFO - Computing model metrics
+2025-08-19 18:01:20,337 - DEBUG - Task type: regression
+2025-08-19 18:01:20,337 - DEBUG - Evaluation data shape: (299, 3), (299,)
+2025-08-19 18:01:20,344 - INFO - Metrics computed successfully: {'MAE': 0.19823745819398017, 'MSE': 0.1383432137959866, 'RMSE': np.float64(0.3719451757934045), 'R2': 0.990007609881252}
+2025-08-19 18:01:20,354 - INFO - Generating prediction from user query
+2025-08-19 18:01:21,267 - INFO - Parsed input from query: {'kms_driven': 45000, 'present_price': None, 'year': None}
+2025-08-19 18:01:21,271 - INFO - Extracted features columns: ['kms_driven', 'present_price', 'year']
+2025-08-19 18:01:21,271 - INFO - Aligned input for prediction: [{'kms_driven': 45000, 'present_price': None, 'year': None}]
+2025-08-19 18:01:21,276 - INFO - Raw prediction: 3.0498000000000007
+2025-08-19 18:01:21,276 - INFO - Final prediction result: {'question': 'predict wagon r selling price if manual and kmsdriven is 45000', 'inputs': {'kms_driven': 45000, 'present_price': None, 'year': None}, 'prediction': 3.0498000000000007}
+2025-08-19 18:01:23,564 - INFO - Generated explanation for prediction
+2025-08-19 18:05:08,453 - INFO - Starting query analysis
+2025-08-19 18:05:08,453 - DEBUG - User query: predict swift selling price if manual and kmsdriven is 45000 and year is 2014 and present price is 6.8
+2025-08-19 18:05:09,525 - INFO - Identified ML problem type: regression
+2025-08-19 18:05:09,533 - INFO - Starting data cleaning process
+2025-08-19 18:05:09,590 - INFO - Data cleaning process completed successfully
+2025-08-19 18:05:09,598 - INFO - Generating validation report...
+2025-08-19 18:05:11,203 - INFO - [Routing Decision] Cleaned status = no
+2025-08-19 18:05:14,213 - DEBUG - Executing smart cleaner code:
+2025-08-19 18:05:14,213 - DEBUG - import pandas as pd
+import numpy as np
+
+# Assuming df is already loaded with the data
+
+# Fill null values with appropriate placeholders
+df['car_name'] = df['car_name'].fillna('Unknown')
+df['fuel_type'] = df['fuel_type'].fillna('Unknown')
+df['seller_type'] = df['seller_type'].fillna('Unknown')
+df['transmission'] = df['transmission'].fillna('Unknown')
+
+# Change datatypes to object
+df['car_name'] = df['car_name'].astype('object')
+df['fuel_type'] = df['fuel_type'].astype('object')
+df['seller_type'] = df['seller_type'].astype('object')
+df['transmission'] = df['transmission'].astype('object')
+
+# No duplicate rows were reported, so no action is needed.
+
+# The 'owner' column has a constant value of 0.0. Consider removing it, or keep it if it has a specific meaning.
+# For now, I will keep it.
+
+# The provided summary does not show any outliers to handle based on the numeric data.
+# If there are specific outlier thresholds, further code would be needed to address them.
+
+# Displaying the cleaned dataframe information to verify the changes.
+# print(df.info())
+# print(df.isnull().sum())
+2025-08-19 18:05:14,213 - INFO - Smart data cleaning executed successfully
+2025-08-19 18:05:14,231 - INFO - Determining target column
+2025-08-19 18:05:14,237 - INFO - Final chosen target column: selling_price
+2025-08-19 18:05:14,248 - INFO - Detected column types: {'numeric': ['year', 'present_price', 'kms_driven', 'owner'], 'categorical': ['car_name', 'fuel_type', 'seller_type', 'transmission'], 'text': [], 'datetime': [], 'boolean': []}
+2025-08-19 18:05:14,264 - INFO - Extracted features columns: ['car_name', 'year', 'present_price', 'kms_driven', 'fuel_type', 'seller_type', 'transmission', 'owner']
+2025-08-19 18:05:14,277 - INFO - Final selected features: ['kms_driven', 'present_price', 'year']
+2025-08-19 18:05:16,670 - INFO - Generated ML config
+2025-08-19 18:05:16,682 - INFO - Starting model fitting
+2025-08-19 18:05:18,192 - DEBUG - Generated training code:
+2025-08-19 18:05:18,192 - DEBUG - import pandas as pd
+from sklearn.ensemble import RandomForestRegressor
+from sklearn.model_selection import train_test_split
+from sklearn.metrics import mean_absolute_error, mean_squared_error, r2_score
+import numpy as np
+
+model = RandomForestRegressor(n_estimators=100, max_depth=None, min_samples_split=2, min_samples_leaf=1, random_state=42)
+model.fit(X, y)
+2025-08-19 18:05:18,299 - INFO - Model training completed successfully
+2025-08-19 18:05:18,313 - INFO - Computing model metrics
+2025-08-19 18:05:18,313 - DEBUG - Task type: regression
+2025-08-19 18:05:18,313 - DEBUG - Evaluation data shape: (299, 3), (299,)
+2025-08-19 18:05:18,321 - INFO - Metrics computed successfully: {'MAE': 0.19823745819398017, 'MSE': 0.1383432137959866, 'RMSE': np.float64(0.3719451757934045), 'R2': 0.990007609881252}
+2025-08-19 18:05:18,331 - INFO - Generating prediction from user query
+2025-08-19 18:05:19,452 - INFO - Parsed input from query: {'kms_driven': 45000, 'present_price': 6.8, 'year': 2014}
+2025-08-19 18:05:19,452 - INFO - Extracted features columns: ['kms_driven', 'present_price', 'year']
+2025-08-19 18:05:19,452 - INFO - Aligned input for prediction: [{'kms_driven': 45000, 'present_price': 6.8, 'year': 2014}]
+2025-08-19 18:05:19,452 - INFO - Raw prediction: 4.469500000000002
+2025-08-19 18:05:19,452 - INFO - Final prediction result: {'question': 'predict swift selling price if manual and kmsdriven is 45000 and year is 2014 and present price is 6.8', 'inputs': {'kms_driven': 45000, 'present_price': 6.8, 'year': 2014}, 'prediction': 4.469500000000002}
+2025-08-19 18:05:22,240 - INFO - Generated explanation for prediction
+2025-08-19 18:18:32,747 - INFO - Starting query analysis
+2025-08-19 18:18:32,748 - DEBUG - User query: predict swift selling price if manual and kmsdriven is 45000 and year is 2014 and present price is 6.
+2025-08-19 18:18:33,858 - INFO - Identified ML problem type: regression
+2025-08-19 18:18:33,865 - INFO - Starting data cleaning process
+2025-08-19 18:18:33,907 - INFO - Data cleaning process completed successfully
+2025-08-19 18:18:33,919 - INFO - Generating validation report...
+2025-08-19 18:18:35,539 - INFO - [Routing Decision] Cleaned status = no
+2025-08-19 18:18:39,690 - DEBUG - Executing smart cleaner code:
+2025-08-19 18:18:39,690 - DEBUG - import pandas as pd
+import numpy as np
+
+# Assuming the dataframe is named 'df'
+# Create a sample dataframe based on the description
+data = {
+    'car_name': [None] * 299,
+    'year': np.random.randint(2006, 2019, size=299),
+    'selling_price': np.random.rand(299) * 14,
+    'present_price': np.random.rand(299) * 23,
+    'kms_driven': np.random.rand(299) * 100000,
+    'fuel_type': [None] * 299,
+    'seller_type': [None] * 299,
+    'transmission': [None] * 299,
+    'owner': [0] * 299
+}
+df = pd.DataFrame(data)
+
+# 1. Fill null values in 'car_name', 'fuel_type', 'seller_type', and 'transmission'
+
+# For car_name, we'll create a placeholder.  A more sophisticated approach would involve using other columns to make a more informed guess.
+df['car_name'] = 'Unknown Car'
+
+# For fuel_type, seller_type, and transmission, we'll use mode imputation.  If there's no mode, we'll use a placeholder.
+for col in ['fuel_type', 'seller_type', 'transmission']:
+    df[col] = 'Unknown'
+
+
+# 2. Correct datatypes for 'car_name', 'fuel_type', 'seller_type' and 'transmission' columns.
+df['car_name'] = df['car_name'].astype(str)
+df['fuel_type'] = df['fuel_type'].astype(str)
+df['seller_type'] = df['seller_type'].astype(str)
+df['transmission'] = df['transmission'].astype(str)
+
+
+# Re-validate the data types
+#print(df.dtypes)
+
+# Re-validate the null counts
+#print(df.isnull().sum())
+
+# Re-validate the categorical summary.
+#print(df.describe(include=['object']))
+2025-08-19 18:18:39,698 - INFO - Smart data cleaning executed successfully
+2025-08-19 18:18:39,717 - INFO - Determining target column
+2025-08-19 18:18:39,725 - INFO - Final chosen target column: selling_price
+2025-08-19 18:18:39,755 - INFO - Detected column types: {'numeric': ['present_price', 'kms_driven', 'owner'], 'categorical': ['car_name', 'year', 'fuel_type', 'seller_type', 'transmission'], 'text': [], 'datetime': [], 'boolean': []}
+2025-08-19 18:18:39,825 - INFO - Extracted features columns: ['car_name', 'year', 'present_price', 'kms_driven', 'fuel_type', 'seller_type', 'transmission', 'owner']
+2025-08-19 18:18:39,858 - INFO - Auto-selected features: ['present_price', 'kms_driven']
+2025-08-19 18:22:19,530 - INFO - Starting query analysis
+2025-08-19 18:22:19,530 - DEBUG - User query: predict swift selling price if manual and kmsdriven is 45000 and year is 2014 and present price is 6.
+
+
+2025-08-19 18:22:20,301 - INFO - Identified ML problem type: regression
+2025-08-19 18:22:20,316 - INFO - Starting data cleaning process
+2025-08-19 18:22:20,381 - INFO - Data cleaning process completed successfully
+2025-08-19 18:22:20,406 - INFO - Generating validation report...
+2025-08-19 18:22:22,080 - INFO - [Routing Decision] Cleaned status = no
+2025-08-19 18:22:25,408 - DEBUG - Executing smart cleaner code:
+2025-08-19 18:22:25,408 - DEBUG - import pandas as pd
+import numpy as np
+
+# Assuming df is the DataFrame you're working with
+# Example DataFrame (replace with your actual DataFrame loading)
+data = {'car_name': [None] * 299, 'year': np.random.randint(2006, 2019, 299), 'selling_price': np.random.rand(299) * 14, 'present_price': np.random.rand(299) * 23, 'kms_driven': np.random.rand(299) * 100000, 'fuel_type': [None] * 299, 'seller_type': [None] * 299, 'transmission': [None] * 299, 'owner': [0] * 299}
+df = pd.DataFrame(data)
+
+# Fill null values with a placeholder 'unknown'
+df['car_name'] = df['car_name'].fillna('unknown')
+df['fuel_type'] = df['fuel_type'].fillna('unknown')
+df['seller_type'] = df['seller_type'].fillna('unknown')
+df['transmission'] = df['transmission'].fillna('unknown')
+
+# Correct the datatypes
+df['car_name'] = df['car_name'].astype(str)
+df['fuel_type'] = df['fuel_type'].astype(str)
+df['seller_type'] = df['seller_type'].astype(str)
+df['transmission'] = df['transmission'].astype(str)
+
+print(df.isnull().sum())
+print(df.dtypes)
+2025-08-19 18:22:25,422 - INFO - Smart data cleaning executed successfully
+2025-08-19 18:22:25,451 - INFO - Determining target column
+2025-08-19 18:22:25,455 - INFO - Final chosen target column: selling_price
+2025-08-19 18:22:25,484 - INFO - Detected column types: {'numeric': ['present_price', 'kms_driven', 'owner'], 'categorical': ['car_name', 'year', 'fuel_type', 'seller_type', 'transmission'], 'text': [], 'datetime': [], 'boolean': []}
+2025-08-19 18:22:25,508 - INFO - Extracted features columns: ['car_name', 'year', 'present_price', 'kms_driven', 'fuel_type', 'seller_type', 'transmission', 'owner']
+2025-08-19 18:22:25,547 - INFO - Auto-selected features: ['present_price', 'kms_driven']
+2025-08-19 18:25:30,998 - INFO - Starting query analysis
+2025-08-19 18:25:30,998 - DEBUG - User query: predict swift selling price if manual and kmsdriven is 45000 and year is 2014 and present price is 6.
+2025-08-19 18:25:32,358 - INFO - Identified ML problem type: regression
+2025-08-19 18:25:32,371 - INFO - Starting data cleaning process
+2025-08-19 18:25:32,440 - INFO - Data cleaning process completed successfully
+2025-08-19 18:25:32,466 - INFO - Generating validation report...
+2025-08-19 18:25:34,408 - INFO - [Routing Decision] Cleaned status = no
+2025-08-19 18:25:36,861 - DEBUG - Executing smart cleaner code:
+2025-08-19 18:25:36,861 - DEBUG - import pandas as pd
+import numpy as np
+
+# Assuming the dataframe is named df
+# Fill null values with appropriate placeholders
+df['car_name'] = df['car_name'].fillna('Unknown')
+df['fuel_type'] = df['fuel_type'].fillna('Unknown')
+df['seller_type'] = df['seller_type'].fillna('Unknown')
+df['transmission'] = df['transmission'].fillna('Unknown')
+
+# Convert columns to appropriate datatypes
+df['car_name'] = df['car_name'].astype(str)
+df['fuel_type'] = df['fuel_type'].astype(str)
+df['seller_type'] = df['seller_type'].astype(str)
+df['transmission'] = df['transmission'].astype(str)
+
+# Convert year and owner to int
+df['year'] = df['year'].astype(int)
+df['owner'] = df['owner'].astype(int)
+2025-08-19 18:25:36,876 - INFO - Smart data cleaning executed successfully
+2025-08-19 18:25:36,908 - INFO - Determining target column
+2025-08-19 18:25:36,908 - INFO - Final chosen target column: selling_price
+2025-08-19 18:25:36,940 - INFO - Detected column types: {'numeric': ['year', 'present_price', 'kms_driven', 'owner'], 'categorical': ['car_name', 'fuel_type', 'seller_type', 'transmission'], 'text': [], 'datetime': [], 'boolean': []}
+2025-08-19 18:25:36,971 - INFO - Extracted features columns: ['car_name', 'year', 'present_price', 'kms_driven', 'fuel_type', 'seller_type', 'transmission', 'owner']
+2025-08-19 18:25:37,003 - INFO - Final selected features: ['kms_driven', 'present_price', 'year']
+2025-08-19 18:25:38,896 - INFO - Generated ML config
+2025-08-19 18:25:38,925 - INFO - Starting model fitting
+2025-08-19 18:25:40,226 - DEBUG - Generated training code:
+2025-08-19 18:25:40,226 - DEBUG - import pandas as pd
+from sklearn.model_selection import train_test_split
+from sklearn.ensemble import RandomForestRegressor
+from sklearn.metrics import mean_absolute_error, mean_squared_error, r2_score
+import numpy as np
+
+model = RandomForestRegressor(n_estimators=100, max_depth=None, min_samples_split=2, min_samples_leaf=1, random_state=42)
+model.fit(X, y)
+2025-08-19 18:25:40,424 - INFO - Model training completed successfully
+2025-08-19 18:25:40,440 - INFO - Computing model metrics
+2025-08-19 18:25:40,440 - DEBUG - Task type: regression
+2025-08-19 18:25:40,440 - DEBUG - Evaluation data shape: (299, 3), (299,)
+2025-08-19 18:25:40,448 - INFO - Metrics computed successfully: {'MAE': 0.19823745819398017, 'MSE': 0.1383432137959866, 'RMSE': np.float64(0.3719451757934045), 'R2': 0.990007609881252}
+2025-08-19 18:25:40,467 - INFO - Generating prediction from user query
+2025-08-19 18:25:41,387 - INFO - Parsed input from query: {'kms_driven': 45000, 'present_price': 6, 'year': 2014}
+2025-08-19 18:25:41,392 - INFO - Extracted features columns: ['kms_driven', 'present_price', 'year']
+2025-08-19 18:25:41,394 - INFO - Aligned input for prediction: [{'kms_driven': 45000, 'present_price': 6, 'year': 2014}]
+2025-08-19 18:25:41,401 - INFO - Raw prediction: 4.324499999999999
+2025-08-19 18:25:41,402 - INFO - Final prediction result: {'question': 'predict swift selling price if manual and kmsdriven is 45000 and year is 2014 and present price is 6.', 'inputs': {'kms_driven': 45000, 'present_price': 6, 'year': 2014}, 'prediction': 4.324499999999999}
+2025-08-19 18:25:44,709 - INFO - Generated explanation for prediction
+2025-08-19 18:32:38,799 - INFO - Starting query analysis
+2025-08-19 18:32:38,799 - DEBUG - User query: predict swift selling price if manual and kmsdriven is 45000 and year is 2014 and present price is 6.
+2025-08-19 18:32:42,982 - INFO - Identified ML problem type: regression
+2025-08-19 18:32:42,994 - INFO - Starting data cleaning process
+2025-08-19 18:32:43,051 - INFO - Data cleaning process completed successfully
+2025-08-19 18:32:43,073 - INFO - Generating validation report...
+2025-08-19 18:32:45,036 - INFO - [Routing Decision] Cleaned status = no
+2025-08-19 18:32:47,183 - DEBUG - Executing smart cleaner code:
+2025-08-19 18:32:47,183 - DEBUG - import pandas as pd
+import numpy as np
+
+# Assuming df is already loaded with the data
+
+# Fill null values with a placeholder 'unknown'
+df['car_name'] = df['car_name'].fillna('unknown')
+df['fuel_type'] = df['fuel_type'].fillna('unknown')
+df['seller_type'] = df['seller_type'].fillna('unknown')
+df['transmission'] = df['transmission'].fillna('unknown')
+
+# Convert columns to object type
+df['car_name'] = df['car_name'].astype('object')
+df['fuel_type'] = df['fuel_type'].astype('object')
+df['seller_type'] = df['seller_type'].astype('object')
+df['transmission'] = df['transmission'].astype('object')
+2025-08-19 18:32:47,198 - INFO - Smart data cleaning executed successfully
+2025-08-19 18:32:47,213 - INFO - Determining target column
+2025-08-19 18:32:47,213 - INFO - Final chosen target column: selling_price
+2025-08-19 18:32:47,227 - INFO - Detected column types: {'numeric': ['year', 'present_price', 'kms_driven', 'owner'], 'categorical': ['car_name', 'fuel_type', 'seller_type', 'transmission'], 'text': [], 'datetime': [], 'boolean': []}
+2025-08-19 18:32:47,246 - INFO - Extracted features columns: ['car_name', 'year', 'present_price', 'kms_driven', 'fuel_type', 'seller_type', 'transmission', 'owner']
+2025-08-19 18:32:47,266 - INFO - Auto-selected features: ['year', 'present_price', 'kms_driven']
+2025-08-19 18:32:48,166 - INFO - Final features after LLM enhancement: ['present_price', 'transmission', 'year', 'kms_driven']
+2025-08-19 18:32:50,784 - INFO - Generated ML config
+2025-08-19 18:32:50,807 - INFO - Starting model fitting
+2025-08-19 18:32:52,078 - DEBUG - Generated training code:
+2025-08-19 18:32:52,078 - DEBUG - import pandas as pd
+from sklearn.model_selection import train_test_split
+from sklearn.ensemble import RandomForestRegressor
+from sklearn.metrics import mean_absolute_error, mean_squared_error, r2_score
+import numpy as np
+
+model = RandomForestRegressor(n_estimators=100, max_depth=None, min_samples_split=2, min_samples_leaf=1, random_state=42)
+model.fit(X, y)
+2025-08-19 18:32:52,248 - INFO - Model training completed successfully
+2025-08-19 18:32:52,264 - INFO - Computing model metrics
+2025-08-19 18:32:52,264 - DEBUG - Task type: regression
+2025-08-19 18:32:52,264 - DEBUG - Evaluation data shape: (299, 4), (299,)
+2025-08-19 18:32:52,283 - INFO - Metrics computed successfully: {'MAE': 0.194584280936455, 'MSE': 0.13379537137123743, 'RMSE': np.float64(0.3657804961602483), 'R2': 0.9903360959302584}
+2025-08-19 18:32:52,300 - INFO - Generating prediction from user query
+2025-08-19 18:32:53,376 - INFO - Parsed input from query: {'present_price': 6, 'transmission': 'manual', 'year': 2014, 'kms_driven': 45000}
+2025-08-19 18:32:53,379 - INFO - Extracted features columns: ['present_price', 'transmission', 'year', 'kms_driven']
+2025-08-19 18:32:53,382 - INFO - Aligned input for prediction: [{'present_price': 6, 'transmission': 0, 'year': 2014, 'kms_driven': 45000}]
+2025-08-19 18:32:53,393 - INFO - Raw prediction: 4.338499999999999
+2025-08-19 18:32:53,393 - INFO - Final prediction result: {'question': 'predict swift selling price if manual and kmsdriven is 45000 and year is 2014 and present price is 6.', 'inputs': {'present_price': 6, 'transmission': 'manual', 'year': 2014, 'kms_driven': 45000}, 'prediction': 4.338499999999999}
+2025-08-19 18:32:55,862 - INFO - Generated explanation for prediction
+2025-08-19 18:39:05,753 - INFO - Starting query analysis
+2025-08-19 18:39:05,753 - DEBUG - User query: predict swift selling price if manual and kmsdriven is 45000 and year is 2014 and present price is 6.
+2025-08-19 18:39:06,681 - INFO - Identified ML problem type: regression
+2025-08-19 18:39:06,699 - INFO - Starting data cleaning process
+2025-08-19 18:39:06,757 - INFO - Data cleaning process completed successfully
+2025-08-19 18:39:06,778 - INFO - Generating validation report...
+2025-08-19 18:39:08,749 - INFO - [Routing Decision] Cleaned status = no
+2025-08-19 18:39:11,131 - DEBUG - Executing smart cleaner code:
+2025-08-19 18:39:11,133 - DEBUG - import pandas as pd
+import numpy as np
+
+# Assuming df is already loaded with the data
+
+# Fill null values with a placeholder 'unknown'
+df['car_name'] = df['car_name'].fillna('unknown')
+df['fuel_type'] = df['fuel_type'].fillna('unknown')
+df['seller_type'] = df['seller_type'].fillna('unknown')
+df['transmission'] = df['transmission'].fillna('unknown')
+
+# Convert columns to object type
+df['car_name'] = df['car_name'].astype('object')
+df['fuel_type'] = df['fuel_type'].astype('object')
+df['seller_type'] = df['seller_type'].astype('object')
+df['transmission'] = df['transmission'].astype('object')
+2025-08-19 18:39:11,133 - INFO - Smart data cleaning executed successfully
+2025-08-19 18:39:11,174 - INFO - Determining target column
+2025-08-19 18:39:12,362 - INFO - Chosen target column: selling_price
+2025-08-19 18:39:12,394 - INFO - Detected column types: {'numeric': ['year', 'present_price', 'kms_driven', 'owner'], 'categorical': ['car_name', 'fuel_type', 'seller_type', 'transmission'], 'text': [], 'datetime': [], 'boolean': []}
+2025-08-19 18:39:12,429 - INFO - Extracted features columns: ['car_name', 'year', 'present_price', 'kms_driven', 'fuel_type', 'seller_type', 'transmission', 'owner']
+2025-08-19 18:39:12,475 - INFO - Auto-selected features: ['year', 'present_price', 'kms_driven']
+2025-08-19 18:39:13,751 - INFO - Final features after LLM enhancement: ['present_price', 'transmission', 'year', 'kms_driven']
+2025-08-19 18:39:15,490 - INFO - Generated ML config
+2025-08-19 18:39:15,525 - INFO - Starting model fitting
+2025-08-19 18:39:17,334 - INFO - Model training completed successfully
+2025-08-19 18:39:17,369 - INFO - Computing model metrics
+2025-08-19 18:39:17,369 - DEBUG - Task type: regression
+2025-08-19 18:39:17,369 - DEBUG - Evaluation data shape: (299, 4), (299,)
+2025-08-19 18:39:17,393 - INFO - Metrics computed successfully: {'MAE': 0.194584280936455, 'MSE': 0.13379537137123743, 'RMSE': np.float64(0.3657804961602483), 'R2': 0.9903360959302584}
+2025-08-19 18:39:17,418 - INFO - Generating prediction from user query
+2025-08-19 18:39:18,381 - INFO - Parsed input from query: {'present_price': 6.0, 'transmission': 'manual', 'year': 2014, 'kms_driven': 45000.0}
+2025-08-19 18:39:18,384 - INFO - Extracted features columns: ['present_price', 'transmission', 'year', 'kms_driven']
+2025-08-19 18:39:18,384 - INFO - Aligned input for prediction: [{'present_price': 6.0, 'transmission': 0, 'year': 2014, 'kms_driven': 45000.0}]
+2025-08-19 18:39:18,392 - INFO - Raw prediction: 4.338499999999999
+2025-08-19 18:39:18,394 - INFO - Final prediction result: {'question': 'predict swift selling price if manual and kmsdriven is 45000 and year is 2014 and present price is 6.', 'inputs': {'present_price': 6.0, 'transmission': 'manual', 'year': 2014, 'kms_driven': 45000.0}, 'prediction': 4.338499999999999}
+2025-08-19 18:39:20,820 - INFO - Generated explanation for prediction
+2025-08-19 18:43:08,133 - INFO - Starting query analysis
+2025-08-19 18:43:08,133 - DEBUG - User query: what if a swift manual model of year 2014 and have run 60000km what would be the selling  price
+2025-08-19 18:43:09,056 - INFO - Identified ML problem type: regression
+2025-08-19 18:43:09,072 - INFO - Starting data cleaning process
+2025-08-19 18:43:09,146 - INFO - Data cleaning process completed successfully
+2025-08-19 18:43:09,168 - INFO - Generating validation report...
+2025-08-19 18:43:11,210 - INFO - [Routing Decision] Cleaned status = no
+2025-08-19 18:43:13,527 - DEBUG - Executing smart cleaner code:
+2025-08-19 18:43:13,544 - INFO - Smart data cleaning executed successfully
+2025-08-19 18:43:13,576 - INFO - Determining target column
+2025-08-19 18:43:14,377 - INFO - Chosen target column: selling_price
+2025-08-19 18:43:14,408 - INFO - Detected column types: {'numeric': ['year', 'present_price', 'kms_driven', 'owner'], 'categorical': ['car_name', 'fuel_type', 'seller_type', 'transmission'], 'text': [], 'datetime': [], 'boolean': []}
+2025-08-19 18:43:14,443 - INFO - Extracted features columns: ['car_name', 'year', 'present_price', 'kms_driven', 'fuel_type', 'seller_type', 'transmission', 'owner']
+2025-08-19 18:43:14,476 - INFO - Auto-selected features: ['year', 'present_price', 'kms_driven']
+2025-08-19 18:43:15,778 - INFO - Final features after LLM enhancement: ['present_price', 'year', 'transmission', 'fuel_type', 'kms_driven']
+2025-08-19 18:43:17,821 - INFO - Generated ML config
+2025-08-19 18:43:17,843 - INFO - Starting model fitting
+2025-08-19 18:43:19,932 - INFO - Model training completed successfully
+2025-08-19 18:43:19,959 - INFO - Computing model metrics
+2025-08-19 18:43:19,959 - DEBUG - Task type: regression
+2025-08-19 18:43:19,959 - DEBUG - Evaluation data shape: (299, 5), (299,)
+2025-08-19 18:43:19,978 - INFO - Metrics computed successfully: {'MAE': 0.19731622073578617, 'MSE': 0.13819742475752503, 'RMSE': np.float64(0.37174914224181477), 'R2': 0.9900181400757398}
+2025-08-19 18:43:19,998 - INFO - Generating prediction from user query
+2025-08-19 18:43:21,169 - INFO - Parsed input from query: {'present_price': None, 'year': 2014, 'transmission': 'Manual', 'fuel_type': None, 'kms_driven': 60000}
+2025-08-19 18:43:21,190 - INFO - Extracted features columns: ['present_price', 'year', 'transmission', 'fuel_type', 'kms_driven']
+2025-08-19 18:43:21,192 - INFO - Aligned input for prediction: [{'present_price': None, 'year': 2014, 'transmission': 0, 'fuel_type': 0, 'kms_driven': 60000}]
+2025-08-19 18:43:21,206 - INFO - Raw prediction: 2.8957999999999995
+2025-08-19 18:43:21,207 - INFO - Final prediction result: {'question': 'what if a swift manual model of year 2014 and have run 60000km what would be the selling  price', 'inputs': {'present_price': None, 'year': 2014, 'transmission': 'Manual', 'fuel_type': None, 'kms_driven': 60000}, 'prediction': 2.8957999999999995}
+2025-08-19 18:43:25,124 - INFO - Generated explanation for prediction
+2025-08-19 18:48:22,391 - INFO - Starting query analysis
+2025-08-19 18:48:22,393 - DEBUG - User query: tell me is google is down news fake or real
+2025-08-19 18:48:28,165 - INFO - Identified ML problem type: 
+2025-08-19 18:48:28,471 - INFO - Starting data cleaning process
+2025-08-19 18:48:33,531 - INFO - Data cleaning process completed successfully
+2025-08-19 18:48:33,817 - INFO - Generating validation report...
+2025-08-19 18:50:15,153 - INFO - Starting query analysis
+2025-08-19 18:50:15,157 - DEBUG - User query: is Kandi Burruss Explodes Over Rape Accusation on 'Real Housewives of Atlanta' Reunion (Video) real ?
+2025-08-19 18:50:23,128 - INFO - Identified ML problem type: 
+2025-08-19 18:50:23,297 - INFO - Starting data cleaning process
+2025-08-19 18:50:26,885 - INFO - Data cleaning process completed successfully
+2025-08-19 18:50:27,167 - INFO - Generating validation report...
+2025-08-19 18:54:22,793 - INFO - Starting query analysis
+2025-08-19 18:54:22,800 - DEBUG - User query: what is quality of wine if fixed acidity is 7.9 , chlorides is 0.076 , density is 0.99 , ph is 3.5 , alcohol is 9.4
+2025-08-19 18:54:33,123 - INFO - Identified ML problem type: classification
+2025-08-19 18:54:33,146 - INFO - Starting data cleaning process
+2025-08-19 18:54:33,184 - INFO - Data cleaning process completed successfully
+2025-08-19 18:54:33,234 - INFO - Generating validation report...
+2025-08-19 18:56:18,806 - INFO - Starting query analysis
+2025-08-19 18:56:18,806 - DEBUG - User query: what is quality of wine if fixed acidity is 7.9 , chlorides is 0.076 , density is 0.99 , ph is 3.5 , alcohol is 9.4
+2025-08-19 18:56:25,750 - INFO - Starting query analysis
+2025-08-19 18:56:25,750 - DEBUG - User query: what is quality of wine if fixed acidity is 7.9 , chlorides is 0.076 , density is 0.99 , ph is 3.5 , alcohol is 9.4
+2025-08-19 18:56:26,767 - INFO - Identified ML problem type: classification
+2025-08-19 18:56:26,782 - INFO - Starting data cleaning process
+2025-08-19 18:56:26,850 - INFO - Data cleaning process completed successfully
+2025-08-19 18:56:26,869 - INFO - Generating validation report...
+2025-08-19 18:56:28,421 - INFO - [Routing Decision] Cleaned status = no
+2025-08-19 18:56:28,913 - INFO - Identified ML problem type: classification
+2025-08-19 18:56:28,952 - INFO - Starting data cleaning process
+2025-08-19 18:56:29,003 - INFO - Data cleaning process completed successfully
+2025-08-19 18:56:29,063 - INFO - Generating validation report...
+2025-08-19 18:56:31,280 - DEBUG - Executing smart cleaner code:
+2025-08-19 18:56:31,327 - INFO - Smart data cleaning executed successfully
+2025-08-19 18:56:31,354 - INFO - Determining target column
+2025-08-19 18:56:32,983 - WARNING - Suggested column 'The provided dataset is about car sales, and the user is asking about wine quality. Therefore, the information provided in the prompt is irrelevant to the dataset.
+
+Given the car sales dataset columns: `['car_name', 'year', 'selling_price', 'present_price', 'kms_driven', 'fuel_type', 'seller_type', 'transmission', 'owner']`, the most likely target column for a machine learning problem would be the `selling_price`.  This is because the other features could reasonably be used to predict the selling price of a car.
+
+```python
+"selling_price"
+```' not found in dataset. Defaulting to first column.
+2025-08-19 18:56:32,988 - INFO - Chosen target column: car_name
+2025-08-19 18:56:33,000 - INFO - Detected column types: {'numeric': ['year', 'selling_price', 'present_price', 'kms_driven', 'fuel_type', 'seller_type', 'transmission', 'owner'], 'categorical': [], 'text': [], 'datetime': [], 'boolean': []}
+2025-08-19 18:56:33,027 - INFO - Extracted features columns: ['year', 'selling_price', 'present_price', 'kms_driven', 'fuel_type', 'seller_type', 'transmission', 'owner']
+2025-08-19 18:56:33,097 - INFO - Auto-selected features: ['year']
+2025-08-19 18:56:34,010 - INFO - Final features after LLM enhancement: ['present_price', 'transmission', 'year', 'fuel_type', 'seller_type', 'kms_driven']
+2025-08-19 18:56:36,020 - INFO - [Routing Decision] Cleaned status = no
+2025-08-19 18:56:37,029 - INFO - Generated ML config
+2025-08-19 18:56:37,058 - INFO - Starting model fitting
+2025-08-19 18:56:38,869 - INFO - Model training completed successfully
+2025-08-19 18:56:38,895 - INFO - Computing model metrics
+2025-08-19 18:56:38,897 - DEBUG - Task type: classification
+2025-08-19 18:56:38,897 - DEBUG - Evaluation data shape: (299, 6), (299,)
+2025-08-19 18:56:38,957 - INFO - Metrics computed successfully: {'accuracy': 1.0, 'precision': 1.0, 'recall': 1.0, 'f1-score': 1.0}
+2025-08-19 18:56:38,975 - INFO - Generating prediction from user query
+2025-08-19 18:56:40,405 - INFO - Parsed input from query: {'present_price': None, 'transmission': None, 'year': None, 'fuel_type': None, 'seller_type': None, 'kms_driven': None}
+2025-08-19 18:56:40,413 - INFO - Extracted features columns: ['present_price', 'transmission', 'year', 'fuel_type', 'seller_type', 'kms_driven']
+2025-08-19 18:56:40,413 - INFO - Aligned input for prediction: [{'present_price': None, 'transmission': None, 'year': None, 'fuel_type': None, 'seller_type': None, 'kms_driven': None}]
+2025-08-19 18:56:40,431 - INFO - Raw prediction: -9223372036854775808
+2025-08-19 18:56:40,431 - INFO - Final prediction result: {'question': 'what is quality of wine if fixed acidity is 7.9 , chlorides is 0.076 , density is 0.99 , ph is 3.5 , alcohol is 9.4', 'inputs': {'present_price': None, 'transmission': None, 'year': None, 'fuel_type': None, 'seller_type': None, 'kms_driven': None}, 'prediction_encoded': -9223372036854775808, 'prediction_label': np.int64(-9223372036854775808)}
+2025-08-19 18:56:43,015 - INFO - Starting query analysis
+2025-08-19 18:56:43,023 - DEBUG - User query: what is quality of wine if fixed acidity is 7.9 , chlorides is 0.076 , density is 0.99 , ph is 3.5 , alcohol is 9.4
+
+
+2025-08-19 18:56:43,716 - INFO - Generated explanation for prediction
+2025-08-19 18:56:44,077 - INFO - Identified ML problem type: classification
+2025-08-19 18:56:44,111 - INFO - Starting data cleaning process
+2025-08-19 18:56:44,156 - INFO - Data cleaning process completed successfully
+2025-08-19 18:56:44,217 - INFO - Generating validation report...
+2025-08-19 18:56:45,345 - INFO - [Routing Decision] Cleaned status = yes
+2025-08-19 18:56:45,432 - INFO - Determining target column
+2025-08-19 18:56:46,376 - INFO - Chosen target column: quality
+2025-08-19 18:56:46,449 - INFO - Detected column types: {'numeric': ['fixed_acidity', 'volatile_acidity', 'citric_acid', 'residual_sugar', 'chlorides', 'free_sulfur_dioxide', 'total_sulfur_dioxide', 'density', 'ph', 'sulphates', 'alcohol'], 'categorical': [], 'text': [], 'datetime': [], 'boolean': []}
+2025-08-19 18:56:46,527 - INFO - Extracted features columns: ['fixed_acidity', 'volatile_acidity', 'citric_acid', 'residual_sugar', 'chlorides', 'free_sulfur_dioxide', 'total_sulfur_dioxide', 'density', 'ph', 'sulphates', 'alcohol']
+2025-08-19 18:56:46,652 - INFO - Auto-selected features: ['fixed_acidity', 'volatile_acidity', 'citric_acid', 'residual_sugar', 'chlorides', 'free_sulfur_dioxide', 'total_sulfur_dioxide', 'density', 'ph', 'sulphates', 'alcohol']
+2025-08-19 18:56:46,932 - DEBUG - Executing smart cleaner code:
+2025-08-19 18:56:46,937 - INFO - Smart data cleaning executed successfully
+2025-08-19 18:56:47,002 - INFO - Determining target column
+2025-08-19 18:56:49,242 - INFO - Final features after LLM enhancement: ['density', 'sulphates', 'residual_sugar', 'chlorides', 'ph', 'volatile_acidity', 'citric_acid', 'alcohol', 'free_sulfur_dioxide', 'fixed_acidity', 'total_sulfur_dioxide']
+2025-08-19 18:56:51,492 - INFO - Generated ML config
+2025-08-19 18:56:51,544 - INFO - Starting model fitting
+2025-08-19 18:56:52,561 - INFO - Chosen target column: quality
+2025-08-19 18:56:52,584 - INFO - Detected column types: {'numeric': ['fixed_acidity', 'volatile_acidity', 'citric_acid', 'residual_sugar', 'chlorides', 'free_sulfur_dioxide', 'total_sulfur_dioxide', 'density', 'ph', 'sulphates', 'alcohol'], 'categorical': [], 'text': [], 'datetime': [], 'boolean': []}
+2025-08-19 18:56:52,628 - INFO - Extracted features columns: ['fixed_acidity', 'volatile_acidity', 'citric_acid', 'residual_sugar', 'chlorides', 'free_sulfur_dioxide', 'total_sulfur_dioxide', 'density', 'ph', 'sulphates', 'alcohol']
+2025-08-19 18:56:52,679 - INFO - Auto-selected features: ['fixed_acidity', 'volatile_acidity', 'citric_acid', 'residual_sugar', 'chlorides', 'free_sulfur_dioxide', 'total_sulfur_dioxide', 'density', 'ph', 'sulphates', 'alcohol']
+2025-08-19 18:56:53,046 - ERROR - Error during model fitting: Unknown label type: continuous. Maybe you are trying to fit a classifier, which expects discrete classes on a regression target with continuous values.
+2025-08-19 18:58:05,124 - INFO - Starting query analysis
+2025-08-19 18:58:05,125 - DEBUG - User query: what is quality of wine if fixed acidity is 7.9 , chlorides is 0.076 , density is 0.99 , ph is 3.5 , alcohol is 9.4 , it is regression
+2025-08-19 18:58:07,006 - INFO - Identified ML problem type: regression
+2025-08-19 18:58:07,043 - INFO - Starting data cleaning process
+2025-08-19 18:58:07,091 - INFO - Data cleaning process completed successfully
+2025-08-19 18:58:07,151 - INFO - Generating validation report...
+2025-08-19 18:58:08,410 - INFO - [Routing Decision] Cleaned status = yes
+2025-08-19 18:58:08,489 - INFO - Determining target column
+2025-08-19 18:58:09,492 - INFO - Chosen target column: quality
+2025-08-19 18:58:09,551 - INFO - Detected column types: {'numeric': ['fixed_acidity', 'volatile_acidity', 'citric_acid', 'residual_sugar', 'chlorides', 'free_sulfur_dioxide', 'total_sulfur_dioxide', 'density', 'ph', 'sulphates', 'alcohol'], 'categorical': [], 'text': [], 'datetime': [], 'boolean': []}
+2025-08-19 18:58:09,624 - INFO - Extracted features columns: ['fixed_acidity', 'volatile_acidity', 'citric_acid', 'residual_sugar', 'chlorides', 'free_sulfur_dioxide', 'total_sulfur_dioxide', 'density', 'ph', 'sulphates', 'alcohol']
+2025-08-19 18:58:09,715 - INFO - Auto-selected features: ['fixed_acidity', 'volatile_acidity', 'citric_acid', 'residual_sugar', 'chlorides', 'free_sulfur_dioxide', 'total_sulfur_dioxide', 'density', 'ph', 'sulphates', 'alcohol']
+2025-08-19 18:58:11,171 - INFO - Final features after LLM enhancement: ['density', 'sulphates', 'residual_sugar', 'chlorides', 'ph', 'volatile_acidity', 'citric_acid', 'alcohol', 'free_sulfur_dioxide', 'fixed_acidity', 'total_sulfur_dioxide']
+2025-08-19 18:58:13,615 - INFO - Generated ML config
+2025-08-19 18:58:13,665 - INFO - Starting model fitting
+2025-08-19 18:58:15,944 - INFO - Model training completed successfully
+2025-08-19 18:58:16,001 - INFO - Computing model metrics
+2025-08-19 18:58:16,001 - DEBUG - Task type: regression
+2025-08-19 18:58:16,001 - DEBUG - Evaluation data shape: (1359, 11), (1359,)
+2025-08-19 18:58:16,025 - INFO - Metrics computed successfully: {'MAE': 0.17813833701250917, 'MSE': 0.052583885209713015, 'RMSE': np.float64(0.22931176422005264), 'R2': 0.9170218821531071}
+2025-08-19 18:58:16,065 - INFO - Generating prediction from user query
+2025-08-19 18:58:17,646 - INFO - Parsed input from query: {'density': 0.99, 'sulphates': None, 'residual_sugar': None, 'chlorides': 0.076, 'ph': 3.5, 'volatile_acidity': None, 'citric_acid': None, 'alcohol': 9.4, 'free_sulfur_dioxide': None, 'fixed_acidity': 7.9, 'total_sulfur_dioxide': None}
+2025-08-19 18:58:17,658 - INFO - Extracted features columns: ['density', 'sulphates', 'residual_sugar', 'chlorides', 'ph', 'volatile_acidity', 'citric_acid', 'alcohol', 'free_sulfur_dioxide', 'fixed_acidity', 'total_sulfur_dioxide']
+2025-08-19 18:58:17,658 - INFO - Aligned input for prediction: [{'density': 0.99, 'sulphates': None, 'residual_sugar': None, 'chlorides': 0.076, 'ph': 3.5, 'volatile_acidity': None, 'citric_acid': None, 'alcohol': 9.4, 'free_sulfur_dioxide': None, 'fixed_acidity': 7.9, 'total_sulfur_dioxide': None}]
+2025-08-19 18:58:17,662 - INFO - Raw prediction: 5.31
+2025-08-19 18:58:17,662 - INFO - Final prediction result: {'question': 'what is quality of wine if fixed acidity is 7.9 , chlorides is 0.076 , density is 0.99 , ph is 3.5 , alcohol is 9.4 , it is regression', 'inputs': {'density': 0.99, 'sulphates': None, 'residual_sugar': None, 'chlorides': 0.076, 'ph': 3.5, 'volatile_acidity': None, 'citric_acid': None, 'alcohol': 9.4, 'free_sulfur_dioxide': None, 'fixed_acidity': 7.9, 'total_sulfur_dioxide': None}, 'prediction': 5.31}
+2025-08-19 18:58:20,019 - INFO - Generated explanation for prediction
+2025-08-19 18:59:36,779 - INFO - Starting query analysis
+2025-08-19 18:59:36,779 - DEBUG - User query: U dun say so early hor... U c already then say... is this ham or spam
+2025-08-19 18:59:37,743 - INFO - Identified ML problem type: classification
+2025-08-19 18:59:37,800 - INFO - Starting data cleaning process
+2025-08-19 18:59:38,756 - INFO - Data cleaning process completed successfully
+2025-08-19 18:59:38,866 - INFO - Generating validation report...
+2025-08-19 19:01:36,600 - INFO - Starting query analysis
+2025-08-19 19:01:36,600 - DEBUG - User query: does glucose = 148 , bloodpressure = 76 insuline = 0 bmi = 33 and age = 50 cause diabetes
+2025-08-19 19:01:37,546 - INFO - Identified ML problem type: classification
+2025-08-19 19:01:37,553 - INFO - Starting data cleaning process
+2025-08-19 19:01:37,575 - INFO - Data cleaning process completed successfully
+2025-08-19 19:01:37,597 - INFO - Generating validation report...
+2025-08-19 19:01:39,014 - INFO - [Routing Decision] Cleaned status = yes
+2025-08-19 19:01:39,038 - INFO - Determining target column
+2025-08-19 19:01:39,673 - INFO - Chosen target column: outcome
+2025-08-19 19:01:39,688 - INFO - Detected column types: {'numeric': ['pregnancies', 'glucose', 'bloodpressure', 'skinthickness', 'insulin', 'bmi', 'diabetespedigreefunction', 'age'], 'categorical': [], 'text': [], 'datetime': [], 'boolean': []}
+2025-08-19 19:01:39,702 - INFO - Extracted features columns: ['pregnancies', 'glucose', 'bloodpressure', 'skinthickness', 'insulin', 'bmi', 'diabetespedigreefunction', 'age']
+2025-08-19 19:01:39,727 - INFO - Auto-selected features: ['pregnancies', 'glucose', 'bloodpressure', 'skinthickness', 'insulin', 'bmi', 'diabetespedigreefunction', 'age']
+2025-08-19 19:01:41,209 - INFO - Final features after LLM enhancement: ['diabetespedigreefunction', 'insulin', 'skinthickness', 'bloodpressure', 'pregnancies', 'bmi', 'age', 'glucose']
+2025-08-19 19:01:43,490 - INFO - Generated ML config
+2025-08-19 19:01:43,517 - INFO - Starting model fitting
+2025-08-19 19:01:45,295 - INFO - Model training completed successfully
+2025-08-19 19:01:45,320 - INFO - Computing model metrics
+2025-08-19 19:01:45,320 - DEBUG - Task type: classification
+2025-08-19 19:01:45,320 - DEBUG - Evaluation data shape: (768, 8), (768,)
+2025-08-19 19:01:45,345 - INFO - Metrics computed successfully: {'accuracy': 1.0, 'precision': 1.0, 'recall': 1.0, 'f1-score': 1.0}
+2025-08-19 19:01:45,370 - INFO - Generating prediction from user query
+2025-08-19 19:01:46,601 - INFO - Parsed input from query: {'diabetespedigreefunction': None, 'insulin': 0, 'skinthickness': None, 'bloodpressure': 76, 'pregnancies': None, 'bmi': 33, 'age': 50, 'glucose': 148}
+2025-08-19 19:01:46,606 - INFO - Extracted features columns: ['diabetespedigreefunction', 'insulin', 'skinthickness', 'bloodpressure', 'pregnancies', 'bmi', 'age', 'glucose']
+2025-08-19 19:01:46,610 - INFO - Aligned input for prediction: [{'diabetespedigreefunction': None, 'insulin': 0, 'skinthickness': None, 'bloodpressure': 76, 'pregnancies': None, 'bmi': 33, 'age': 50, 'glucose': 148}]
+2025-08-19 19:01:46,614 - INFO - Raw prediction: 1.0
+2025-08-19 19:01:46,614 - INFO - Final prediction result: {'question': 'does glucose = 148 , bloodpressure = 76 insuline = 0 bmi = 33 and age = 50 cause diabetes', 'inputs': {'diabetespedigreefunction': None, 'insulin': 0, 'skinthickness': None, 'bloodpressure': 76, 'pregnancies': None, 'bmi': 33, 'age': 50, 'glucose': 148}, 'prediction_encoded': 1, 'prediction_label': np.float64(1.0)}
+2025-08-19 19:01:49,874 - INFO - Generated explanation for prediction
+2025-08-19 19:05:46,707 - INFO - Starting query analysis
+2025-08-19 19:05:46,707 - DEBUG - User query: predict price of gold if spx is 144.7 and gld = 84.86 and slv is 15.18
+2025-08-19 19:05:51,933 - INFO - Identified ML problem type: 
+2025-08-19 19:05:51,991 - INFO - Starting data cleaning process
+2025-08-19 19:05:52,061 - INFO - Data cleaning process completed successfully
+2025-08-19 19:05:52,144 - INFO - Generating validation report...
+2025-08-19 19:06:30,323 - INFO - [Routing Decision] Cleaned status = no
+2025-08-19 19:07:04,245 - DEBUG - Executing smart cleaner code:
+2025-08-19 19:07:04,303 - INFO - Smart data cleaning executed successfully
+2025-08-19 19:07:04,366 - INFO - Determining target column
+2025-08-19 19:07:06,595 - WARNING - Suggested column '' not found in dataset. Defaulting to first column.
+2025-08-19 19:07:06,597 - INFO - Chosen target column: date
+2025-08-19 19:07:06,710 - INFO - Detected column types: {'numeric': ['spx', 'gld', 'uso', 'slv', 'eur/usd'], 'categorical': [], 'text': [], 'datetime': [], 'boolean': []}
+2025-08-19 19:07:06,788 - INFO - Extracted features columns: ['spx', 'gld', 'uso', 'slv', 'eur/usd']
+2025-08-19 19:07:48,489 - INFO - Starting query analysis
+2025-08-19 19:07:48,489 - DEBUG - User query: predict EUR/USD if spx is 144.7 and gld = 84.86 and slv is 15.18
+2025-08-19 19:07:55,644 - INFO - Identified ML problem type: regression
+2025-08-19 19:07:55,680 - INFO - Starting data cleaning process
+2025-08-19 19:07:55,752 - INFO - Data cleaning process completed successfully
+2025-08-19 19:07:55,868 - INFO - Generating validation report...
+2025-08-20 00:07:33,145 - INFO - Starting query analysis
+2025-08-20 00:07:33,147 - DEBUG - User query: does glucose = 148 , bloodpressure = 76 insuline = 0 bmi = 33 and age = 50 cause diabetes
+2025-08-20 00:07:34,335 - INFO - Identified ML problem type: classification
+2025-08-20 00:07:34,376 - INFO - Starting data cleaning process
+2025-08-20 00:07:34,445 - INFO - Data cleaning process completed successfully
+2025-08-20 00:07:34,471 - INFO - Generating validation report...
+2025-08-20 00:07:39,096 - INFO - [Routing Decision] Cleaned status = yes
+2025-08-20 00:07:39,136 - INFO - Determining target column
+2025-08-20 00:07:40,389 - INFO - Chosen target column: outcome
+2025-08-20 00:07:40,419 - INFO - Detected column types: {'numeric': ['pregnancies', 'glucose', 'bloodpressure', 'skinthickness', 'insulin', 'bmi', 'diabetespedigreefunction', 'age'], 'categorical': [], 'text': [], 'datetime': [], 'boolean': []}
+2025-08-20 00:07:40,445 - INFO - Extracted features columns: ['pregnancies', 'glucose', 'bloodpressure', 'skinthickness', 'insulin', 'bmi', 'diabetespedigreefunction', 'age']
+2025-08-20 00:07:40,528 - INFO - Auto-selected features: ['pregnancies', 'glucose', 'bloodpressure', 'skinthickness', 'insulin', 'bmi', 'diabetespedigreefunction', 'age']
+2025-08-20 00:07:42,477 - INFO - Final features after LLM enhancement: ['skinthickness', 'diabetespedigreefunction', 'bmi', 'pregnancies', 'age', 'bloodpressure', 'glucose', 'insulin']
+2025-08-20 00:07:45,818 - INFO - Generated ML config
+2025-08-20 00:07:45,836 - INFO - Starting model fitting
+2025-08-20 00:07:47,512 - INFO - Model training completed successfully
+2025-08-20 00:07:47,526 - INFO - Computing model metrics
+2025-08-20 00:07:47,526 - DEBUG - Task type: classification
+2025-08-20 00:07:47,526 - DEBUG - Evaluation data shape: (768, 8), (768,)
+2025-08-20 00:07:47,545 - INFO - Metrics computed successfully: {'accuracy': 1.0, 'precision': 1.0, 'recall': 1.0, 'f1-score': 1.0}
+2025-08-20 00:07:47,557 - INFO - Generating prediction from user query
+2025-08-20 00:07:49,486 - INFO - Parsed input from query: {'skinthickness': None, 'diabetespedigreefunction': None, 'bmi': 33, 'pregnancies': None, 'age': 50, 'bloodpressure': 76, 'glucose': 148, 'insulin': 0}
+2025-08-20 00:07:49,490 - INFO - Extracted features columns: ['skinthickness', 'diabetespedigreefunction', 'bmi', 'pregnancies', 'age', 'bloodpressure', 'glucose', 'insulin']
+2025-08-20 00:07:49,492 - INFO - Aligned input for prediction: [{'skinthickness': None, 'diabetespedigreefunction': None, 'bmi': 33, 'pregnancies': None, 'age': 50, 'bloodpressure': 76, 'glucose': 148, 'insulin': 0}]
+2025-08-20 00:07:49,495 - INFO - Raw prediction: 1.0
+2025-08-20 00:07:49,499 - INFO - Final prediction result: {'question': 'does glucose = 148 , bloodpressure = 76 insuline = 0 bmi = 33 and age = 50 cause diabetes', 'inputs': {'skinthickness': None, 'diabetespedigreefunction': None, 'bmi': 33, 'pregnancies': None, 'age': 50, 'bloodpressure': 76, 'glucose': 148, 'insulin': 0}, 'prediction_encoded': 1, 'prediction_label': np.float64(1.0)}
+2025-08-20 00:07:58,081 - INFO - Generated explanation for prediction
+2025-08-20 00:09:14,678 - INFO - Starting query analysis
+2025-08-20 00:09:14,678 - DEBUG - User query: Free entry in 2 a wkly comp to win FA Cup final tkts 21st May 2005. Text FA to 87121 to receive entry question(std txt rate)T&C's apply 08452810075over18's is this ham or spam
+2025-08-20 00:09:15,625 - INFO - Identified ML problem type: classification
+2025-08-20 00:09:15,660 - INFO - Starting data cleaning process
+2025-08-20 00:09:17,017 - INFO - Data cleaning process completed successfully
+2025-08-20 00:09:17,105 - INFO - Generating validation report...
+2025-08-20 00:16:28,153 - INFO - Starting query analysis
+2025-08-20 00:16:28,154 - DEBUG - User query: Free entry in 2 a wkly comp to win FA Cup final tkts 21st May 2005. Text FA to 87121 to receive entry question(std txt rate)T&C's apply 08452810075over18's is this ham or spam
+
+
+2025-08-20 00:16:29,237 - INFO - Identified ML problem type: classification
+2025-08-20 00:16:29,300 - INFO - Starting data cleaning process
+2025-08-20 00:16:30,450 - INFO - Data cleaning process completed successfully
+2025-08-20 00:16:30,523 - INFO - Generating validation report...
+2025-08-20 00:16:30,529 - DEBUG - {'shape': (5157, 2), 'columns': ['category', 'message'], 'null_counts': {'category': 5157, 'message': 5157}, 'duplicate_rows': 5156, 'dtypes': {'category': 'datetime64[ns]', 'message': 'datetime64[ns]'}}
+2025-08-20 00:18:45,253 - INFO - Starting query analysis
+2025-08-20 00:18:45,254 - DEBUG - User query: Free entry in 2 a wkly comp to win FA Cup final tkts 21st May 2005. Text FA to 87121 to receive entry question(std txt rate)T&C's apply 08452810075over18's is this ham or spam
+
+
+2025-08-20 00:18:47,399 - INFO - Identified ML problem type: classification
+2025-08-20 00:18:47,458 - INFO - Starting data cleaning process
+2025-08-20 00:18:47,504 - INFO - Data cleaning process completed successfully
+2025-08-20 00:18:47,627 - INFO - Generating validation report...
+2025-08-20 00:18:47,650 - DEBUG - {'shape': (5157, 2), 'columns': ['category', 'message'], 'null_counts': {'category': 0, 'message': 0}, 'duplicate_rows': 0, 'dtypes': {'category': 'object', 'message': 'object'}}
+2025-08-20 00:23:26,287 - INFO - Starting query analysis
+2025-08-20 00:23:26,298 - DEBUG - User query: Free entry in 2 a wkly comp to win FA Cup final tkts 21st May 2005. Text FA to 87121 to receive entry question(std txt rate)T&C's apply 08452810075over18's is this ham or spam
+
+
+2025-08-20 00:23:36,712 - INFO - Identified ML problem type: classification
+2025-08-20 00:23:36,729 - INFO - Starting dynamic data cleaning process
+2025-08-20 00:23:36,786 - INFO - Dynamic data cleaning process completed successfully
+2025-08-20 00:23:36,804 - INFO - Generating validation report...
+2025-08-20 00:23:36,807 - DEBUG - {'shape': (5157, 2), 'columns': ['category', 'message'], 'null_counts': {'category': 0, 'message': 0}, 'duplicate_rows': 0, 'dtypes': {'category': 'object', 'message': 'object'}}
+2025-08-20 00:26:35,301 - INFO - Starting query analysis
+2025-08-20 00:26:35,301 - DEBUG - User query: Free entry in 2 a wkly comp to win FA Cup final tkts 21st May 2005. Text FA to 87121 to receive entry question(std txt rate)T&C's apply 08452810075over18's is this ham or spam
+
+
+2025-08-20 00:26:37,449 - INFO - Identified ML problem type: classification
+2025-08-20 00:26:37,492 - INFO - Starting dynamic data cleaning process
+2025-08-20 00:26:37,533 - INFO - Dynamic data cleaning process completed successfully
+2025-08-20 00:26:37,611 - INFO - Generating validation report...
+2025-08-20 00:26:37,632 - DEBUG - {'shape': (5157, 2), 'columns': ['category', 'message'], 'null_counts': {'category': 0, 'message': 0}, 'duplicate_rows': 0, 'dtypes': {'category': 'object', 'message': 'object'}, 'numeric_summary': {}, 'categorical_summary': {'category': {'count': 5157, 'unique': 2, 'top': 'ham', 'freq': 4516}, 'message': {'count': 5157, 'unique': 5157, 'top': 'Rofl. Its true to its name', 'freq': 1}}, 'datetime_summary': {}}
+2025-08-20 00:27:55,797 - INFO - Starting query analysis
+2025-08-20 00:27:55,802 - DEBUG - User query: Free entry in 2 a wkly comp to win FA Cup final tkts 21st May 2005. Text FA to 87121 to receive entry question(std txt rate)T&C's apply 08452810075over18's is this ham or spam
+
+
+2025-08-20 00:27:56,652 - INFO - Identified ML problem type: classification
+2025-08-20 00:27:56,693 - INFO - Starting dynamic data cleaning process
+2025-08-20 00:27:56,737 - INFO - Dynamic data cleaning process completed successfully
+2025-08-20 00:27:56,816 - INFO - Generating validation report...
+2025-08-20 00:27:56,840 - DEBUG - {'shape': (5157, 2), 'columns': ['category', 'message'], 'null_counts': {'category': 0, 'message': 0}, 'duplicate_rows': 0, 'dtypes': {'category': 'object', 'message': 'object'}, 'numeric_summary': {}, 'categorical_summary': {'category': {'count': 5157, 'unique': 2, 'top': 'ham', 'freq': 4516}, 'message': {'count': 5157, 'unique': 5157, 'top': 'Rofl. Its true to its name', 'freq': 1}}, 'datetime_summary': {}}
+2025-08-20 00:28:01,065 - INFO - [Routing Decision] Cleaned status = yes
+2025-08-20 00:28:01,180 - INFO - Determining target column
+2025-08-20 00:28:02,231 - INFO - Chosen target column: category
+2025-08-20 00:28:02,237 - DEBUG - Applied LabelEncoder to target column
+2025-08-20 00:28:02,322 - INFO - Detected column types: {'numeric': [], 'categorical': [], 'text': ['message'], 'datetime': [], 'boolean': []}
+2025-08-20 00:28:02,584 - INFO - Extracted features columns: ['message_tfidf_0', 'message_tfidf_1', 'message_tfidf_2', 'message_tfidf_3', 'message_tfidf_4', 'message_tfidf_5', 'message_tfidf_6', 'message_tfidf_7', 'message_tfidf_8', 'message_tfidf_9']
+2025-08-20 00:28:02,710 - INFO - Auto-selected features: ['message_tfidf_0', 'message_tfidf_1', 'message_tfidf_2', 'message_tfidf_3', 'message_tfidf_4', 'message_tfidf_5', 'message_tfidf_6', 'message_tfidf_7', 'message_tfidf_8', 'message_tfidf_9']
+2025-08-20 00:28:05,010 - INFO - Final features after LLM enhancement: ['message_tfidf_5', 'message_tfidf_2', 'message_tfidf_0', 'message_tfidf_6', 'message_tfidf_9', 'message_tfidf_1', 'message_tfidf_3', 'message_tfidf_4', 'message_tfidf_7', 'message_tfidf_8']
+2025-08-20 00:28:10,588 - INFO - Generated ML config
+2025-08-20 00:28:10,649 - INFO - Starting model fitting
+2025-08-20 00:28:13,591 - INFO - Model training completed successfully
+2025-08-20 00:28:13,651 - INFO - Computing model metrics
+2025-08-20 00:28:13,652 - DEBUG - Task type: classification
+2025-08-20 00:28:13,652 - DEBUG - Evaluation data shape: (5157, 10), (5157,)
+2025-08-20 00:28:13,707 - INFO - Metrics computed successfully: {'accuracy': 0.9071165406243941, 'precision': 0.9016454075309285, 'recall': 0.9071165406243941, 'f1-score': 0.887807823113328}
+2025-08-20 00:28:13,765 - INFO - Generating prediction from user query
+2025-08-20 00:28:21,220 - INFO - Parsed input from query: {'message_tfidf_5': None, 'message_tfidf_2': None, 'message_tfidf_0': None, 'message_tfidf_6': None, 'message_tfidf_9': None, 'message_tfidf_1': None, 'message_tfidf_3': None, 'message_tfidf_4': None, 'message_tfidf_7': None, 'message_tfidf_8': None}
+2025-08-20 00:28:21,222 - INFO - Extracted features columns: []
+2025-08-20 00:28:21,223 - INFO - Aligned input for prediction: [{'message_tfidf_5': 0, 'message_tfidf_2': 0, 'message_tfidf_0': 0, 'message_tfidf_6': 0, 'message_tfidf_9': 0, 'message_tfidf_1': 0, 'message_tfidf_3': 0, 'message_tfidf_4': 0, 'message_tfidf_7': 0, 'message_tfidf_8': 0}]
+2025-08-20 00:28:21,228 - INFO - Raw prediction: 0
+2025-08-20 00:28:21,228 - INFO - Final prediction result: {'question': "Free entry in 2 a wkly comp to win FA Cup final tkts 21st May 2005. Text FA to 87121 to receive entry question(std txt rate)T&C's apply 08452810075over18's is this ham or spam\n\n", 'inputs': {'message_tfidf_5': None, 'message_tfidf_2': None, 'message_tfidf_0': None, 'message_tfidf_6': None, 'message_tfidf_9': None, 'message_tfidf_1': None, 'message_tfidf_3': None, 'message_tfidf_4': None, 'message_tfidf_7': None, 'message_tfidf_8': None}, 'prediction_encoded': 0, 'prediction_label': np.int64(0)}
+2025-08-20 00:28:34,685 - INFO - Generated explanation for prediction
+2025-08-20 00:34:02,180 - INFO - Starting query analysis
+2025-08-20 00:34:02,181 - DEBUG - User query: Free entry in 2 a wkly comp to win FA Cup final tkts 21st May 2005. Text FA to 87121 to receive entry question(std txt rate)T&C's apply 08452810075over18's is this ham or spam
+
+
+2025-08-20 00:34:04,863 - INFO - Identified ML problem type: classification
+2025-08-20 00:34:04,921 - INFO - Starting dynamic data cleaning process
+2025-08-20 00:34:05,106 - INFO - Dynamic data cleaning process completed successfully
+2025-08-20 00:34:05,204 - INFO - Generating validation report...
+2025-08-20 00:34:05,227 - DEBUG - {'shape': (5157, 2), 'columns': ['category', 'message'], 'null_counts': {'category': 0, 'message': 0}, 'duplicate_rows': 0, 'dtypes': {'category': 'object', 'message': 'object'}, 'numeric_summary': {}, 'categorical_summary': {'category': {'count': 5157, 'unique': 2, 'top': 'ham', 'freq': 4516}, 'message': {'count': 5157, 'unique': 5157, 'top': 'Rofl. Its true to its name', 'freq': 1}}, 'datetime_summary': {}}
+2025-08-20 00:34:07,959 - INFO - [Routing Decision] Cleaned status = yes
+2025-08-20 00:34:08,081 - INFO - Determining target column
+2025-08-20 00:34:08,957 - INFO - Chosen target column: category
+2025-08-20 00:34:08,960 - DEBUG - Applied LabelEncoder to target column
+2025-08-20 00:34:09,071 - INFO - Detected column types: {'numeric': [], 'categorical': [], 'text': ['message'], 'datetime': [], 'boolean': []}
+2025-08-20 00:34:09,322 - INFO - Extracted features columns: ['message_tfidf_0', 'message_tfidf_1', 'message_tfidf_2', 'message_tfidf_3', 'message_tfidf_4', 'message_tfidf_5', 'message_tfidf_6', 'message_tfidf_7', 'message_tfidf_8', 'message_tfidf_9']
+2025-08-20 00:34:09,495 - INFO - Auto-selected features: ['message_tfidf_0', 'message_tfidf_1', 'message_tfidf_2', 'message_tfidf_3', 'message_tfidf_4', 'message_tfidf_5', 'message_tfidf_6', 'message_tfidf_7', 'message_tfidf_8', 'message_tfidf_9']
+2025-08-20 00:34:12,129 - INFO - Final features after LLM enhancement: ['message_tfidf_5', 'message_tfidf_2', 'message_tfidf_0', 'message_tfidf_6', 'message_tfidf_9', 'message_tfidf_1', 'message_tfidf_3', 'message_tfidf_4', 'message_tfidf_7', 'message_tfidf_8']
+2025-08-20 00:34:16,727 - INFO - Generated ML config
+2025-08-20 00:34:16,987 - INFO - Starting model fitting
+2025-08-20 00:34:19,089 - INFO - Model training completed successfully
+2025-08-20 00:34:19,299 - INFO - Computing model metrics
+2025-08-20 00:34:19,302 - DEBUG - Task type: classification
+2025-08-20 00:34:19,302 - DEBUG - Evaluation data shape: (5157, 10), (5157,)
+2025-08-20 00:34:19,415 - INFO - Metrics computed successfully: {'accuracy': 0.9071165406243941, 'precision': 0.9016454075309285, 'recall': 0.9071165406243941, 'f1-score': 0.887807823113328}
+2025-08-20 00:34:19,617 - INFO - Generating prediction from user query
+2025-08-20 00:34:22,806 - INFO - Parsed input from query: {'message_tfidf_5': None, 'message_tfidf_2': None, 'message_tfidf_0': None, 'message_tfidf_6': None, 'message_tfidf_9': None, 'message_tfidf_1': None, 'message_tfidf_3': None, 'message_tfidf_4': None, 'message_tfidf_7': None, 'message_tfidf_8': None}
+2025-08-20 00:34:22,810 - INFO - Extracted features columns: []
+2025-08-20 00:34:22,814 - INFO - Aligned input for prediction: [{'message_tfidf_5': 0, 'message_tfidf_2': 0, 'message_tfidf_0': 0, 'message_tfidf_6': 0, 'message_tfidf_9': 0, 'message_tfidf_1': 0, 'message_tfidf_3': 0, 'message_tfidf_4': 0, 'message_tfidf_7': 0, 'message_tfidf_8': 0}]
+2025-08-20 00:34:22,869 - INFO - Raw prediction: 0
+2025-08-20 00:34:22,874 - INFO - Final prediction result: {'question': "Free entry in 2 a wkly comp to win FA Cup final tkts 21st May 2005. Text FA to 87121 to receive entry question(std txt rate)T&C's apply 08452810075over18's is this ham or spam\n\n", 'inputs': {'message_tfidf_5': None, 'message_tfidf_2': None, 'message_tfidf_0': None, 'message_tfidf_6': None, 'message_tfidf_9': None, 'message_tfidf_1': None, 'message_tfidf_3': None, 'message_tfidf_4': None, 'message_tfidf_7': None, 'message_tfidf_8': None}, 'prediction_encoded': 0, 'prediction_label': np.int64(0)}
+2025-08-20 00:34:33,397 - INFO - Generated explanation for prediction
+2025-08-20 00:42:28,197 - INFO - Starting query analysis
+2025-08-20 00:42:28,199 - DEBUG - User query: Free entry in 2 a wkly comp to win FA Cup final tkts 21st May 2005. Text FA to 87121 to receive entry question(std txt rate)T&C's apply 08452810075over18's is this ham or spam
+
+
+2025-08-20 00:42:30,210 - INFO - Identified ML problem type: classification
+2025-08-20 00:42:30,360 - INFO - Starting dynamic data cleaning process
+2025-08-20 00:42:30,477 - INFO - Dynamic data cleaning process completed successfully
+2025-08-20 00:42:30,579 - INFO - Generating validation report...
+2025-08-20 00:42:30,597 - DEBUG - {'shape': (5157, 2), 'columns': ['category', 'message'], 'null_counts': {'category': 0, 'message': 0}, 'duplicate_rows': 0, 'dtypes': {'category': 'object', 'message': 'object'}, 'numeric_summary': {}, 'categorical_summary': {'category': {'count': 5157, 'unique': 2, 'top': 'ham', 'freq': 4516}, 'message': {'count': 5157, 'unique': 5157, 'top': 'Rofl. Its true to its name', 'freq': 1}}, 'datetime_summary': {}}
+2025-08-20 00:42:33,757 - INFO - [Routing Decision] Cleaned status = yes
+2025-08-20 00:42:33,885 - INFO - Determining target column
+2025-08-20 00:42:34,976 - INFO - Chosen target column: category
+2025-08-20 00:42:34,980 - DEBUG - Applied LabelEncoder to target column
+2025-08-20 00:42:35,042 - INFO - Detected column types: {'numeric': [], 'categorical': [], 'text': ['message'], 'datetime': [], 'boolean': []}
+2025-08-20 00:42:35,127 - INFO - Extracted features columns: ['message_tfidf_0', 'message_tfidf_1', 'message_tfidf_2', 'message_tfidf_3', 'message_tfidf_4', 'message_tfidf_5', 'message_tfidf_6', 'message_tfidf_7', 'message_tfidf_8', 'message_tfidf_9']
+2025-08-20 00:42:35,175 - INFO - Auto-selected features: ['message_tfidf_0', 'message_tfidf_1', 'message_tfidf_2', 'message_tfidf_3', 'message_tfidf_4', 'message_tfidf_5', 'message_tfidf_6', 'message_tfidf_7', 'message_tfidf_8', 'message_tfidf_9']
+2025-08-20 00:42:38,382 - INFO - Final features after LLM enhancement: ['message_tfidf_5', 'message_tfidf_2', 'message_tfidf_0', 'message_tfidf_6', 'message_tfidf_9', 'message_tfidf_1', 'message_tfidf_3', 'message_tfidf_4', 'message_tfidf_7', 'message_tfidf_8']
+2025-08-20 00:42:42,311 - INFO - Generated ML config
+2025-08-20 00:42:42,369 - INFO - Starting model fitting
+2025-08-20 00:42:44,170 - INFO - Model training completed successfully
+2025-08-20 00:42:44,224 - INFO - Computing model metrics
+2025-08-20 00:42:44,225 - DEBUG - Task type: classification
+2025-08-20 00:42:44,225 - DEBUG - Evaluation data shape: (5157, 10), (5157,)
+2025-08-20 00:42:44,233 - INFO - Metrics computed successfully: {'accuracy': 0.8786115958890828, 'precision': 0.8495136268534016, 'recall': 0.8786115958890828, 'f1-score': 0.8321277524825444}
+2025-08-20 00:42:44,293 - INFO - Generating prediction from user query
+2025-08-20 00:42:52,182 - INFO - Parsed input from query: {'message_tfidf_5': None, 'message_tfidf_2': None, 'message_tfidf_0': None, 'message_tfidf_6': None, 'message_tfidf_9': None, 'message_tfidf_1': None, 'message_tfidf_3': None, 'message_tfidf_4': None, 'message_tfidf_7': None, 'message_tfidf_8': None}
+2025-08-20 00:42:52,183 - INFO - Extracted features columns: []
+2025-08-20 00:42:52,184 - INFO - Aligned input for prediction: [{'message_tfidf_5': 0, 'message_tfidf_2': 0, 'message_tfidf_0': 0, 'message_tfidf_6': 0, 'message_tfidf_9': 0, 'message_tfidf_1': 0, 'message_tfidf_3': 0, 'message_tfidf_4': 0, 'message_tfidf_7': 0, 'message_tfidf_8': 0}]
+2025-08-20 00:42:52,221 - INFO - Raw prediction: 0
+2025-08-20 00:42:52,221 - INFO - Final prediction result: {'question': "Free entry in 2 a wkly comp to win FA Cup final tkts 21st May 2005. Text FA to 87121 to receive entry question(std txt rate)T&C's apply 08452810075over18's is this ham or spam\n\n", 'inputs': {'message_tfidf_5': None, 'message_tfidf_2': None, 'message_tfidf_0': None, 'message_tfidf_6': None, 'message_tfidf_9': None, 'message_tfidf_1': None, 'message_tfidf_3': None, 'message_tfidf_4': None, 'message_tfidf_7': None, 'message_tfidf_8': None}, 'prediction_encoded': 0, 'prediction_label': np.int64(0)}
+2025-08-20 00:53:57,706 - INFO - Starting query analysis
+2025-08-20 00:53:57,711 - DEBUG - User query: is Free entry in 2 a wkly comp to win FA Cup final tkts 21st May 2005. Text FA to 87121 to receive entry question(std txt rate)T&C's apply 08452810075over18's spam or ham
+2025-08-20 00:53:58,713 - INFO - Identified ML problem type: classification
+2025-08-20 00:53:58,788 - INFO - Starting dynamic data cleaning process
+2025-08-20 00:53:58,853 - INFO - Dynamic data cleaning process completed successfully
+2025-08-20 00:53:59,063 - INFO - Generating validation report...
+2025-08-20 00:53:59,082 - DEBUG - {'shape': (5157, 2), 'columns': ['category', 'message'], 'null_counts': {'category': 0, 'message': 0}, 'duplicate_rows': 0, 'dtypes': {'category': 'object', 'message': 'object'}, 'numeric_summary': {}, 'categorical_summary': {'category': {'count': 5157, 'unique': 2, 'top': 'ham', 'freq': 4516}, 'message': {'count': 5157, 'unique': 5157, 'top': 'Rofl. Its true to its name', 'freq': 1}}, 'datetime_summary': {}}
+2025-08-20 00:54:02,713 - INFO - [Routing Decision] Cleaned status = yes
+2025-08-20 00:54:02,871 - INFO - Determining target column
+2025-08-20 00:54:04,680 - INFO - Chosen target column: category
+2025-08-20 00:54:04,685 - DEBUG - Applied LabelEncoder to target column
+2025-08-20 00:54:04,826 - INFO - Detected column types: {'numeric': [], 'categorical': [], 'text': ['message'], 'datetime': [], 'boolean': []}
+2025-08-20 00:54:05,074 - INFO - Extracted features columns: ['message_tfidf_0', 'message_tfidf_1', 'message_tfidf_2', 'message_tfidf_3', 'message_tfidf_4', 'message_tfidf_5', 'message_tfidf_6', 'message_tfidf_7', 'message_tfidf_8', 'message_tfidf_9']
+2025-08-20 00:54:05,242 - INFO - Auto-selected features: ['message_tfidf_0', 'message_tfidf_1', 'message_tfidf_2', 'message_tfidf_3', 'message_tfidf_4', 'message_tfidf_5', 'message_tfidf_6', 'message_tfidf_7', 'message_tfidf_8', 'message_tfidf_9']
+2025-08-20 00:54:08,093 - INFO - Final features after LLM enhancement: ['message_tfidf_5', 'message_tfidf_2', 'message_tfidf_0', 'message_tfidf_6', 'message_tfidf_9', 'message_tfidf_1', 'message_tfidf_3', 'message_tfidf_4', 'message_tfidf_7', 'message_tfidf_8']
+2025-08-20 00:54:12,061 - INFO - Generated ML config
+2025-08-20 00:54:12,443 - INFO - Starting model fitting
+2025-08-20 00:54:13,857 - INFO - Model training completed successfully
+2025-08-20 00:54:14,064 - INFO - Computing model metrics
+2025-08-20 00:54:14,070 - DEBUG - Task type: classification
+2025-08-20 00:54:14,070 - DEBUG - Evaluation data shape: (5157, 10), (5157,)
+2025-08-20 00:54:14,077 - INFO - Metrics computed successfully: {'accuracy': 0.8786115958890828, 'precision': 0.8495136268534016, 'recall': 0.8786115958890828, 'f1-score': 0.8321277524825444}
+2025-08-20 00:54:14,140 - INFO - Parsing user query into feature values
+2025-08-20 00:54:31,660 - INFO - Parsed input: {'message_tfidf_5': None, 'message_tfidf_2': None, 'message_tfidf_0': None, 'message_tfidf_6': None, 'message_tfidf_9': None, 'message_tfidf_1': None, 'message_tfidf_3': None, 'message_tfidf_4': None, 'message_tfidf_7': None, 'message_tfidf_8': None}
+2025-08-20 00:58:15,404 - INFO - Starting query analysis
+2025-08-20 00:58:15,407 - DEBUG - User query: is Free entry in 2 a wkly comp to win FA Cup final tkts 21st May 2005. Text FA to 87121 to receive entry question(std txt rate)T&C's apply 08452810075over18's spam or ham
+
+
+2025-08-20 00:58:16,340 - INFO - Identified ML problem type: classification
+2025-08-20 00:58:16,392 - INFO - Starting dynamic data cleaning process
+2025-08-20 00:58:16,445 - INFO - Dynamic data cleaning process completed successfully
+2025-08-20 00:58:16,526 - INFO - Generating validation report...
+2025-08-20 00:58:16,552 - DEBUG - {'shape': (5157, 2), 'columns': ['category', 'message'], 'null_counts': {'category': 0, 'message': 0}, 'duplicate_rows': 0, 'dtypes': {'category': 'object', 'message': 'object'}, 'numeric_summary': {}, 'categorical_summary': {'category': {'count': 5157, 'unique': 2, 'top': 'ham', 'freq': 4516}, 'message': {'count': 5157, 'unique': 5157, 'top': 'Rofl. Its true to its name', 'freq': 1}}, 'datetime_summary': {}}
+2025-08-20 00:58:19,689 - INFO - [Routing Decision] Cleaned status = yes
+2025-08-20 00:58:19,804 - INFO - Determining target column
+2025-08-20 00:58:20,894 - INFO - Chosen target column: category
+2025-08-20 00:58:20,899 - DEBUG - Applied LabelEncoder to target column
+2025-08-20 00:58:20,984 - INFO - Detected column types: {'numeric': [], 'categorical': [], 'text': ['message'], 'datetime': [], 'boolean': []}
+2025-08-20 00:58:21,227 - INFO - Extracted features columns: ['message_tfidf_0', 'message_tfidf_1', 'message_tfidf_2', 'message_tfidf_3', 'message_tfidf_4', 'message_tfidf_5', 'message_tfidf_6', 'message_tfidf_7', 'message_tfidf_8', 'message_tfidf_9']
+2025-08-20 00:58:21,401 - INFO - Auto-selected features: ['message_tfidf_0', 'message_tfidf_1', 'message_tfidf_2', 'message_tfidf_3', 'message_tfidf_4', 'message_tfidf_5', 'message_tfidf_6', 'message_tfidf_7', 'message_tfidf_8', 'message_tfidf_9']
+2025-08-20 00:58:23,618 - INFO - Final features after LLM enhancement: ['message_tfidf_5', 'message_tfidf_2', 'message_tfidf_0', 'message_tfidf_6', 'message_tfidf_9', 'message_tfidf_1', 'message_tfidf_3', 'message_tfidf_4', 'message_tfidf_7', 'message_tfidf_8']
+2025-08-20 00:58:27,560 - INFO - Generated ML config
+2025-08-20 00:58:27,629 - INFO - Starting model fitting
+2025-08-20 00:58:29,235 - INFO - Model training completed successfully
+2025-08-20 00:58:29,291 - INFO - Computing model metrics
+2025-08-20 00:58:29,291 - DEBUG - Task type: classification
+2025-08-20 00:58:29,292 - DEBUG - Evaluation data shape: (5157, 10), (5157,)
+2025-08-20 00:58:29,329 - INFO - Metrics computed successfully: {'accuracy': 0.9071165406243941, 'precision': 0.9016454075309285, 'recall': 0.9071165406243941, 'f1-score': 0.887807823113328}
+2025-08-20 00:58:29,386 - INFO - Generating prediction from user query
+2025-08-20 00:58:37,904 - INFO - Parsed input from query: {'message_tfidf_5': None, 'message_tfidf_2': None, 'message_tfidf_0': None, 'message_tfidf_6': None, 'message_tfidf_9': None, 'message_tfidf_1': None, 'message_tfidf_3': None, 'message_tfidf_4': None, 'message_tfidf_7': None, 'message_tfidf_8': None}
+2025-08-20 00:58:37,915 - INFO - Extracted features columns: []
+2025-08-20 00:58:37,918 - INFO - Aligned input for prediction: [{'message_tfidf_5': 0, 'message_tfidf_2': 0, 'message_tfidf_0': 0, 'message_tfidf_6': 0, 'message_tfidf_9': 0, 'message_tfidf_1': 0, 'message_tfidf_3': 0, 'message_tfidf_4': 0, 'message_tfidf_7': 0, 'message_tfidf_8': 0}]
+2025-08-20 00:58:37,923 - INFO - Raw prediction: 0
+2025-08-20 00:58:37,924 - INFO - Final prediction result: {'question': "is Free entry in 2 a wkly comp to win FA Cup final tkts 21st May 2005. Text FA to 87121 to receive entry question(std txt rate)T&C's apply 08452810075over18's spam or ham\n\n", 'inputs': {'message_tfidf_5': None, 'message_tfidf_2': None, 'message_tfidf_0': None, 'message_tfidf_6': None, 'message_tfidf_9': None, 'message_tfidf_1': None, 'message_tfidf_3': None, 'message_tfidf_4': None, 'message_tfidf_7': None, 'message_tfidf_8': None}, 'prediction_encoded': 0, 'prediction_label': np.int64(0)}
+2025-08-20 00:58:45,420 - INFO - Generated explanation for prediction
+2025-08-20 01:00:55,199 - INFO - Starting query analysis
+2025-08-20 01:00:55,199 - DEBUG - User query: is Free entry in 2 a wkly comp to win FA Cup final tkts 21st May 2005. Text FA to 87121 to receive entry question(std txt rate)T&C's apply 08452810075over18's spam or ham
+
+
+2025-08-20 01:00:56,948 - INFO - Identified ML problem type: classification
+2025-08-20 01:00:57,032 - INFO - Starting dynamic data cleaning process
+2025-08-20 01:00:57,081 - INFO - Dynamic data cleaning process completed successfully
+2025-08-20 01:00:57,169 - INFO - Generating validation report...
+2025-08-20 01:00:57,219 - DEBUG - {'shape': (5157, 2), 'columns': ['category', 'message'], 'null_counts': {'category': 0, 'message': 0}, 'duplicate_rows': 0, 'dtypes': {'category': 'object', 'message': 'object'}, 'numeric_summary': {}, 'categorical_summary': {'category': {'count': 5157, 'unique': 2, 'top': 'ham', 'freq': 4516}, 'message': {'count': 5157, 'unique': 5157, 'top': 'Rofl. Its true to its name', 'freq': 1}}, 'datetime_summary': {}}
+2025-08-20 01:01:00,762 - INFO - [Routing Decision] Cleaned status = yes
+2025-08-20 01:01:00,880 - INFO - Determining target column
+2025-08-20 01:01:01,833 - INFO - Chosen target column: category
+2025-08-20 01:01:01,838 - DEBUG - Applied LabelEncoder to target column
+2025-08-20 01:01:01,974 - INFO - Detected column types: {'numeric': [], 'categorical': [], 'text': ['message'], 'datetime': [], 'boolean': []}
+2025-08-20 01:01:02,238 - INFO - Extracted features columns: ['message_tfidf_0', 'message_tfidf_1', 'message_tfidf_2', 'message_tfidf_3', 'message_tfidf_4', 'message_tfidf_5', 'message_tfidf_6', 'message_tfidf_7', 'message_tfidf_8', 'message_tfidf_9']
+2025-08-20 01:01:02,409 - INFO - Auto-selected features: ['message_tfidf_0', 'message_tfidf_1', 'message_tfidf_2', 'message_tfidf_3', 'message_tfidf_4', 'message_tfidf_5', 'message_tfidf_6', 'message_tfidf_7', 'message_tfidf_8', 'message_tfidf_9']
+2025-08-20 01:01:04,791 - INFO - Final features after LLM enhancement: ['message_tfidf_5', 'message_tfidf_2', 'message_tfidf_0', 'message_tfidf_6', 'message_tfidf_9', 'message_tfidf_1', 'message_tfidf_3', 'message_tfidf_4', 'message_tfidf_7', 'message_tfidf_8']
+2025-08-20 01:01:08,625 - INFO - Generated ML config
+2025-08-20 01:01:08,855 - INFO - Starting model fitting
+2025-08-20 01:01:11,087 - INFO - Model training completed successfully
+2025-08-20 01:01:11,327 - INFO - Computing model metrics
+2025-08-20 01:01:11,330 - DEBUG - Task type: classification
+2025-08-20 01:01:11,330 - DEBUG - Evaluation data shape: (5157, 10), (5157,)
+2025-08-20 01:01:11,452 - INFO - Metrics computed successfully: {'accuracy': 0.9071165406243941, 'precision': 0.9016454075309285, 'recall': 0.9071165406243941, 'f1-score': 0.887807823113328}
+2025-08-20 01:01:11,669 - INFO - Generating prediction from user query
+2025-08-20 01:01:23,862 - INFO - Parsed input from query: {'message_tfidf_5': None, 'message_tfidf_2': None, 'message_tfidf_0': None, 'message_tfidf_6': None, 'message_tfidf_9': None, 'message_tfidf_1': None, 'message_tfidf_3': None, 'message_tfidf_4': None, 'message_tfidf_7': None, 'message_tfidf_8': None}
+2025-08-20 01:01:23,871 - INFO - Extracted features columns: []
+2025-08-20 01:01:23,873 - INFO - Aligned input for prediction: [{'message_tfidf_5': 0, 'message_tfidf_2': 0, 'message_tfidf_0': 0, 'message_tfidf_6': 0, 'message_tfidf_9': 0, 'message_tfidf_1': 0, 'message_tfidf_3': 0, 'message_tfidf_4': 0, 'message_tfidf_7': 0, 'message_tfidf_8': 0}]
+2025-08-20 01:01:23,884 - INFO - Raw prediction: 0
+2025-08-20 01:01:23,892 - INFO - Final prediction result: {'question': "is Free entry in 2 a wkly comp to win FA Cup final tkts 21st May 2005. Text FA to 87121 to receive entry question(std txt rate)T&C's apply 08452810075over18's spam or ham\n\n", 'inputs': {'message_tfidf_5': None, 'message_tfidf_2': None, 'message_tfidf_0': None, 'message_tfidf_6': None, 'message_tfidf_9': None, 'message_tfidf_1': None, 'message_tfidf_3': None, 'message_tfidf_4': None, 'message_tfidf_7': None, 'message_tfidf_8': None}, 'prediction_encoded': 0, 'prediction_label': np.int64(0)}
+2025-08-20 01:01:33,458 - INFO - Generated explanation for prediction
+2025-08-20 01:02:19,050 - INFO - Starting query analysis
+2025-08-20 01:02:19,050 - DEBUG - User query: win free iphone is it ham or spam
+2025-08-20 01:02:19,992 - INFO - Identified ML problem type: classification
+2025-08-20 01:02:20,019 - INFO - Starting dynamic data cleaning process
+2025-08-20 01:02:20,043 - INFO - Dynamic data cleaning process completed successfully
+2025-08-20 01:02:20,083 - INFO - Generating validation report...
+2025-08-20 01:02:20,093 - DEBUG - {'shape': (5157, 2), 'columns': ['category', 'message'], 'null_counts': {'category': 0, 'message': 0}, 'duplicate_rows': 0, 'dtypes': {'category': 'object', 'message': 'object'}, 'numeric_summary': {}, 'categorical_summary': {'category': {'count': 5157, 'unique': 2, 'top': 'ham', 'freq': 4516}, 'message': {'count': 5157, 'unique': 5157, 'top': 'Rofl. Its true to its name', 'freq': 1}}, 'datetime_summary': {}}
+2025-08-20 01:02:23,529 - INFO - [Routing Decision] Cleaned status = yes
+2025-08-20 01:02:23,583 - INFO - Determining target column
+2025-08-20 01:02:25,195 - INFO - Chosen target column: category
+2025-08-20 01:02:25,198 - DEBUG - Applied LabelEncoder to target column
+2025-08-20 01:02:25,235 - INFO - Detected column types: {'numeric': [], 'categorical': [], 'text': ['message'], 'datetime': [], 'boolean': []}
+2025-08-20 01:02:25,324 - INFO - Extracted features columns: ['message_tfidf_0', 'message_tfidf_1', 'message_tfidf_2', 'message_tfidf_3', 'message_tfidf_4', 'message_tfidf_5', 'message_tfidf_6', 'message_tfidf_7', 'message_tfidf_8', 'message_tfidf_9']
+2025-08-20 01:02:25,383 - INFO - Auto-selected features: ['message_tfidf_0', 'message_tfidf_1', 'message_tfidf_2', 'message_tfidf_3', 'message_tfidf_4', 'message_tfidf_5', 'message_tfidf_6', 'message_tfidf_7', 'message_tfidf_8', 'message_tfidf_9']
+2025-08-20 01:02:27,131 - INFO - Final features after LLM enhancement: ['message_tfidf_5', 'message_tfidf_2', 'message_tfidf_0', 'message_tfidf_6', 'message_tfidf_9', 'message_tfidf_1', 'message_tfidf_3', 'message_tfidf_4', 'message_tfidf_7', 'message_tfidf_8']
+2025-08-20 01:02:30,459 - INFO - Generated ML config
+2025-08-20 01:02:30,525 - INFO - Starting model fitting
+2025-08-20 01:02:31,918 - INFO - Model training completed successfully
+2025-08-20 01:02:31,979 - INFO - Computing model metrics
+2025-08-20 01:02:31,980 - DEBUG - Task type: classification
+2025-08-20 01:02:31,980 - DEBUG - Evaluation data shape: (5157, 10), (5157,)
+2025-08-20 01:02:31,986 - INFO - Metrics computed successfully: {'accuracy': 0.8786115958890828, 'precision': 0.8495136268534016, 'recall': 0.8786115958890828, 'f1-score': 0.8321277524825444}
+2025-08-20 01:02:32,050 - INFO - Generating prediction from user query
+2025-08-20 01:02:43,926 - INFO - Parsed input from query: {'message_tfidf_5': None, 'message_tfidf_2': None, 'message_tfidf_0': None, 'message_tfidf_6': None, 'message_tfidf_9': None, 'message_tfidf_1': None, 'message_tfidf_3': None, 'message_tfidf_4': None, 'message_tfidf_7': None, 'message_tfidf_8': None}
+2025-08-20 01:02:43,929 - INFO - Extracted features columns: []
+2025-08-20 01:02:43,930 - INFO - Aligned input for prediction: [{'message_tfidf_5': 0, 'message_tfidf_2': 0, 'message_tfidf_0': 0, 'message_tfidf_6': 0, 'message_tfidf_9': 0, 'message_tfidf_1': 0, 'message_tfidf_3': 0, 'message_tfidf_4': 0, 'message_tfidf_7': 0, 'message_tfidf_8': 0}]
+2025-08-20 01:02:43,932 - INFO - Raw prediction: 0
+2025-08-20 01:02:43,932 - INFO - Final prediction result: {'question': 'win free iphone is it ham or spam', 'inputs': {'message_tfidf_5': None, 'message_tfidf_2': None, 'message_tfidf_0': None, 'message_tfidf_6': None, 'message_tfidf_9': None, 'message_tfidf_1': None, 'message_tfidf_3': None, 'message_tfidf_4': None, 'message_tfidf_7': None, 'message_tfidf_8': None}, 'prediction_encoded': 0, 'prediction_label': np.int64(0)}
+2025-08-20 01:02:54,462 - INFO - Generated explanation for prediction
+2025-08-20 01:03:14,286 - INFO - Starting query analysis
+2025-08-20 01:03:14,291 - DEBUG - User query: win free iphone is it ham or spam
+2025-08-20 01:03:16,918 - INFO - Identified ML problem type: classification
+2025-08-20 01:03:16,965 - INFO - Starting dynamic data cleaning process
+2025-08-20 01:03:17,031 - INFO - Dynamic data cleaning process completed successfully
+2025-08-20 01:03:17,161 - INFO - Generating validation report...
+2025-08-20 01:03:17,243 - DEBUG - {'shape': (5157, 2), 'columns': ['category', 'message'], 'null_counts': {'category': 0, 'message': 0}, 'duplicate_rows': 0, 'dtypes': {'category': 'object', 'message': 'object'}, 'numeric_summary': {}, 'categorical_summary': {'category': {'count': 5157, 'unique': 2, 'top': 'ham', 'freq': 4516}, 'message': {'count': 5157, 'unique': 5157, 'top': 'Rofl. Its true to its name', 'freq': 1}}, 'datetime_summary': {}}
+2025-08-20 01:03:20,491 - INFO - [Routing Decision] Cleaned status = yes
+2025-08-20 01:03:20,524 - INFO - Determining target column
+2025-08-20 01:03:21,844 - INFO - Chosen target column: category
+2025-08-20 01:03:21,845 - DEBUG - Applied LabelEncoder to target column
+2025-08-20 01:03:21,874 - INFO - Detected column types: {'numeric': [], 'categorical': [], 'text': ['message'], 'datetime': [], 'boolean': []}
+2025-08-20 01:03:21,965 - INFO - Extracted features columns: ['message_tfidf_0', 'message_tfidf_1', 'message_tfidf_2', 'message_tfidf_3', 'message_tfidf_4', 'message_tfidf_5', 'message_tfidf_6', 'message_tfidf_7', 'message_tfidf_8', 'message_tfidf_9']
+2025-08-20 01:03:22,036 - INFO - Auto-selected features: ['message_tfidf_0', 'message_tfidf_1', 'message_tfidf_2', 'message_tfidf_3', 'message_tfidf_4', 'message_tfidf_5', 'message_tfidf_6', 'message_tfidf_7', 'message_tfidf_8', 'message_tfidf_9']
+2025-08-20 01:03:25,200 - INFO - Final features after LLM enhancement: ['message_tfidf_5', 'message_tfidf_2', 'message_tfidf_0', 'message_tfidf_6', 'message_tfidf_9', 'message_tfidf_1', 'message_tfidf_3', 'message_tfidf_4', 'message_tfidf_7', 'message_tfidf_8']
+2025-08-20 01:03:28,494 - INFO - Generated ML config
+2025-08-20 01:03:28,549 - INFO - Starting model fitting
+2025-08-20 01:03:30,061 - INFO - Model training completed successfully
+2025-08-20 01:03:30,116 - INFO - Computing model metrics
+2025-08-20 01:03:30,125 - DEBUG - Task type: classification
+2025-08-20 01:03:30,125 - DEBUG - Evaluation data shape: (5157, 10), (5157,)
+2025-08-20 01:03:30,129 - INFO - Metrics computed successfully: {'accuracy': 0.8786115958890828, 'precision': 0.8495136268534016, 'recall': 0.8786115958890828, 'f1-score': 0.8321277524825444}
+2025-08-20 01:03:30,202 - INFO - Generating prediction from user query
+2025-08-20 01:03:34,209 - INFO - Parsed input from query: {'message_tfidf_5': None, 'message_tfidf_2': None, 'message_tfidf_0': None, 'message_tfidf_6': None, 'message_tfidf_9': None, 'message_tfidf_1': None, 'message_tfidf_3': None, 'message_tfidf_4': None, 'message_tfidf_7': None, 'message_tfidf_8': None}
+2025-08-20 01:03:34,211 - INFO - Extracted features columns: []
+2025-08-20 01:03:34,212 - INFO - Aligned input for prediction: [{'message_tfidf_5': 0, 'message_tfidf_2': 0, 'message_tfidf_0': 0, 'message_tfidf_6': 0, 'message_tfidf_9': 0, 'message_tfidf_1': 0, 'message_tfidf_3': 0, 'message_tfidf_4': 0, 'message_tfidf_7': 0, 'message_tfidf_8': 0}]
+2025-08-20 01:03:34,212 - INFO - Raw prediction: 0
+2025-08-20 01:03:34,212 - DEBUG - 0
+2025-08-20 01:03:34,212 - INFO - Final prediction result: {'question': 'win free iphone is it ham or spam', 'inputs': {'message_tfidf_5': None, 'message_tfidf_2': None, 'message_tfidf_0': None, 'message_tfidf_6': None, 'message_tfidf_9': None, 'message_tfidf_1': None, 'message_tfidf_3': None, 'message_tfidf_4': None, 'message_tfidf_7': None, 'message_tfidf_8': None}, 'prediction_encoded': 0, 'prediction_label': np.int64(0)}
+2025-08-20 01:03:42,662 - INFO - Generated explanation for prediction
+2025-08-20 01:06:41,782 - INFO - Starting query analysis
+2025-08-20 01:06:41,782 - DEBUG - User query: win free iphone is it ham or spam
+
+
+2025-08-20 01:06:42,718 - INFO - Identified ML problem type: classification
+2025-08-20 01:06:42,781 - INFO - Starting dynamic data cleaning process
+2025-08-20 01:06:42,876 - INFO - Dynamic data cleaning process completed successfully
+2025-08-20 01:06:42,992 - INFO - Generating validation report...
+2025-08-20 01:06:43,047 - DEBUG - {'shape': (5157, 2), 'columns': ['category', 'message'], 'null_counts': {'category': 0, 'message': 0}, 'duplicate_rows': 0, 'dtypes': {'category': 'object', 'message': 'object'}, 'numeric_summary': {}, 'categorical_summary': {'category': {'count': 5157, 'unique': 2, 'top': 'ham', 'freq': 4516}, 'message': {'count': 5157, 'unique': 5157, 'top': 'Rofl. Its true to its name', 'freq': 1}}, 'datetime_summary': {}}
+2025-08-20 01:06:45,893 - INFO - [Routing Decision] Cleaned status = yes
+2025-08-20 01:06:46,024 - INFO - Determining target column
+2025-08-20 01:06:47,418 - INFO - Chosen target column: category
+2025-08-20 01:06:47,424 - DEBUG - Applied LabelEncoder to target column
+2025-08-20 01:06:47,529 - INFO - Detected column types: {'numeric': [], 'categorical': [], 'text': ['message'], 'datetime': [], 'boolean': []}
+2025-08-20 01:06:47,783 - INFO - Extracted features columns: ['message_tfidf_0', 'message_tfidf_1', 'message_tfidf_2', 'message_tfidf_3', 'message_tfidf_4', 'message_tfidf_5', 'message_tfidf_6', 'message_tfidf_7', 'message_tfidf_8', 'message_tfidf_9']
+2025-08-20 01:06:47,952 - INFO - Auto-selected features: ['message_tfidf_0', 'message_tfidf_1', 'message_tfidf_2', 'message_tfidf_3', 'message_tfidf_4', 'message_tfidf_5', 'message_tfidf_6', 'message_tfidf_7', 'message_tfidf_8', 'message_tfidf_9']
+2025-08-20 01:06:50,259 - INFO - Final features after LLM enhancement: ['message_tfidf_5', 'message_tfidf_2', 'message_tfidf_0', 'message_tfidf_6', 'message_tfidf_9', 'message_tfidf_1', 'message_tfidf_3', 'message_tfidf_4', 'message_tfidf_7', 'message_tfidf_8']
+2025-08-20 01:06:53,593 - INFO - Generated ML config
+2025-08-20 01:06:53,663 - INFO - Starting model fitting
+2025-08-20 01:06:55,357 - INFO - Model training completed successfully
+2025-08-20 01:06:55,443 - INFO - Computing model metrics
+2025-08-20 01:06:55,445 - DEBUG - Task type: classification
+2025-08-20 01:06:55,445 - DEBUG - Evaluation data shape: (5157, 10), (5157,)
+2025-08-20 01:06:55,451 - INFO - Metrics computed successfully: {'accuracy': 0.8786115958890828, 'precision': 0.8495136268534016, 'recall': 0.8786115958890828, 'f1-score': 0.8321277524825444}
+2025-08-20 01:06:55,517 - INFO - Generating prediction from user query
+2025-08-20 01:06:58,446 - INFO - Parsed input from query: {'message_tfidf_5': None, 'message_tfidf_2': None, 'message_tfidf_0': None, 'message_tfidf_6': None, 'message_tfidf_9': None, 'message_tfidf_1': None, 'message_tfidf_3': None, 'message_tfidf_4': None, 'message_tfidf_7': None, 'message_tfidf_8': None}
+2025-08-20 01:06:58,460 - INFO - Extracted features columns: []
+2025-08-20 01:06:58,461 - INFO - Aligned input for prediction: [{'message_tfidf_5': 0, 'message_tfidf_2': 0, 'message_tfidf_0': 0, 'message_tfidf_6': 0, 'message_tfidf_9': 0, 'message_tfidf_1': 0, 'message_tfidf_3': 0, 'message_tfidf_4': 0, 'message_tfidf_7': 0, 'message_tfidf_8': 0}]
+2025-08-20 01:06:58,464 - INFO - Raw prediction: 0
+2025-08-20 01:06:58,464 - DEBUG - 0
+2025-08-20 01:06:58,464 - INFO - Final prediction result: {'question': 'win free iphone is it ham or spam\n\n', 'inputs': {'message_tfidf_5': None, 'message_tfidf_2': None, 'message_tfidf_0': None, 'message_tfidf_6': None, 'message_tfidf_9': None, 'message_tfidf_1': None, 'message_tfidf_3': None, 'message_tfidf_4': None, 'message_tfidf_7': None, 'message_tfidf_8': None}, 'prediction_encoded': 0, 'prediction_label': np.int64(0)}
+2025-08-20 01:07:05,862 - INFO - Generated explanation for prediction
+2025-08-20 01:12:38,055 - INFO - Starting query analysis
+2025-08-20 01:12:38,058 - DEBUG - User query: Free entry in 2 a wkly comp to win FA Cup final tkts 21st May 2005. Text FA to 87121 to receive entry question(std txt rate)T&C's apply 08452810075over18's spam or ham
+2025-08-20 01:12:42,395 - INFO - Identified ML problem type: classification
+2025-08-20 01:12:42,485 - INFO - Starting dynamic data cleaning process
+2025-08-20 01:12:42,549 - INFO - Dynamic data cleaning process completed successfully
+2025-08-20 01:12:42,653 - INFO - Generating validation report...
+2025-08-20 01:12:42,676 - DEBUG - {'shape': (5157, 2), 'columns': ['category', 'message'], 'null_counts': {'category': 0, 'message': 0}, 'duplicate_rows': 0, 'dtypes': {'category': 'object', 'message': 'object'}, 'numeric_summary': {}, 'categorical_summary': {'category': {'count': 5157, 'unique': 2, 'top': 'ham', 'freq': 4516}, 'message': {'count': 5157, 'unique': 5157, 'top': 'Rofl. Its true to its name', 'freq': 1}}, 'datetime_summary': {}}
+2025-08-20 01:12:46,448 - INFO - [Routing Decision] Cleaned status = yes
+2025-08-20 01:12:46,588 - INFO - Determining target column
+2025-08-20 01:12:48,549 - INFO - Chosen target column: category
+2025-08-20 01:12:48,555 - DEBUG - Applied LabelEncoder to target column
+2025-08-20 01:12:48,683 - INFO - Detected column types: {'numeric': [], 'categorical': [], 'text': ['message'], 'datetime': [], 'boolean': []}
+2025-08-20 01:12:48,958 - INFO - Extracted features columns: ['message_tfidf_0', 'message_tfidf_1', 'message_tfidf_2', 'message_tfidf_3', 'message_tfidf_4', 'message_tfidf_5', 'message_tfidf_6', 'message_tfidf_7', 'message_tfidf_8', 'message_tfidf_9']
+2025-08-20 01:12:49,151 - INFO - Auto-selected features: ['message_tfidf_0', 'message_tfidf_1', 'message_tfidf_2', 'message_tfidf_3', 'message_tfidf_4', 'message_tfidf_5', 'message_tfidf_6', 'message_tfidf_7', 'message_tfidf_8', 'message_tfidf_9']
+2025-08-20 01:12:53,355 - INFO - Final features after LLM enhancement: ['message_tfidf_5', 'message_tfidf_2', 'message_tfidf_0', 'message_tfidf_6', 'message_tfidf_9', 'message_tfidf_1', 'message_tfidf_3', 'message_tfidf_4', 'message_tfidf_7', 'message_tfidf_8']
+2025-08-20 01:12:57,750 - INFO - Generated ML config
+2025-08-20 01:12:58,157 - INFO - Starting model fitting
+2025-08-20 01:13:01,217 - INFO - Model training completed successfully
+2025-08-20 01:13:01,580 - INFO - Computing model metrics
+2025-08-20 01:13:01,585 - DEBUG - Task type: classification
+2025-08-20 01:13:01,585 - DEBUG - Evaluation data shape: (5157, 10), (5157,)
+2025-08-20 01:13:01,704 - INFO - Metrics computed successfully: {'accuracy': 0.9071165406243941, 'precision': 0.9016454075309285, 'recall': 0.9071165406243941, 'f1-score': 0.887807823113328}
+2025-08-20 01:13:01,917 - INFO - Generating prediction from user query
+2025-08-20 01:13:08,816 - INFO - Parsed input from query: {'message_tfidf_5': None, 'message_tfidf_2': None, 'message_tfidf_0': None, 'message_tfidf_6': None, 'message_tfidf_9': None, 'message_tfidf_1': None, 'message_tfidf_3': None, 'message_tfidf_4': None, 'message_tfidf_7': None, 'message_tfidf_8': None}
+2025-08-20 01:13:08,817 - INFO - Extracted features columns: []
+2025-08-20 01:13:08,819 - INFO - Aligned input for prediction: [{'message_tfidf_5': 0, 'message_tfidf_2': 0, 'message_tfidf_0': 0, 'message_tfidf_6': 0, 'message_tfidf_9': 0, 'message_tfidf_1': 0, 'message_tfidf_3': 0, 'message_tfidf_4': 0, 'message_tfidf_7': 0, 'message_tfidf_8': 0}]
+2025-08-20 01:13:08,822 - INFO - Raw prediction: 0
+2025-08-20 01:13:08,822 - DEBUG - 0
+2025-08-20 01:13:08,822 - INFO - Final prediction result: {'question': "Free entry in 2 a wkly comp to win FA Cup final tkts 21st May 2005. Text FA to 87121 to receive entry question(std txt rate)T&C's apply 08452810075over18's spam or ham", 'inputs': {'message_tfidf_5': None, 'message_tfidf_2': None, 'message_tfidf_0': None, 'message_tfidf_6': None, 'message_tfidf_9': None, 'message_tfidf_1': None, 'message_tfidf_3': None, 'message_tfidf_4': None, 'message_tfidf_7': None, 'message_tfidf_8': None}, 'prediction_encoded': 0, 'prediction_label': np.int64(0)}
+2025-08-20 01:13:21,367 - INFO - Generated explanation for prediction
+2025-08-20 01:16:15,856 - INFO - Starting query analysis
+2025-08-20 01:16:15,858 - DEBUG - User query: Free entry in 2 a wkly comp to win FA Cup final tkts 21st May 2005. Text FA to 87121 to receive entry question(std txt rate)T&C's apply 08452810075over18's spam or ham
+
+
+2025-08-20 01:16:18,227 - INFO - Identified ML problem type: classification
+2025-08-20 01:16:18,292 - INFO - Starting dynamic data cleaning process
+2025-08-20 01:16:18,398 - INFO - Dynamic data cleaning process completed successfully
+2025-08-20 01:16:18,504 - INFO - Generating validation report...
+2025-08-20 01:16:18,540 - DEBUG - {'shape': (5157, 2), 'columns': ['category', 'message'], 'null_counts': {'category': 0, 'message': 0}, 'duplicate_rows': 0, 'dtypes': {'category': 'object', 'message': 'object'}, 'numeric_summary': {}, 'categorical_summary': {'category': {'count': 5157, 'unique': 2, 'top': 'ham', 'freq': 4516}, 'message': {'count': 5157, 'unique': 5157, 'top': 'Rofl. Its true to its name', 'freq': 1}}, 'datetime_summary': {}}
+2025-08-20 01:16:24,430 - INFO - [Routing Decision] Cleaned status = yes
+2025-08-20 01:16:24,468 - INFO - Determining target column
+2025-08-20 01:16:26,530 - INFO - Chosen target column: category
+2025-08-20 01:16:26,533 - DEBUG - Applied LabelEncoder to target column
+2025-08-20 01:16:26,581 - INFO - Detected column types: {'numeric': [], 'categorical': [], 'text': ['message'], 'datetime': [], 'boolean': []}
+2025-08-20 01:16:26,656 - INFO - Extracted features columns: ['message_tfidf_0', 'message_tfidf_1', 'message_tfidf_2', 'message_tfidf_3', 'message_tfidf_4', 'message_tfidf_5', 'message_tfidf_6', 'message_tfidf_7', 'message_tfidf_8', 'message_tfidf_9']
+2025-08-20 01:16:26,702 - INFO - Auto-selected features: ['message_tfidf_0', 'message_tfidf_1', 'message_tfidf_2', 'message_tfidf_3', 'message_tfidf_4', 'message_tfidf_5', 'message_tfidf_6', 'message_tfidf_7', 'message_tfidf_8', 'message_tfidf_9']
+2025-08-20 01:16:33,859 - INFO - Final features after LLM enhancement: ['message_tfidf_5', 'message_tfidf_2', 'message_tfidf_0', 'message_tfidf_6', 'message_tfidf_9', 'message_tfidf_1', 'message_tfidf_3', 'message_tfidf_4', 'message_tfidf_7', 'message_tfidf_8']
+2025-08-20 01:16:38,406 - INFO - Generated ML config
+2025-08-20 01:16:38,461 - INFO - Starting model fitting
+2025-08-20 01:16:40,032 - INFO - Model training completed successfully
+2025-08-20 01:16:40,098 - INFO - Computing model metrics
+2025-08-20 01:16:40,099 - DEBUG - Task type: classification
+2025-08-20 01:16:40,099 - DEBUG - Evaluation data shape: (5157, 10), (5157,)
+2025-08-20 01:16:40,136 - INFO - Metrics computed successfully: {'accuracy': 0.9071165406243941, 'precision': 0.9016454075309285, 'recall': 0.9071165406243941, 'f1-score': 0.887807823113328}
+2025-08-20 01:16:40,205 - INFO - Generating prediction from user query
+2025-08-20 01:16:51,378 - INFO - Parsed input from query: {'message_tfidf_5': None, 'message_tfidf_2': None, 'message_tfidf_0': None, 'message_tfidf_6': None, 'message_tfidf_9': None, 'message_tfidf_1': None, 'message_tfidf_3': None, 'message_tfidf_4': None, 'message_tfidf_7': None, 'message_tfidf_8': None}
+2025-08-20 01:16:51,380 - INFO - Extracted features columns: []
+2025-08-20 01:16:51,382 - INFO - Aligned input for prediction: [{'message_tfidf_5': 0, 'message_tfidf_2': 0, 'message_tfidf_0': 0, 'message_tfidf_6': 0, 'message_tfidf_9': 0, 'message_tfidf_1': 0, 'message_tfidf_3': 0, 'message_tfidf_4': 0, 'message_tfidf_7': 0, 'message_tfidf_8': 0}]
+2025-08-20 01:16:51,388 - INFO - Raw prediction: 0
+2025-08-20 01:16:51,393 - DEBUG - 0
+2025-08-20 01:16:51,393 - INFO - Final prediction result: {'question': "Free entry in 2 a wkly comp to win FA Cup final tkts 21st May 2005. Text FA to 87121 to receive entry question(std txt rate)T&C's apply 08452810075over18's spam or ham\n\n", 'inputs': {'message_tfidf_5': None, 'message_tfidf_2': None, 'message_tfidf_0': None, 'message_tfidf_6': None, 'message_tfidf_9': None, 'message_tfidf_1': None, 'message_tfidf_3': None, 'message_tfidf_4': None, 'message_tfidf_7': None, 'message_tfidf_8': None}, 'prediction_encoded': 0, 'prediction_label': np.int64(0)}
+2025-08-20 01:17:02,477 - INFO - Generated explanation for prediction
+2025-08-20 01:19:04,220 - INFO - Starting query analysis
+2025-08-20 01:19:04,223 - DEBUG - User query: Free entry in 2 a wkly comp to win FA Cup final tkts 21st May 2005. Text FA to 87121 to receive entry question(std txt rate)T&C's apply 08452810075over18's spam or ham
+
+
+2025-08-20 01:19:06,496 - INFO - Identified ML problem type: classification
+2025-08-20 01:19:06,555 - INFO - Starting dynamic data cleaning process
+2025-08-20 01:19:06,604 - INFO - Dynamic data cleaning process completed successfully
+2025-08-20 01:19:06,690 - INFO - Generating validation report...
+2025-08-20 01:19:06,713 - DEBUG - {'shape': (5157, 2), 'columns': ['category', 'message'], 'null_counts': {'category': 0, 'message': 0}, 'duplicate_rows': 0, 'dtypes': {'category': 'object', 'message': 'object'}, 'numeric_summary': {}, 'categorical_summary': {'category': {'count': 5157, 'unique': 2, 'top': 'ham', 'freq': 4516}, 'message': {'count': 5157, 'unique': 5157, 'top': 'Rofl. Its true to its name', 'freq': 1}}, 'datetime_summary': {}}
+2025-08-20 01:19:10,939 - INFO - [Routing Decision] Cleaned status = yes
+2025-08-20 01:19:11,080 - INFO - Determining target column
+2025-08-20 01:19:13,223 - INFO - Chosen target column: category
+2025-08-20 01:19:13,228 - DEBUG - Applied LabelEncoder to target column
+2025-08-20 01:19:13,347 - INFO - Detected column types: {'numeric': [], 'categorical': [], 'text': ['message'], 'datetime': [], 'boolean': []}
+2025-08-20 01:19:13,601 - INFO - Extracted features columns: ['message_tfidf_0', 'message_tfidf_1', 'message_tfidf_2', 'message_tfidf_3', 'message_tfidf_4', 'message_tfidf_5', 'message_tfidf_6', 'message_tfidf_7', 'message_tfidf_8', 'message_tfidf_9']
+2025-08-20 01:19:13,768 - INFO - Auto-selected features: ['message_tfidf_0', 'message_tfidf_1', 'message_tfidf_2', 'message_tfidf_3', 'message_tfidf_4', 'message_tfidf_5', 'message_tfidf_6', 'message_tfidf_7', 'message_tfidf_8', 'message_tfidf_9']
+2025-08-20 01:19:18,986 - INFO - Final features after LLM enhancement: ['message_tfidf_5', 'message_tfidf_2', 'message_tfidf_0', 'message_tfidf_6', 'message_tfidf_9', 'message_tfidf_1', 'message_tfidf_3', 'message_tfidf_4', 'message_tfidf_7', 'message_tfidf_8']
+2025-08-20 01:19:23,684 - INFO - Generated ML config
+2025-08-20 01:19:23,752 - INFO - Starting model fitting
+2025-08-20 01:19:25,712 - INFO - Model training completed successfully
+2025-08-20 01:19:25,793 - INFO - Computing model metrics
+2025-08-20 01:19:25,793 - DEBUG - Task type: classification
+2025-08-20 01:19:25,793 - DEBUG - Evaluation data shape: (5157, 10), (5157,)
+2025-08-20 01:19:25,833 - INFO - Metrics computed successfully: {'accuracy': 0.9071165406243941, 'precision': 0.9016454075309285, 'recall': 0.9071165406243941, 'f1-score': 0.887807823113328}
+2025-08-20 01:19:25,896 - INFO - Generating prediction from user query
+2025-08-20 01:19:25,899 - INFO - Extracted features columns: ['message_tfidf_0', 'message_tfidf_1', 'message_tfidf_2', 'message_tfidf_3', 'message_tfidf_4', 'message_tfidf_5', 'message_tfidf_6', 'message_tfidf_7', 'message_tfidf_8', 'message_tfidf_9']
+2025-08-20 01:19:25,902 - INFO - Aligned input for prediction: [{'message_tfidf_5': 0.20412414523193154, 'message_tfidf_2': 0.20412414523193154, 'message_tfidf_0': 0.20412414523193154, 'message_tfidf_6': 0.4082482904638631, 'message_tfidf_9': 0.6123724356957946, 'message_tfidf_1': 0.20412414523193154, 'message_tfidf_3': 0.20412414523193154, 'message_tfidf_4': 0.20412414523193154, 'message_tfidf_7': 0.4082482904638631, 'message_tfidf_8': 0.20412414523193154}]
+2025-08-20 01:19:25,906 - INFO - Raw prediction: 0
+2025-08-20 01:19:25,907 - INFO - Final prediction result: {'question': "Free entry in 2 a wkly comp to win FA Cup final tkts 21st May 2005. Text FA to 87121 to receive entry question(std txt rate)T&C's apply 08452810075over18's spam or ham\n\n", 'inputs': {'message_tfidf_5': 0.20412414523193154, 'message_tfidf_2': 0.20412414523193154, 'message_tfidf_0': 0.20412414523193154, 'message_tfidf_6': 0.4082482904638631, 'message_tfidf_9': 0.6123724356957946, 'message_tfidf_1': 0.20412414523193154, 'message_tfidf_3': 0.20412414523193154, 'message_tfidf_4': 0.20412414523193154, 'message_tfidf_7': 0.4082482904638631, 'message_tfidf_8': 0.20412414523193154}, 'prediction_encoded': 0, 'prediction_label': np.int64(0)}
+2025-08-20 01:19:33,916 - INFO - Generated explanation for prediction
+2025-08-20 01:23:44,947 - INFO - Starting query analysis
+2025-08-20 01:23:44,951 - DEBUG - User query: Free entry in 2 a wkly comp to win FA Cup final tkts 21st May 2005. Text FA to 87121 to receive entry question(std txt rate)T&C's apply 08452810075over18's spam or ham
+
+
+2025-08-20 01:23:47,497 - INFO - Identified ML problem type: classification
+2025-08-20 01:23:47,567 - INFO - Starting dynamic data cleaning process
+2025-08-20 01:23:47,619 - INFO - Dynamic data cleaning process completed successfully
+2025-08-20 01:23:47,716 - INFO - Generating validation report...
+2025-08-20 01:23:47,746 - DEBUG - {'shape': (5157, 2), 'columns': ['category', 'message'], 'null_counts': {'category': 0, 'message': 0}, 'duplicate_rows': 0, 'dtypes': {'category': 'object', 'message': 'object'}, 'numeric_summary': {}, 'categorical_summary': {'category': {'count': 5157, 'unique': 2, 'top': 'ham', 'freq': 4516}, 'message': {'count': 5157, 'unique': 5157, 'top': 'Rofl. Its true to its name', 'freq': 1}}, 'datetime_summary': {}}
+2025-08-20 01:23:51,454 - INFO - [Routing Decision] Cleaned status = yes
+2025-08-20 01:23:51,786 - INFO - Determining target column
+2025-08-20 01:23:55,288 - INFO - Chosen target column: category
+2025-08-20 01:23:55,290 - DEBUG - Applied LabelEncoder to target column
+2025-08-20 01:23:55,323 - INFO - Detected column types: {'numeric': [], 'categorical': [], 'text': ['message'], 'datetime': [], 'boolean': []}
+2025-08-20 01:23:55,413 - INFO - Extracted features columns: ['message_tfidf_0', 'message_tfidf_1', 'message_tfidf_2', 'message_tfidf_3', 'message_tfidf_4', 'message_tfidf_5', 'message_tfidf_6', 'message_tfidf_7', 'message_tfidf_8', 'message_tfidf_9']
+2025-08-20 01:23:55,473 - INFO - Auto-selected features: ['message_tfidf_0', 'message_tfidf_1', 'message_tfidf_2', 'message_tfidf_3', 'message_tfidf_4', 'message_tfidf_5', 'message_tfidf_6', 'message_tfidf_7', 'message_tfidf_8', 'message_tfidf_9']
+2025-08-20 01:24:03,144 - INFO - Final features after LLM enhancement: ['message_tfidf_5', 'message_tfidf_2', 'message_tfidf_0', 'message_tfidf_6', 'message_tfidf_9', 'message_tfidf_1', 'message_tfidf_3', 'message_tfidf_4', 'message_tfidf_7', 'message_tfidf_8']
+2025-08-20 01:24:06,843 - INFO - Generated ML config
+2025-08-20 01:24:06,916 - INFO - Starting model fitting
+2025-08-20 01:24:08,591 - INFO - Model training completed successfully
+2025-08-20 01:24:08,665 - INFO - Computing model metrics
+2025-08-20 01:24:08,665 - DEBUG - Task type: classification
+2025-08-20 01:24:08,665 - DEBUG - Evaluation data shape: (5157, 10), (5157,)
+2025-08-20 01:24:08,708 - INFO - Metrics computed successfully: {'accuracy': 0.9071165406243941, 'precision': 0.9016454075309285, 'recall': 0.9071165406243941, 'f1-score': 0.887807823113328}
+2025-08-20 01:24:08,769 - INFO - Generating prediction from user query
+2025-08-20 01:24:08,773 - INFO - Extracted features columns: ['message_tfidf_0', 'message_tfidf_1', 'message_tfidf_2', 'message_tfidf_3', 'message_tfidf_4', 'message_tfidf_5', 'message_tfidf_6', 'message_tfidf_7', 'message_tfidf_8', 'message_tfidf_9']
+2025-08-20 01:24:08,773 - INFO - Aligned input for prediction: [{'message_tfidf_5': 0.20412414523193154, 'message_tfidf_2': 0.20412414523193154, 'message_tfidf_0': 0.20412414523193154, 'message_tfidf_6': 0.4082482904638631, 'message_tfidf_9': 0.6123724356957946, 'message_tfidf_1': 0.20412414523193154, 'message_tfidf_3': 0.20412414523193154, 'message_tfidf_4': 0.20412414523193154, 'message_tfidf_7': 0.4082482904638631, 'message_tfidf_8': 0.20412414523193154}]
+2025-08-20 01:24:08,776 - INFO - Raw prediction: 0
+2025-08-20 01:24:08,777 - INFO - Final prediction result: {'question': "Free entry in 2 a wkly comp to win FA Cup final tkts 21st May 2005. Text FA to 87121 to receive entry question(std txt rate)T&C's apply 08452810075over18's spam or ham\n\n", 'inputs': {'message_tfidf_5': 0.20412414523193154, 'message_tfidf_2': 0.20412414523193154, 'message_tfidf_0': 0.20412414523193154, 'message_tfidf_6': 0.4082482904638631, 'message_tfidf_9': 0.6123724356957946, 'message_tfidf_1': 0.20412414523193154, 'message_tfidf_3': 0.20412414523193154, 'message_tfidf_4': 0.20412414523193154, 'message_tfidf_7': 0.4082482904638631, 'message_tfidf_8': 0.20412414523193154}, 'prediction_encoded': 0, 'prediction_label': np.int64(0)}
+2025-08-20 01:29:59,485 - INFO - Starting query analysis
+2025-08-20 01:29:59,486 - DEBUG - User query: Free entry in 2 a wkly comp to win FA Cup final tkts 21st May 2005. Text FA to 87121 to receive entry question(std txt rate)T&C's apply 08452810075over18's spam or ham
+2025-08-20 01:30:03,403 - INFO - Identified ML problem type: classification
+2025-08-20 01:30:03,503 - INFO - Starting dynamic data cleaning process
+2025-08-20 01:30:03,559 - INFO - Dynamic data cleaning process completed successfully
+2025-08-20 01:30:03,630 - INFO - Generating validation report...
+2025-08-20 01:30:03,652 - DEBUG - {'shape': (5157, 2), 'columns': ['category', 'message'], 'null_counts': {'category': 0, 'message': 0}, 'duplicate_rows': 0, 'dtypes': {'category': 'object', 'message': 'object'}, 'numeric_summary': {}, 'categorical_summary': {'category': {'count': 5157, 'unique': 2, 'top': 'ham', 'freq': 4516}, 'message': {'count': 5157, 'unique': 5157, 'top': 'Rofl. Its true to its name', 'freq': 1}}, 'datetime_summary': {}}
+2025-08-20 01:30:09,132 - INFO - [Routing Decision] Cleaned status = yes
+2025-08-20 01:30:09,185 - INFO - Determining target column
+2025-08-20 01:30:11,037 - INFO - Chosen target column: category
+2025-08-20 01:30:11,039 - INFO - Applied LabelEncoder to target column. Mapping: {'ham': np.int64(0), 'spam': np.int64(1)}
+2025-08-20 01:30:11,075 - INFO - Detected column types: {'numeric': [], 'categorical': [], 'text': ['message'], 'datetime': [], 'boolean': []}
+2025-08-20 01:30:11,160 - INFO - Extracted features columns: ['message_tfidf_0', 'message_tfidf_1', 'message_tfidf_2', 'message_tfidf_3', 'message_tfidf_4', 'message_tfidf_5', 'message_tfidf_6', 'message_tfidf_7', 'message_tfidf_8', 'message_tfidf_9']
+2025-08-20 01:30:11,202 - INFO - Auto-selected features: ['message_tfidf_0', 'message_tfidf_1', 'message_tfidf_2', 'message_tfidf_3', 'message_tfidf_4', 'message_tfidf_5', 'message_tfidf_6', 'message_tfidf_7', 'message_tfidf_8', 'message_tfidf_9']
+2025-08-20 01:30:14,253 - INFO - Final features after LLM enhancement: ['message_tfidf_5', 'message_tfidf_2', 'message_tfidf_0', 'message_tfidf_6', 'message_tfidf_9', 'message_tfidf_1', 'message_tfidf_3', 'message_tfidf_4', 'message_tfidf_7', 'message_tfidf_8']
+2025-08-20 01:30:18,435 - INFO - Generated ML config
+2025-08-20 01:30:18,487 - INFO - Starting model fitting
+2025-08-20 01:30:20,520 - INFO - Model training completed successfully
+2025-08-20 01:30:20,593 - INFO - Computing model metrics
+2025-08-20 01:30:20,594 - DEBUG - Task type: classification
+2025-08-20 01:30:20,595 - DEBUG - Evaluation data shape: (5157, 10), (5157,)
+2025-08-20 01:30:20,599 - INFO - Metrics computed successfully: {'accuracy': 0.8786115958890828, 'precision': 0.8495136268534016, 'recall': 0.8786115958890828, 'f1-score': 0.8321277524825444}
+2025-08-20 01:30:20,665 - INFO - Generating prediction from user query
+2025-08-20 01:30:29,284 - INFO - Parsed input from query: {'message_tfidf_5': None, 'message_tfidf_2': None, 'message_tfidf_0': None, 'message_tfidf_6': None, 'message_tfidf_9': None, 'message_tfidf_1': None, 'message_tfidf_3': None, 'message_tfidf_4': None, 'message_tfidf_7': None, 'message_tfidf_8': None}
+2025-08-20 01:30:29,287 - INFO - Extracted features columns: []
+2025-08-20 01:30:29,295 - INFO - Aligned input for prediction: [{'message_tfidf_5': 0, 'message_tfidf_2': 0, 'message_tfidf_0': 0, 'message_tfidf_6': 0, 'message_tfidf_9': 0, 'message_tfidf_1': 0, 'message_tfidf_3': 0, 'message_tfidf_4': 0, 'message_tfidf_7': 0, 'message_tfidf_8': 0}]
+2025-08-20 01:30:29,330 - INFO - Raw prediction: 0
+2025-08-20 01:30:29,331 - INFO - Final prediction result: {'question': "Free entry in 2 a wkly comp to win FA Cup final tkts 21st May 2005. Text FA to 87121 to receive entry question(std txt rate)T&C's apply 08452810075over18's spam or ham", 'inputs': {'message_tfidf_5': None, 'message_tfidf_2': None, 'message_tfidf_0': None, 'message_tfidf_6': None, 'message_tfidf_9': None, 'message_tfidf_1': None, 'message_tfidf_3': None, 'message_tfidf_4': None, 'message_tfidf_7': None, 'message_tfidf_8': None}, 'prediction_encoded': 0, 'prediction_label': np.int64(0), 'label_mapping': None}
+2025-08-20 01:30:41,003 - INFO - Generated explanation for prediction
+2025-08-20 01:34:24,232 - INFO - Starting query analysis
+2025-08-20 01:34:24,235 - DEBUG - User query: Free entry in 2 a wkly comp to win FA Cup final tkts 21st May 2005. Text FA to 87121 to receive entry question(std txt rate)T&C's apply 08452810075over18's spam or ham
+
+
+2025-08-20 01:34:26,030 - INFO - Identified ML problem type: classification
+2025-08-20 01:34:26,100 - INFO - Starting dynamic data cleaning process
+2025-08-20 01:34:26,161 - INFO - Dynamic data cleaning process completed successfully
+2025-08-20 01:34:26,245 - INFO - Generating validation report...
+2025-08-20 01:34:26,269 - DEBUG - {'shape': (5157, 2), 'columns': ['category', 'message'], 'null_counts': {'category': 0, 'message': 0}, 'duplicate_rows': 0, 'dtypes': {'category': 'object', 'message': 'object'}, 'numeric_summary': {}, 'categorical_summary': {'category': {'count': 5157, 'unique': 2, 'top': 'ham', 'freq': 4516}, 'message': {'count': 5157, 'unique': 5157, 'top': 'Rofl. Its true to its name', 'freq': 1}}, 'datetime_summary': {}}
+2025-08-20 01:34:29,547 - INFO - [Routing Decision] Cleaned status = yes
+2025-08-20 01:34:29,844 - INFO - Determining target column
+2025-08-20 01:34:31,170 - INFO - Chosen target column: category
+2025-08-20 01:34:31,174 - INFO - Applied LabelEncoder to target column. Mapping: {'ham': np.int64(0), 'spam': np.int64(1)}
+2025-08-20 01:34:31,287 - INFO - Detected column types: {'numeric': [], 'categorical': [], 'text': ['message'], 'datetime': [], 'boolean': []}
+2025-08-20 01:34:31,529 - INFO - Extracted features columns: ['message_tfidf_0', 'message_tfidf_1', 'message_tfidf_2', 'message_tfidf_3', 'message_tfidf_4', 'message_tfidf_5', 'message_tfidf_6', 'message_tfidf_7', 'message_tfidf_8', 'message_tfidf_9']
+2025-08-20 01:34:31,697 - INFO - Auto-selected features: ['message_tfidf_0', 'message_tfidf_1', 'message_tfidf_2', 'message_tfidf_3', 'message_tfidf_4', 'message_tfidf_5', 'message_tfidf_6', 'message_tfidf_7', 'message_tfidf_8', 'message_tfidf_9']
+2025-08-20 01:34:33,944 - INFO - Final features after LLM enhancement: ['message_tfidf_5', 'message_tfidf_2', 'message_tfidf_0', 'message_tfidf_6', 'message_tfidf_9', 'message_tfidf_1', 'message_tfidf_3', 'message_tfidf_4', 'message_tfidf_7', 'message_tfidf_8']
+2025-08-20 01:34:38,122 - INFO - Generated ML config
+2025-08-20 01:34:38,185 - INFO - Starting model fitting
+2025-08-20 01:34:39,770 - INFO - Model training completed successfully
+2025-08-20 01:34:39,834 - INFO - Computing model metrics
+2025-08-20 01:34:39,834 - DEBUG - Task type: classification
+2025-08-20 01:34:39,834 - DEBUG - Evaluation data shape: (5157, 10), (5157,)
+2025-08-20 01:34:39,876 - INFO - Metrics computed successfully: {'accuracy': 0.9071165406243941, 'precision': 0.9016454075309285, 'recall': 0.9071165406243941, 'f1-score': 0.887807823113328}
+2025-08-20 01:34:39,949 - INFO - Generating prediction from user query
+2025-08-20 01:34:49,059 - INFO - Parsed input from query: {'message_tfidf_5': None, 'message_tfidf_2': None, 'message_tfidf_0': None, 'message_tfidf_6': None, 'message_tfidf_9': None, 'message_tfidf_1': None, 'message_tfidf_3': None, 'message_tfidf_4': None, 'message_tfidf_7': None, 'message_tfidf_8': None}
+2025-08-20 01:34:49,063 - INFO - Extracted features columns: []
+2025-08-20 01:34:49,067 - INFO - Aligned input for prediction: [{'message_tfidf_5': 0, 'message_tfidf_2': 0, 'message_tfidf_0': 0, 'message_tfidf_6': 0, 'message_tfidf_9': 0, 'message_tfidf_1': 0, 'message_tfidf_3': 0, 'message_tfidf_4': 0, 'message_tfidf_7': 0, 'message_tfidf_8': 0}]
+2025-08-20 01:34:49,093 - INFO - Raw prediction: 0
+2025-08-20 01:34:49,093 - INFO - Final prediction result: {'question': "Free entry in 2 a wkly comp to win FA Cup final tkts 21st May 2005. Text FA to 87121 to receive entry question(std txt rate)T&C's apply 08452810075over18's spam or ham\n\n", 'inputs': {'message_tfidf_5': None, 'message_tfidf_2': None, 'message_tfidf_0': None, 'message_tfidf_6': None, 'message_tfidf_9': None, 'message_tfidf_1': None, 'message_tfidf_3': None, 'message_tfidf_4': None, 'message_tfidf_7': None, 'message_tfidf_8': None}, 'prediction_encoded': 0, 'prediction_label': np.int64(0), 'label_mapping': None}
+2025-08-20 01:34:56,371 - INFO - Generated explanation for prediction
+2025-08-20 01:36:51,742 - INFO - Starting query analysis
+2025-08-20 01:36:51,742 - DEBUG - User query: Free entry in 2 a wkly comp to win FA Cup final tkts 21st May 2005. Text FA to 87121 to receive entry question(std txt rate)T&C's apply 08452810075over18's spam or ham
+
+
+2025-08-20 01:36:54,101 - INFO - Identified ML problem type: classification
+2025-08-20 01:36:54,170 - INFO - Starting dynamic data cleaning process
+2025-08-20 01:36:54,217 - INFO - Dynamic data cleaning process completed successfully
+2025-08-20 01:36:54,298 - INFO - Generating validation report...
+2025-08-20 01:36:54,336 - DEBUG - {'shape': (5157, 2), 'columns': ['category', 'message'], 'null_counts': {'category': 0, 'message': 0}, 'duplicate_rows': 0, 'dtypes': {'category': 'object', 'message': 'object'}, 'numeric_summary': {}, 'categorical_summary': {'category': {'count': 5157, 'unique': 2, 'top': 'ham', 'freq': 4516}, 'message': {'count': 5157, 'unique': 5157, 'top': 'Rofl. Its true to its name', 'freq': 1}}, 'datetime_summary': {}}
+2025-08-20 01:36:57,848 - INFO - [Routing Decision] Cleaned status = yes
+2025-08-20 01:36:57,999 - INFO - Determining target column
+2025-08-20 01:37:00,530 - INFO - Chosen target column: category
+2025-08-20 01:37:00,533 - INFO - Applied LabelEncoder to target column. Mapping: {'ham': np.int64(0), 'spam': np.int64(1)}
+2025-08-20 01:37:00,672 - INFO - Detected column types: {'numeric': [], 'categorical': [], 'text': ['message'], 'datetime': [], 'boolean': []}
+2025-08-20 01:37:00,949 - INFO - Extracted features columns: ['message_tfidf_0', 'message_tfidf_1', 'message_tfidf_2', 'message_tfidf_3', 'message_tfidf_4', 'message_tfidf_5', 'message_tfidf_6', 'message_tfidf_7', 'message_tfidf_8', 'message_tfidf_9']
+2025-08-20 01:37:01,116 - INFO - Auto-selected features: ['message_tfidf_0', 'message_tfidf_1', 'message_tfidf_2', 'message_tfidf_3', 'message_tfidf_4', 'message_tfidf_5', 'message_tfidf_6', 'message_tfidf_7', 'message_tfidf_8', 'message_tfidf_9']
+2025-08-20 01:37:03,216 - INFO - Final features after LLM enhancement: ['message_tfidf_5', 'message_tfidf_2', 'message_tfidf_0', 'message_tfidf_6', 'message_tfidf_9', 'message_tfidf_1', 'message_tfidf_3', 'message_tfidf_4', 'message_tfidf_7', 'message_tfidf_8']
+2025-08-20 01:37:09,253 - INFO - Generated ML config
+2025-08-20 01:37:09,682 - INFO - Starting model fitting
+2025-08-20 01:37:14,621 - INFO - Model training completed successfully
+2025-08-20 01:37:14,693 - INFO - Computing model metrics
+2025-08-20 01:37:14,694 - DEBUG - Task type: classification
+2025-08-20 01:37:14,694 - DEBUG - Evaluation data shape: (5157, 10), (5157,)
+2025-08-20 01:37:14,734 - INFO - Metrics computed successfully: {'accuracy': 0.9071165406243941, 'precision': 0.9016454075309285, 'recall': 0.9071165406243941, 'f1-score': 0.887807823113328}
+2025-08-20 01:37:14,795 - INFO - Generating prediction from user query
+2025-08-20 01:37:29,339 - INFO - Parsed input from query: {'message_tfidf_5': None, 'message_tfidf_2': None, 'message_tfidf_0': None, 'message_tfidf_6': None, 'message_tfidf_9': None, 'message_tfidf_1': None, 'message_tfidf_3': None, 'message_tfidf_4': None, 'message_tfidf_7': None, 'message_tfidf_8': None}
+2025-08-20 01:37:29,342 - INFO - Extracted features columns: []
+2025-08-20 01:37:29,342 - INFO - Aligned input for prediction: [{'message_tfidf_5': 0, 'message_tfidf_2': 0, 'message_tfidf_0': 0, 'message_tfidf_6': 0, 'message_tfidf_9': 0, 'message_tfidf_1': 0, 'message_tfidf_3': 0, 'message_tfidf_4': 0, 'message_tfidf_7': 0, 'message_tfidf_8': 0}]
+2025-08-20 01:37:29,349 - INFO - Raw prediction: 0
+2025-08-20 01:37:29,349 - INFO - Final prediction result: {'question': "Free entry in 2 a wkly comp to win FA Cup final tkts 21st May 2005. Text FA to 87121 to receive entry question(std txt rate)T&C's apply 08452810075over18's spam or ham\n\n", 'inputs': {'message_tfidf_5': None, 'message_tfidf_2': None, 'message_tfidf_0': None, 'message_tfidf_6': None, 'message_tfidf_9': None, 'message_tfidf_1': None, 'message_tfidf_3': None, 'message_tfidf_4': None, 'message_tfidf_7': None, 'message_tfidf_8': None}, 'prediction_encoded': 0, 'prediction_label': np.int64(0), 'label_mapping': None}
+2025-08-20 01:37:38,177 - INFO - Generated explanation for prediction
+2025-08-20 01:39:01,513 - INFO - Starting query analysis
+2025-08-20 01:39:01,514 - DEBUG - User query: Free entry in 2 a wkly comp to win FA Cup final tkts 21st May 2005. Text FA to 87121 to receive entry question(std txt rate)T&C's apply 08452810075over18's spam or ham
+
+
+2025-08-20 01:39:04,525 - INFO - Identified ML problem type: classification
+2025-08-20 01:39:04,585 - INFO - Starting dynamic data cleaning process
+2025-08-20 01:39:04,652 - INFO - Dynamic data cleaning process completed successfully
+2025-08-20 01:39:04,735 - INFO - Generating validation report...
+2025-08-20 01:39:04,759 - DEBUG - {'shape': (5157, 2), 'columns': ['category', 'message'], 'null_counts': {'category': 0, 'message': 0}, 'duplicate_rows': 0, 'dtypes': {'category': 'object', 'message': 'object'}, 'numeric_summary': {}, 'categorical_summary': {'category': {'count': 5157, 'unique': 2, 'top': 'ham', 'freq': 4516}, 'message': {'count': 5157, 'unique': 5157, 'top': 'Rofl. Its true to its name', 'freq': 1}}, 'datetime_summary': {}}
+2025-08-20 01:39:08,189 - INFO - [Routing Decision] Cleaned status = yes
+2025-08-20 01:39:08,316 - INFO - Determining target column
+2025-08-20 01:39:10,291 - INFO - Chosen target column: category
+2025-08-20 01:39:10,296 - INFO - Applied LabelEncoder to target column. Mapping: {'ham': np.int64(0), 'spam': np.int64(1)}
+2025-08-20 01:39:10,427 - INFO - Detected column types: {'numeric': [], 'categorical': [], 'text': ['message'], 'datetime': [], 'boolean': []}
+2025-08-20 01:39:10,681 - INFO - Extracted features columns: ['message_tfidf_0', 'message_tfidf_1', 'message_tfidf_2', 'message_tfidf_3', 'message_tfidf_4', 'message_tfidf_5', 'message_tfidf_6', 'message_tfidf_7', 'message_tfidf_8', 'message_tfidf_9']
+2025-08-20 01:39:10,841 - INFO - Auto-selected features: ['message_tfidf_0', 'message_tfidf_1', 'message_tfidf_2', 'message_tfidf_3', 'message_tfidf_4', 'message_tfidf_5', 'message_tfidf_6', 'message_tfidf_7', 'message_tfidf_8', 'message_tfidf_9']
+2025-08-20 01:39:13,059 - INFO - Final features after LLM enhancement: ['message_tfidf_5', 'message_tfidf_2', 'message_tfidf_0', 'message_tfidf_6', 'message_tfidf_9', 'message_tfidf_1', 'message_tfidf_3', 'message_tfidf_4', 'message_tfidf_7', 'message_tfidf_8']
+2025-08-20 01:39:17,525 - INFO - Generated ML config
+2025-08-20 01:39:17,761 - INFO - Starting model fitting
+2025-08-20 01:39:20,076 - INFO - Model training completed successfully
+2025-08-20 01:39:20,301 - INFO - Computing model metrics
+2025-08-20 01:39:20,307 - DEBUG - Task type: classification
+2025-08-20 01:39:20,307 - DEBUG - Evaluation data shape: (5157, 10), (5157,)
+2025-08-20 01:39:20,417 - INFO - Metrics computed successfully: {'accuracy': 0.9071165406243941, 'precision': 0.9016454075309285, 'recall': 0.9071165406243941, 'f1-score': 0.887807823113328}
+2025-08-20 01:39:20,633 - INFO - Generating prediction from user query
+2025-08-20 01:39:36,010 - INFO - Parsed input from query: {'message_tfidf_5': None, 'message_tfidf_2': None, 'message_tfidf_0': None, 'message_tfidf_6': None, 'message_tfidf_9': None, 'message_tfidf_1': None, 'message_tfidf_3': None, 'message_tfidf_4': None, 'message_tfidf_7': None, 'message_tfidf_8': None}
+2025-08-20 01:39:36,014 - INFO - Extracted features columns: []
+2025-08-20 01:39:36,022 - INFO - Aligned input for prediction: [{'message_tfidf_5': 0, 'message_tfidf_2': 0, 'message_tfidf_0': 0, 'message_tfidf_6': 0, 'message_tfidf_9': 0, 'message_tfidf_1': 0, 'message_tfidf_3': 0, 'message_tfidf_4': 0, 'message_tfidf_7': 0, 'message_tfidf_8': 0}]
+2025-08-20 01:39:36,040 - INFO - Raw prediction: 0
+2025-08-20 01:39:36,041 - INFO - Final prediction result: {'question': "Free entry in 2 a wkly comp to win FA Cup final tkts 21st May 2005. Text FA to 87121 to receive entry question(std txt rate)T&C's apply 08452810075over18's spam or ham\n\n", 'inputs': {'message_tfidf_5': None, 'message_tfidf_2': None, 'message_tfidf_0': None, 'message_tfidf_6': None, 'message_tfidf_9': None, 'message_tfidf_1': None, 'message_tfidf_3': None, 'message_tfidf_4': None, 'message_tfidf_7': None, 'message_tfidf_8': None}, 'prediction_encoded': 0, 'prediction_label': np.int64(0), 'label_mapping': None}
+2025-08-20 01:39:45,034 - INFO - Generated explanation for prediction
+2025-08-20 01:41:04,839 - INFO - Starting query analysis
+2025-08-20 01:41:04,842 - DEBUG - User query: what is quality if density is 0.99 , ph is 3.51 , sulphates is 0.56 and alcohol is 9.4 chlorides is 0.076 
+2025-08-20 01:41:07,405 - INFO - Identified ML problem type: regression
+2025-08-20 01:41:07,541 - INFO - Starting dynamic data cleaning process
+2025-08-20 01:41:07,621 - INFO - Dynamic data cleaning process completed successfully
+2025-08-20 01:41:07,698 - INFO - Generating validation report...
+2025-08-20 01:41:07,754 - DEBUG - {'shape': (1359, 12), 'columns': ['fixed_acidity', 'volatile_acidity', 'citric_acid', 'residual_sugar', 'chlorides', 'free_sulfur_dioxide', 'total_sulfur_dioxide', 'density', 'ph', 'sulphates', 'alcohol', 'quality'], 'null_counts': {'fixed_acidity': 0, 'volatile_acidity': 0, 'citric_acid': 0, 'residual_sugar': 0, 'chlorides': 0, 'free_sulfur_dioxide': 0, 'total_sulfur_dioxide': 0, 'density': 0, 'ph': 0, 'sulphates': 0, 'alcohol': 0, 'quality': 0}, 'duplicate_rows': 3, 'dtypes': {'fixed_acidity': 'float64', 'volatile_acidity': 'float64', 'citric_acid': 'float64', 'residual_sugar': 'float64', 'chlorides': 'float64', 'free_sulfur_dioxide': 'float64', 'total_sulfur_dioxide': 'float64', 'density': 'float64', 'ph': 'float64', 'sulphates': 'float64', 'alcohol': 'float64', 'quality': 'float64'}, 'numeric_summary': {'fixed_acidity': {'count': 1359.0, 'mean': 8.284069168506255, 'std': 1.6583185225292498, 'min': 4.6, '25%': 7.1, '50%': 7.9, '75%': 9.2, 'max': 12.349999999999998}, 'volatile_acidity': {'count': 1359.0, 'mean': 0.5278403237674761, 'std': 0.1772616039982449, 'min': 0.12, '25%': 0.39, '50%': 0.52, '75%': 0.64, 'max': 1.0150000000000001}, 'citric_acid': {'count': 1359.0, 'mean': 0.2722884473877851, 'std': 0.1953788339470516, 'min': 0.0, '25%': 0.09, '50%': 0.26, '75%': 0.43, 'max': 0.94}, 'residual_sugar': {'count': 1359.0, 'mean': 2.3240986019131715, 'std': 0.6075575033466872, 'min': 0.9, '25%': 1.9, '50%': 2.2, '75%': 2.6, 'max': 3.6500000000000004}, 'chlorides': {'count': 1359.0, 'mean': 0.08132339955849889, 'std': 0.018485806677633974, 'min': 0.03850000000000002, '25%': 0.07, '50%': 0.079, '75%': 0.091, 'max': 0.12249999999999998}, 'free_sulfur_dioxide': {'count': 1359.0, 'mean': 15.71449595290655, 'std': 9.852641236969099, 'min': 1.0, '25%': 7.0, '50%': 14.0, '75%': 21.0, 'max': 42.0}, 'total_sulfur_dioxide': {'count': 1359.0, 'mean': 46.09271523178808, 'std': 30.877994245593804, 'min': 6.0, '25%': 22.0, '50%': 38.0, '75%': 63.0, 'max': 124.5}, 'density': {'count': 1359.0, 'mean': 0.9967065783664459, 'std': 0.001797558315588415, 'min': 0.99227, '25%': 0.9956, '50%': 0.9967, '75%': 0.99782, 'max': 1.00115}, 'ph': {'count': 1359.0, 'mean': 3.3088888888888888, 'std': 0.14998164399767763, 'min': 2.925, '25%': 3.21, '50%': 3.31, '75%': 3.4, 'max': 3.6849999999999996}, 'sulphates': {'count': 1359.0, 'mean': 0.649963208241354, 'std': 0.13740306037995, 'min': 0.33, '25%': 0.55, '50%': 0.62, '75%': 0.73, 'max': 0.9999999999999999}, 'alcohol': {'count': 1359.0, 'mean': 10.428734363502576, 'std': 1.0706469447839977, 'min': 8.4, '25%': 9.5, '50%': 10.2, '75%': 11.1, 'max': 13.5}, 'quality': {'count': 1359.0, 'mean': 5.620676968359088, 'std': 0.7963507421717632, 'min': 3.5, '25%': 5.0, '50%': 6.0, '75%': 6.0, 'max': 7.5}}, 'categorical_summary': {}, 'datetime_summary': {}}
+2025-08-20 01:41:11,270 - INFO - [Routing Decision] Cleaned status = no
+2025-08-20 01:41:14,115 - DEBUG - Executing smart cleaner code:
+2025-08-20 01:41:14,115 - INFO - Smart data cleaning executed successfully
+2025-08-20 01:41:14,169 - INFO - Determining target column
+2025-08-20 01:41:15,027 - INFO - Chosen target column: quality
+2025-08-20 01:41:15,049 - INFO - Detected column types: {'numeric': ['fixed_acidity', 'volatile_acidity', 'citric_acid', 'residual_sugar', 'chlorides', 'free_sulfur_dioxide', 'total_sulfur_dioxide', 'density', 'ph', 'sulphates', 'alcohol'], 'categorical': [], 'text': [], 'datetime': [], 'boolean': []}
+2025-08-20 01:41:15,079 - INFO - Extracted features columns: ['fixed_acidity', 'volatile_acidity', 'citric_acid', 'residual_sugar', 'chlorides', 'free_sulfur_dioxide', 'total_sulfur_dioxide', 'density', 'ph', 'sulphates', 'alcohol']
+2025-08-20 01:41:15,110 - INFO - Auto-selected features: ['fixed_acidity', 'volatile_acidity', 'citric_acid', 'residual_sugar', 'chlorides', 'free_sulfur_dioxide', 'total_sulfur_dioxide', 'density', 'ph', 'sulphates', 'alcohol']
+2025-08-20 01:41:16,973 - INFO - Final features after LLM enhancement: ['residual_sugar', 'total_sulfur_dioxide', 'citric_acid', 'fixed_acidity', 'ph', 'sulphates', 'volatile_acidity', 'chlorides', 'density', 'alcohol', 'free_sulfur_dioxide']
+2025-08-20 01:41:20,228 - INFO - Generated ML config
+2025-08-20 01:41:20,263 - INFO - Starting model fitting
+2025-08-20 01:41:22,220 - INFO - Model training completed successfully
+2025-08-20 01:41:22,246 - INFO - Computing model metrics
+2025-08-20 01:41:22,247 - DEBUG - Task type: regression
+2025-08-20 01:41:22,247 - DEBUG - Evaluation data shape: (1356, 11), (1356,)
+2025-08-20 01:41:22,262 - INFO - Metrics computed successfully: {'MAE': 0.17954646017699114, 'MSE': 0.053567754424778756, 'RMSE': np.float64(0.2314470877431357), 'R2': 0.9152431995088256}
+2025-08-20 01:41:22,288 - INFO - Generating prediction from user query
+2025-08-20 01:41:24,624 - INFO - Parsed input from query: {'residual_sugar': None, 'total_sulfur_dioxide': None, 'citric_acid': None, 'fixed_acidity': None, 'ph': 3.51, 'sulphates': 0.56, 'volatile_acidity': None, 'chlorides': 0.076, 'density': 0.99, 'alcohol': 9.4, 'free_sulfur_dioxide': None}
+2025-08-20 01:41:24,630 - INFO - Extracted features columns: ['residual_sugar', 'total_sulfur_dioxide', 'citric_acid', 'fixed_acidity', 'ph', 'sulphates', 'volatile_acidity', 'chlorides', 'density', 'alcohol', 'free_sulfur_dioxide']
+2025-08-20 01:41:24,632 - INFO - Aligned input for prediction: [{'residual_sugar': None, 'total_sulfur_dioxide': None, 'citric_acid': None, 'fixed_acidity': None, 'ph': 3.51, 'sulphates': 0.56, 'volatile_acidity': None, 'chlorides': 0.076, 'density': 0.99, 'alcohol': 9.4, 'free_sulfur_dioxide': None}]
+2025-08-20 01:41:24,646 - INFO - Raw prediction: 5.24
+2025-08-20 01:41:24,650 - INFO - Final prediction result: {'question': 'what is quality if density is 0.99 , ph is 3.51 , sulphates is 0.56 and alcohol is 9.4 chlorides is 0.076 ', 'inputs': {'residual_sugar': None, 'total_sulfur_dioxide': None, 'citric_acid': None, 'fixed_acidity': None, 'ph': 3.51, 'sulphates': 0.56, 'volatile_acidity': None, 'chlorides': 0.076, 'density': 0.99, 'alcohol': 9.4, 'free_sulfur_dioxide': None}, 'prediction': 5.24}
+2025-08-20 01:41:33,865 - INFO - Generated explanation for prediction
+2025-08-20 01:54:38,452 - INFO - Starting query analysis
+2025-08-20 01:54:39,987 - INFO - Identified ML problem type: classification
+2025-08-20 01:54:40,036 - INFO - Starting dynamic data cleaning process
+2025-08-20 01:54:40,085 - INFO - Dynamic data cleaning process completed successfully
+2025-08-20 01:54:40,161 - INFO - Generating validation report...
+2025-08-20 01:54:40,183 - DEBUG - {'shape': (5157, 2), 'columns': ['category', 'message'], 'null_counts': {'category': 0, 'message': 0}, 'duplicate_rows': 0, 'dtypes': {'category': 'object', 'message': 'object'}, 'numeric_summary': {}, 'categorical_summary': {'category': {'count': 5157, 'unique': 2, 'top': 'ham', 'freq': 4516}, 'message': {'count': 5157, 'unique': 5157, 'top': 'Rofl. Its true to its name', 'freq': 1}}, 'datetime_summary': {}}
+2025-08-20 01:54:43,609 - INFO - [Routing Decision] Cleaned status = yes
+2025-08-20 01:54:43,762 - INFO - Determining target column
+2025-08-20 01:54:45,735 - INFO - Chosen target column: category
+2025-08-20 01:54:45,738 - INFO - Applied LabelEncoder to target column. Mapping: {'ham': np.int64(0), 'spam': np.int64(1)}
+2025-08-20 01:54:45,850 - INFO - Detected column types: {'numeric': [], 'categorical': [], 'text': ['message'], 'datetime': [], 'boolean': []}
+2025-08-20 01:54:46,415 - INFO - Extracted features columns: ['message_tfidf_0', 'message_tfidf_1', 'message_tfidf_2', 'message_tfidf_3', 'message_tfidf_4', 'message_tfidf_5', 'message_tfidf_6', 'message_tfidf_7', 'message_tfidf_8', 'message_tfidf_9']
+2025-08-20 01:54:50,902 - INFO - Final features after LLM enhancement: ['message_tfidf_5', 'message_tfidf_2', 'message_tfidf_0', 'message_tfidf_6', 'message_tfidf_9', 'message_tfidf_1', 'message_tfidf_3', 'message_tfidf_4', 'message_tfidf_7', 'message_tfidf_8']
+2025-08-20 01:54:54,617 - INFO - Generated ML config
+2025-08-20 01:54:54,719 - INFO - Starting model fitting
+2025-08-20 01:54:56,486 - INFO - Model training completed successfully
+2025-08-20 01:54:56,574 - INFO - Computing model metrics
+2025-08-20 01:54:56,575 - DEBUG - Task type: classification
+2025-08-20 01:54:56,575 - DEBUG - Evaluation data shape: (5157, 10), (5157,)
+2025-08-20 01:54:56,638 - INFO - Metrics computed successfully: {'accuracy': 0.9071165406243941, 'precision': 0.9016454075309285, 'recall': 0.9071165406243941, 'f1-score': 0.887807823113328}
+2025-08-20 01:54:56,735 - INFO - Generating prediction from user query
+2025-08-20 01:54:56,740 - INFO - Extracted features columns: ['message_tfidf_0', 'message_tfidf_1', 'message_tfidf_2', 'message_tfidf_3', 'message_tfidf_4', 'message_tfidf_5', 'message_tfidf_6', 'message_tfidf_7', 'message_tfidf_8', 'message_tfidf_9']
+2025-08-20 01:54:56,743 - INFO - Aligned input for prediction: [{'message_tfidf_5': 0.20412414523193154, 'message_tfidf_2': 0.20412414523193154, 'message_tfidf_0': 0.20412414523193154, 'message_tfidf_6': 0.4082482904638631, 'message_tfidf_9': 0.6123724356957946, 'message_tfidf_1': 0.20412414523193154, 'message_tfidf_3': 0.20412414523193154, 'message_tfidf_4': 0.20412414523193154, 'message_tfidf_7': 0.4082482904638631, 'message_tfidf_8': 0.20412414523193154}]
+2025-08-20 01:54:56,751 - INFO - Raw prediction: 0
+2025-08-20 01:54:56,751 - INFO - Final prediction result: {'question': "Free entry in 2 a wkly comp to win FA Cup final tkts 21st May 2005. Text FA to 87121 to receive entry question(std txt rate)T&C's apply 08452810075over18's spam or ham", 'inputs': {'message': "Free entry in 2 a wkly comp to win FA Cup final tkts 21st May 2005. Text FA to 87121 to receive entry question(std txt rate)T&C's apply 08452810075over18's spam or ham"}, 'prediction_encoded': 0, 'prediction_label': np.int64(0), 'label_mapping': None}
+2025-08-20 01:55:06,443 - INFO - Generated explanation for prediction
+2025-08-20 01:57:35,393 - INFO - Starting query analysis
+2025-08-20 01:57:36,687 - INFO - Identified ML problem type: classification
+2025-08-20 01:57:36,773 - INFO - Starting dynamic data cleaning process
+2025-08-20 01:57:36,936 - INFO - Dynamic data cleaning process completed successfully
+2025-08-20 01:57:37,152 - INFO - Generating validation report...
+2025-08-20 01:57:37,179 - DEBUG - {'shape': (5157, 2), 'columns': ['category', 'message'], 'null_counts': {'category': 0, 'message': 0}, 'duplicate_rows': 0, 'dtypes': {'category': 'object', 'message': 'object'}, 'numeric_summary': {}, 'categorical_summary': {'category': {'count': 5157, 'unique': 2, 'top': 'ham', 'freq': 4516}, 'message': {'count': 5157, 'unique': 5157, 'top': 'Rofl. Its true to its name', 'freq': 1}}, 'datetime_summary': {}}
+2025-08-20 01:57:40,545 - INFO - [Routing Decision] Cleaned status = yes
+2025-08-20 01:57:40,640 - INFO - Determining target column
+2025-08-20 01:57:41,875 - INFO - Chosen target column: category
+2025-08-20 01:57:41,880 - INFO - Applied LabelEncoder to target column. Mapping: {'ham': np.int64(0), 'spam': np.int64(1)}
+2025-08-20 01:57:41,992 - INFO - Detected column types: {'numeric': [], 'categorical': [], 'text': ['message'], 'datetime': [], 'boolean': []}
+2025-08-20 01:57:42,256 - INFO - Extracted features columns: ['message_tfidf_0', 'message_tfidf_1', 'message_tfidf_2', 'message_tfidf_3', 'message_tfidf_4', 'message_tfidf_5', 'message_tfidf_6', 'message_tfidf_7', 'message_tfidf_8', 'message_tfidf_9']
+2025-08-20 01:57:44,353 - INFO - Final features after LLM enhancement: ['message_tfidf_5', 'message_tfidf_2', 'message_tfidf_0', 'message_tfidf_6', 'message_tfidf_9', 'message_tfidf_1', 'message_tfidf_3', 'message_tfidf_4', 'message_tfidf_7', 'message_tfidf_8']
+2025-08-20 01:57:48,047 - INFO - Generated ML config
+2025-08-20 01:57:48,354 - INFO - Starting model fitting
+2025-08-20 01:57:49,715 - INFO - Model training completed successfully
+2025-08-20 01:57:49,930 - INFO - Computing model metrics
+2025-08-20 01:57:49,932 - DEBUG - Task type: classification
+2025-08-20 01:57:49,932 - DEBUG - Evaluation data shape: (5157, 10), (5157,)
+2025-08-20 01:57:49,953 - INFO - Metrics computed successfully: {'accuracy': 0.8786115958890828, 'precision': 0.8495136268534016, 'recall': 0.8786115958890828, 'f1-score': 0.8321277524825444}
+2025-08-20 01:57:50,198 - INFO - Generating prediction from user query
+2025-08-20 01:57:50,204 - INFO - Extracted features columns: ['message_tfidf_0', 'message_tfidf_1', 'message_tfidf_2', 'message_tfidf_3', 'message_tfidf_4']
+2025-08-20 01:57:50,208 - INFO - Aligned input for prediction: [{'message_tfidf_5': 0, 'message_tfidf_2': 0.4472135954999579, 'message_tfidf_0': 0.4472135954999579, 'message_tfidf_6': 0, 'message_tfidf_9': 0, 'message_tfidf_1': 0.4472135954999579, 'message_tfidf_3': 0.4472135954999579, 'message_tfidf_4': 0.4472135954999579, 'message_tfidf_7': 0, 'message_tfidf_8': 0}]
+2025-08-20 01:57:50,214 - INFO - Raw prediction: 0
+2025-08-20 01:57:50,214 - INFO - Final prediction result: {'question': 'win a lottery spam or ham', 'inputs': {'message': 'win a lottery spam or ham'}, 'prediction_encoded': 0, 'prediction_label': np.int64(0), 'label_mapping': None}
+2025-08-20 01:58:00,049 - INFO - Generated explanation for prediction
+2025-08-20 02:00:00,555 - INFO - Starting query analysis
+2025-08-20 02:00:02,548 - INFO - Identified ML problem type: classification
+2025-08-20 02:00:02,603 - INFO - Starting dynamic data cleaning process
+2025-08-20 02:00:02,654 - INFO - Dynamic data cleaning process completed successfully
+2025-08-20 02:00:02,745 - INFO - Generating validation report...
+2025-08-20 02:00:02,790 - DEBUG - {'shape': (5157, 2), 'columns': ['category', 'message'], 'null_counts': {'category': 0, 'message': 0}, 'duplicate_rows': 0, 'dtypes': {'category': 'object', 'message': 'object'}, 'numeric_summary': {}, 'categorical_summary': {'category': {'count': 5157, 'unique': 2, 'top': 'ham', 'freq': 4516}, 'message': {'count': 5157, 'unique': 5157, 'top': 'Rofl. Its true to its name', 'freq': 1}}, 'datetime_summary': {}}
+2025-08-20 02:00:06,072 - INFO - [Routing Decision] Cleaned status = yes
+2025-08-20 02:00:06,201 - INFO - Determining target column
+2025-08-20 02:00:07,554 - INFO - Chosen target column: category
+2025-08-20 02:00:07,559 - INFO - Applied LabelEncoder to target column. Mapping: {'ham': np.int64(0), 'spam': np.int64(1)}
+2025-08-20 02:00:07,676 - INFO - Detected column types: {'numeric': [], 'categorical': [], 'text': ['message'], 'datetime': [], 'boolean': []}
+2025-08-20 02:00:07,973 - INFO - Extracted features columns: ['message_tfidf_0', 'message_tfidf_1', 'message_tfidf_2', 'message_tfidf_3', 'message_tfidf_4', 'message_tfidf_5', 'message_tfidf_6', 'message_tfidf_7', 'message_tfidf_8', 'message_tfidf_9']
+2025-08-20 02:00:09,980 - INFO - Final features after LLM enhancement: ['message_tfidf_5', 'message_tfidf_2', 'message_tfidf_0', 'message_tfidf_6', 'message_tfidf_9', 'message_tfidf_1', 'message_tfidf_3', 'message_tfidf_4', 'message_tfidf_7', 'message_tfidf_8']
+2025-08-20 02:00:13,753 - INFO - Generated ML config
+2025-08-20 02:00:13,959 - INFO - Starting model fitting
+2025-08-20 02:00:15,921 - INFO - Model training completed successfully
+2025-08-20 02:00:15,984 - INFO - Computing model metrics
+2025-08-20 02:00:15,985 - DEBUG - Task type: classification
+2025-08-20 02:00:15,985 - DEBUG - Evaluation data shape: (5157, 10), (5157,)
+2025-08-20 02:00:16,025 - INFO - Metrics computed successfully: {'accuracy': 0.9071165406243941, 'precision': 0.9016454075309285, 'recall': 0.9071165406243941, 'f1-score': 0.887807823113328}
+2025-08-20 02:00:16,098 - INFO - Generating prediction from user query
+2025-08-20 02:00:16,101 - INFO - Extracted features columns: ['message_tfidf_0', 'message_tfidf_1', 'message_tfidf_2', 'message_tfidf_3', 'message_tfidf_4']
+2025-08-20 02:00:16,102 - INFO - Aligned input for prediction: [{'message_tfidf_5': 0, 'message_tfidf_2': 0.4472135954999579, 'message_tfidf_0': 0.4472135954999579, 'message_tfidf_6': 0, 'message_tfidf_9': 0, 'message_tfidf_1': 0.4472135954999579, 'message_tfidf_3': 0.4472135954999579, 'message_tfidf_4': 0.4472135954999579, 'message_tfidf_7': 0, 'message_tfidf_8': 0}]
+2025-08-20 02:00:16,108 - INFO - Raw prediction: 0
+2025-08-20 02:00:16,108 - INFO - Final prediction result: {'question': 'win a lottery spam or ham\n\n', 'inputs': {'message': 'win a lottery spam or ham\n\n'}, 'prediction_encoded': 0, 'prediction_label': np.int64(0), 'label_mapping': None}
+2025-08-20 02:03:10,479 - INFO - Starting query analysis
+2025-08-20 02:03:12,502 - INFO - Identified ML problem type: classification
+2025-08-20 02:03:12,550 - INFO - Starting dynamic data cleaning process
+2025-08-20 02:03:12,597 - INFO - Dynamic data cleaning process completed successfully
+2025-08-20 02:03:12,678 - INFO - Generating validation report...
+2025-08-20 02:03:12,704 - DEBUG - {'shape': (5157, 2), 'columns': ['category', 'message'], 'null_counts': {'category': 0, 'message': 0}, 'duplicate_rows': 0, 'dtypes': {'category': 'object', 'message': 'object'}, 'numeric_summary': {}, 'categorical_summary': {'category': {'count': 5157, 'unique': 2, 'top': 'ham', 'freq': 4516}, 'message': {'count': 5157, 'unique': 5157, 'top': 'Rofl. Its true to its name', 'freq': 1}}, 'datetime_summary': {}}
+2025-08-20 02:03:16,395 - INFO - [Routing Decision] Cleaned status = yes
+2025-08-20 02:03:16,568 - INFO - Determining target column
+2025-08-20 02:03:18,267 - INFO - Chosen target column: category
+2025-08-20 02:03:18,273 - INFO - Applied LabelEncoder to target column. Mapping: {'ham': np.int64(0), 'spam': np.int64(1)}
+2025-08-20 02:03:18,390 - INFO - Detected column types: {'numeric': [], 'categorical': [], 'text': ['message'], 'datetime': [], 'boolean': []}
+2025-08-20 02:03:18,653 - INFO - Extracted features columns: ['message_tfidf_0', 'message_tfidf_1', 'message_tfidf_2', 'message_tfidf_3', 'message_tfidf_4', 'message_tfidf_5', 'message_tfidf_6', 'message_tfidf_7', 'message_tfidf_8', 'message_tfidf_9']
+2025-08-20 02:03:21,037 - INFO - Final features after LLM enhancement: ['message_tfidf_5', 'message_tfidf_2', 'message_tfidf_0', 'message_tfidf_6', 'message_tfidf_9', 'message_tfidf_1', 'message_tfidf_3', 'message_tfidf_4', 'message_tfidf_7', 'message_tfidf_8']
+2025-08-20 02:03:24,210 - INFO - Generated ML config
+2025-08-20 02:03:24,290 - INFO - Starting model fitting
+2025-08-20 02:03:26,799 - INFO - Model training completed successfully
+2025-08-20 02:03:26,866 - INFO - Computing model metrics
+2025-08-20 02:03:26,867 - DEBUG - Task type: classification
+2025-08-20 02:03:26,867 - DEBUG - Evaluation data shape: (5157, 10), (5157,)
+2025-08-20 02:03:26,872 - INFO - Metrics computed successfully: {'accuracy': 0.8786115958890828, 'precision': 0.8495136268534016, 'recall': 0.8786115958890828, 'f1-score': 0.8321277524825444}
+2025-08-20 02:03:26,933 - INFO - Generating prediction from user query
+2025-08-20 02:03:26,935 - INFO - Extracted features columns: ['message_tfidf_0', 'message_tfidf_1', 'message_tfidf_2', 'message_tfidf_3', 'message_tfidf_4']
+2025-08-20 02:03:26,936 - INFO - Aligned input for prediction: [{'message_tfidf_5': 0, 'message_tfidf_2': 0.4472135954999579, 'message_tfidf_0': 0.4472135954999579, 'message_tfidf_6': 0, 'message_tfidf_9': 0, 'message_tfidf_1': 0.4472135954999579, 'message_tfidf_3': 0.4472135954999579, 'message_tfidf_4': 0.4472135954999579, 'message_tfidf_7': 0, 'message_tfidf_8': 0}]
+2025-08-20 02:03:26,937 - INFO - Raw prediction: 0
+2025-08-20 02:03:26,937 - INFO - Final prediction result: {'question': 'win a lottery spam or ham\n\n', 'inputs': {'message': 'win a lottery spam or ham\n\n'}, 'prediction_encoded': 0, 'prediction_label': np.int64(0), 'label_mapping': None}
+2025-08-20 02:05:58,843 - INFO - Starting query analysis
+2025-08-20 02:06:00,728 - INFO - Identified ML problem type: classification
+2025-08-20 02:06:00,780 - INFO - Starting dynamic data cleaning process
+2025-08-20 02:06:00,831 - INFO - Dynamic data cleaning process completed successfully
+2025-08-20 02:06:00,915 - INFO - Generating validation report...
+2025-08-20 02:06:00,935 - DEBUG - {'shape': (5157, 2), 'columns': ['category', 'message'], 'null_counts': {'category': 0, 'message': 0}, 'duplicate_rows': 0, 'dtypes': {'category': 'object', 'message': 'object'}, 'numeric_summary': {}, 'categorical_summary': {'category': {'count': 5157, 'unique': 2, 'top': 'ham', 'freq': 4516}, 'message': {'count': 5157, 'unique': 5157, 'top': 'Rofl. Its true to its name', 'freq': 1}}, 'datetime_summary': {}}
+2025-08-20 02:06:05,409 - INFO - [Routing Decision] Cleaned status = yes
+2025-08-20 02:06:05,469 - INFO - Determining target column
+2025-08-20 02:06:06,972 - INFO - Chosen target column: category
+2025-08-20 02:06:06,974 - INFO - Applied LabelEncoder to target column. Mapping: {'ham': np.int64(0), 'spam': np.int64(1)}
+2025-08-20 02:06:07,016 - INFO - Detected column types: {'numeric': [], 'categorical': [], 'text': ['message'], 'datetime': [], 'boolean': []}
+2025-08-20 02:06:07,135 - INFO - Extracted features columns: ['message_tfidf_0', 'message_tfidf_1', 'message_tfidf_2', 'message_tfidf_3', 'message_tfidf_4', 'message_tfidf_5', 'message_tfidf_6', 'message_tfidf_7', 'message_tfidf_8', 'message_tfidf_9']
+2025-08-20 02:06:09,410 - INFO - Final features after LLM enhancement: ['message_tfidf_5', 'message_tfidf_2', 'message_tfidf_0', 'message_tfidf_6', 'message_tfidf_9', 'message_tfidf_1', 'message_tfidf_3', 'message_tfidf_4', 'message_tfidf_7', 'message_tfidf_8']
+2025-08-20 02:06:13,081 - INFO - Generated ML config
+2025-08-20 02:06:13,174 - INFO - Starting model fitting
+2025-08-20 02:06:14,574 - INFO - Model training completed successfully
+2025-08-20 02:06:14,670 - INFO - Computing model metrics
+2025-08-20 02:06:14,671 - DEBUG - Task type: classification
+2025-08-20 02:06:14,671 - DEBUG - Evaluation data shape: (5157, 10), (5157,)
+2025-08-20 02:06:14,681 - INFO - Metrics computed successfully: {'accuracy': 0.8786115958890828, 'precision': 0.8495136268534016, 'recall': 0.8786115958890828, 'f1-score': 0.8321277524825444}
+2025-08-20 02:06:14,776 - INFO - Generating prediction from user query
+2025-08-20 02:06:14,780 - INFO - Extracted features columns: ['message_tfidf_0', 'message_tfidf_1', 'message_tfidf_2', 'message_tfidf_3', 'message_tfidf_4']
+2025-08-20 02:06:14,781 - INFO - Aligned input for prediction: [{'message_tfidf_5': 0, 'message_tfidf_2': 0.4472135954999579, 'message_tfidf_0': 0.4472135954999579, 'message_tfidf_6': 0, 'message_tfidf_9': 0, 'message_tfidf_1': 0.4472135954999579, 'message_tfidf_3': 0.4472135954999579, 'message_tfidf_4': 0.4472135954999579, 'message_tfidf_7': 0, 'message_tfidf_8': 0}]
+2025-08-20 02:06:14,786 - INFO - Raw prediction: 0
+2025-08-20 02:06:14,787 - INFO - Final prediction result: {'question': 'win a lottery spam or ham\n\n', 'inputs': {'message': 'win a lottery spam or ham\n\n'}, 'prediction_encoded': 0, 'prediction_label': np.int64(0), 'label_mapping': None}
+2025-08-20 02:07:18,931 - INFO - Starting query analysis
+2025-08-20 02:07:23,132 - INFO - Identified ML problem type: classification
+2025-08-20 02:07:23,182 - INFO - Starting dynamic data cleaning process
+2025-08-20 02:07:23,233 - INFO - Dynamic data cleaning process completed successfully
+2025-08-20 02:07:23,322 - INFO - Generating validation report...
+2025-08-20 02:07:23,346 - DEBUG - {'shape': (5157, 2), 'columns': ['category', 'message'], 'null_counts': {'category': 0, 'message': 0}, 'duplicate_rows': 0, 'dtypes': {'category': 'object', 'message': 'object'}, 'numeric_summary': {}, 'categorical_summary': {'category': {'count': 5157, 'unique': 2, 'top': 'ham', 'freq': 4516}, 'message': {'count': 5157, 'unique': 5157, 'top': 'Rofl. Its true to its name', 'freq': 1}}, 'datetime_summary': {}}
+2025-08-20 02:07:26,215 - INFO - [Routing Decision] Cleaned status = yes
+2025-08-20 02:07:26,261 - INFO - Determining target column
+2025-08-20 02:07:28,616 - INFO - Chosen target column: category
+2025-08-20 02:07:28,618 - INFO - Applied LabelEncoder to target column. Mapping: {'ham': np.int64(0), 'spam': np.int64(1)}
+2025-08-20 02:07:28,662 - INFO - Detected column types: {'numeric': [], 'categorical': [], 'text': ['message'], 'datetime': [], 'boolean': []}
+2025-08-20 02:07:28,780 - INFO - Extracted features columns: ['message_tfidf_0', 'message_tfidf_1', 'message_tfidf_2', 'message_tfidf_3', 'message_tfidf_4', 'message_tfidf_5', 'message_tfidf_6', 'message_tfidf_7', 'message_tfidf_8', 'message_tfidf_9']
+2025-08-20 02:07:30,449 - INFO - Final features after LLM enhancement: ['message_tfidf_5', 'message_tfidf_2', 'message_tfidf_0', 'message_tfidf_6', 'message_tfidf_9', 'message_tfidf_1', 'message_tfidf_3', 'message_tfidf_4', 'message_tfidf_7', 'message_tfidf_8']
+2025-08-20 02:07:33,491 - INFO - Generated ML config
+2025-08-20 02:07:33,579 - INFO - Starting model fitting
+2025-08-20 02:07:36,220 - INFO - Model training completed successfully
+2025-08-20 02:07:36,331 - INFO - Computing model metrics
+2025-08-20 02:07:36,332 - DEBUG - Task type: classification
+2025-08-20 02:07:36,332 - DEBUG - Evaluation data shape: (5157, 10), (5157,)
+2025-08-20 02:07:36,344 - INFO - Metrics computed successfully: {'accuracy': 0.8786115958890828, 'precision': 0.8495136268534016, 'recall': 0.8786115958890828, 'f1-score': 0.8321277524825444}
+2025-08-20 02:07:36,440 - INFO - Generating prediction from user query
+2025-08-20 02:07:36,444 - INFO - Extracted features columns: ['message_tfidf_0', 'message_tfidf_1', 'message_tfidf_2', 'message_tfidf_3', 'message_tfidf_4']
+2025-08-20 02:07:36,448 - INFO - Aligned input for prediction: [{'message_tfidf_5': 0, 'message_tfidf_2': 0.4472135954999579, 'message_tfidf_0': 0.4472135954999579, 'message_tfidf_6': 0, 'message_tfidf_9': 0, 'message_tfidf_1': 0.4472135954999579, 'message_tfidf_3': 0.4472135954999579, 'message_tfidf_4': 0.4472135954999579, 'message_tfidf_7': 0, 'message_tfidf_8': 0}]
+2025-08-20 02:07:36,449 - INFO - Raw prediction: 0
+2025-08-20 02:09:16,687 - INFO - Starting query analysis
+2025-08-20 02:09:20,232 - INFO - Identified ML problem type: classification
+2025-08-20 02:09:20,280 - INFO - Starting dynamic data cleaning process
+2025-08-20 02:09:20,329 - INFO - Dynamic data cleaning process completed successfully
+2025-08-20 02:09:20,411 - INFO - Generating validation report...
+2025-08-20 02:09:20,433 - DEBUG - {'shape': (5157, 2), 'columns': ['category', 'message'], 'null_counts': {'category': 0, 'message': 0}, 'duplicate_rows': 0, 'dtypes': {'category': 'object', 'message': 'object'}, 'numeric_summary': {}, 'categorical_summary': {'category': {'count': 5157, 'unique': 2, 'top': 'ham', 'freq': 4516}, 'message': {'count': 5157, 'unique': 5157, 'top': 'Rofl. Its true to its name', 'freq': 1}}, 'datetime_summary': {}}
+2025-08-20 02:09:23,337 - INFO - [Routing Decision] Cleaned status = yes
+2025-08-20 02:09:23,400 - INFO - Determining target column
+2025-08-20 02:09:24,511 - INFO - Chosen target column: category
+2025-08-20 02:09:24,514 - INFO - Applied LabelEncoder to target column. Mapping: {'ham': np.int64(0), 'spam': np.int64(1)}
+2025-08-20 02:09:24,569 - INFO - Detected column types: {'numeric': [], 'categorical': [], 'text': ['message'], 'datetime': [], 'boolean': []}
+2025-08-20 02:09:24,700 - INFO - Extracted features columns: ['message_tfidf_0', 'message_tfidf_1', 'message_tfidf_2', 'message_tfidf_3', 'message_tfidf_4', 'message_tfidf_5', 'message_tfidf_6', 'message_tfidf_7', 'message_tfidf_8', 'message_tfidf_9']
+2025-08-20 02:09:27,154 - INFO - Final features after LLM enhancement: ['message_tfidf_5', 'message_tfidf_2', 'message_tfidf_0', 'message_tfidf_6', 'message_tfidf_9', 'message_tfidf_1', 'message_tfidf_3', 'message_tfidf_4', 'message_tfidf_7', 'message_tfidf_8']
+2025-08-20 02:09:30,554 - INFO - Generated ML config
+2025-08-20 02:09:30,666 - INFO - Starting model fitting
+2025-08-20 02:09:33,907 - INFO - Model training completed successfully
+2025-08-20 02:09:34,002 - INFO - Computing model metrics
+2025-08-20 02:09:34,002 - DEBUG - Task type: classification
+2025-08-20 02:09:34,002 - DEBUG - Evaluation data shape: (5157, 10), (5157,)
+2025-08-20 02:09:34,066 - INFO - Metrics computed successfully: {'accuracy': 0.9071165406243941, 'precision': 0.9016454075309285, 'recall': 0.9071165406243941, 'f1-score': 0.887807823113328}
+2025-08-20 02:09:34,154 - INFO - Generating prediction from user query
+2025-08-20 02:09:34,156 - INFO - Extracted features columns: ['message_tfidf_0', 'message_tfidf_1', 'message_tfidf_2', 'message_tfidf_3', 'message_tfidf_4']
+2025-08-20 02:09:34,158 - INFO - Aligned input for prediction: [{'message_tfidf_5': 0, 'message_tfidf_2': 0.4472135954999579, 'message_tfidf_0': 0.4472135954999579, 'message_tfidf_6': 0, 'message_tfidf_9': 0, 'message_tfidf_1': 0.4472135954999579, 'message_tfidf_3': 0.4472135954999579, 'message_tfidf_4': 0.4472135954999579, 'message_tfidf_7': 0, 'message_tfidf_8': 0}]
+2025-08-20 02:09:34,166 - INFO - Raw prediction: 0
+2025-08-20 02:11:29,085 - INFO - Starting query analysis
+2025-08-20 02:11:35,296 - INFO - Identified ML problem type: classification
+2025-08-20 02:11:35,351 - INFO - Starting dynamic data cleaning process
+2025-08-20 02:11:35,404 - INFO - Dynamic data cleaning process completed successfully
+2025-08-20 02:11:35,480 - INFO - Generating validation report...
+2025-08-20 02:11:35,507 - DEBUG - {'shape': (5157, 2), 'columns': ['category', 'message'], 'null_counts': {'category': 0, 'message': 0}, 'duplicate_rows': 0, 'dtypes': {'category': 'object', 'message': 'object'}, 'numeric_summary': {}, 'categorical_summary': {'category': {'count': 5157, 'unique': 2, 'top': 'ham', 'freq': 4516}, 'message': {'count': 5157, 'unique': 5157, 'top': 'Rofl. Its true to its name', 'freq': 1}}, 'datetime_summary': {}}
+2025-08-20 02:11:41,429 - INFO - [Routing Decision] Cleaned status = yes
+2025-08-20 02:11:41,490 - INFO - Determining target column
+2025-08-20 02:11:48,971 - INFO - Chosen target column: category
+2025-08-20 02:11:48,972 - INFO - Applied LabelEncoder to target column. Mapping: {'ham': np.int64(0), 'spam': np.int64(1)}
+2025-08-20 02:11:49,015 - INFO - Detected column types: {'numeric': [], 'categorical': [], 'text': ['message'], 'datetime': [], 'boolean': []}
+2025-08-20 02:11:49,133 - INFO - Extracted features columns: ['message_tfidf_0', 'message_tfidf_1', 'message_tfidf_2', 'message_tfidf_3', 'message_tfidf_4', 'message_tfidf_5', 'message_tfidf_6', 'message_tfidf_7', 'message_tfidf_8', 'message_tfidf_9']
+2025-08-20 02:12:00,899 - INFO - Final features after LLM enhancement: ['message_tfidf_8', 'message_tfidf_1', 'message_tfidf_0', 'message_tfidf_6', 'message_tfidf_3', 'message_tfidf_5', 'message_tfidf_2', 'message_tfidf_7', 'message_tfidf_4', 'message_tfidf_9']
+2025-08-20 02:12:14,436 - INFO - Generated ML config
+2025-08-20 02:12:14,532 - INFO - Starting model fitting
+2025-08-20 02:12:21,305 - INFO - Model training completed successfully
+2025-08-20 02:12:21,405 - INFO - Computing model metrics
+2025-08-20 02:12:21,406 - DEBUG - Task type: classification
+2025-08-20 02:12:21,406 - DEBUG - Evaluation data shape: (5157, 10), (5157,)
+2025-08-20 02:12:21,418 - INFO - Metrics computed successfully: {'accuracy': 0.8786115958890828, 'precision': 0.8495136268534016, 'recall': 0.8786115958890828, 'f1-score': 0.8321277524825444}
+2025-08-20 02:12:21,509 - INFO - Generating prediction from user query
+2025-08-20 02:12:21,513 - INFO - Extracted features columns: ['message_tfidf_0', 'message_tfidf_1', 'message_tfidf_2', 'message_tfidf_3', 'message_tfidf_4', 'message_tfidf_5', 'message_tfidf_6', 'message_tfidf_7', 'message_tfidf_8', 'message_tfidf_9']
+2025-08-20 02:12:21,515 - INFO - Aligned input for prediction: [{'message_tfidf_8': 0.20412414523193154, 'message_tfidf_1': 0.20412414523193154, 'message_tfidf_0': 0.20412414523193154, 'message_tfidf_6': 0.4082482904638631, 'message_tfidf_3': 0.20412414523193154, 'message_tfidf_5': 0.20412414523193154, 'message_tfidf_2': 0.20412414523193154, 'message_tfidf_7': 0.4082482904638631, 'message_tfidf_4': 0.20412414523193154, 'message_tfidf_9': 0.6123724356957946}]
+2025-08-20 02:12:21,518 - INFO - Raw prediction: 0
+2025-08-20 02:13:28,112 - INFO - Starting query analysis
+2025-08-20 02:13:33,206 - INFO - Identified ML problem type: classification
+2025-08-20 02:13:33,249 - INFO - Starting dynamic data cleaning process
+2025-08-20 02:13:33,303 - INFO - Dynamic data cleaning process completed successfully
+2025-08-20 02:13:33,387 - INFO - Generating validation report...
+2025-08-20 02:13:33,412 - DEBUG - {'shape': (5157, 2), 'columns': ['category', 'message'], 'null_counts': {'category': 0, 'message': 0}, 'duplicate_rows': 0, 'dtypes': {'category': 'object', 'message': 'object'}, 'numeric_summary': {}, 'categorical_summary': {'category': {'count': 5157, 'unique': 2, 'top': 'ham', 'freq': 4516}, 'message': {'count': 5157, 'unique': 5157, 'top': 'Rofl. Its true to its name', 'freq': 1}}, 'datetime_summary': {}}
+2025-08-20 02:13:39,351 - INFO - [Routing Decision] Cleaned status = yes
+2025-08-20 02:13:39,423 - INFO - Determining target column
+2025-08-20 02:13:47,605 - INFO - Chosen target column: category
+2025-08-20 02:13:47,609 - INFO - Applied LabelEncoder to target column. Mapping: {'ham': np.int64(0), 'spam': np.int64(1)}
+2025-08-20 02:13:47,657 - INFO - Detected column types: {'numeric': [], 'categorical': [], 'text': ['message'], 'datetime': [], 'boolean': []}
+2025-08-20 02:13:47,770 - INFO - Extracted features columns: ['message_tfidf_0', 'message_tfidf_1', 'message_tfidf_2', 'message_tfidf_3', 'message_tfidf_4', 'message_tfidf_5', 'message_tfidf_6', 'message_tfidf_7', 'message_tfidf_8', 'message_tfidf_9']
+2025-08-20 02:13:59,505 - INFO - Final features after LLM enhancement: ['message_tfidf_8', 'message_tfidf_1', 'message_tfidf_0', 'message_tfidf_6', 'message_tfidf_3', 'message_tfidf_5', 'message_tfidf_2', 'message_tfidf_7', 'message_tfidf_4', 'message_tfidf_9']
+2025-08-20 02:14:10,267 - INFO - Generated ML config
+2025-08-20 02:14:10,464 - INFO - Starting model fitting
+2025-08-20 02:14:15,989 - INFO - Model training completed successfully
+2025-08-20 02:14:16,069 - INFO - Computing model metrics
+2025-08-20 02:14:16,069 - DEBUG - Task type: classification
+2025-08-20 02:14:16,070 - DEBUG - Evaluation data shape: (5157, 10), (5157,)
+2025-08-20 02:14:16,078 - INFO - Metrics computed successfully: {'accuracy': 0.8786115958890828, 'precision': 0.8495136268534016, 'recall': 0.8786115958890828, 'f1-score': 0.8321277524825444}
+2025-08-20 02:14:16,162 - INFO - Generating prediction from user query
+2025-08-20 02:14:16,166 - INFO - Extracted features columns: ['message_tfidf_0', 'message_tfidf_1', 'message_tfidf_2', 'message_tfidf_3', 'message_tfidf_4', 'message_tfidf_5', 'message_tfidf_6', 'message_tfidf_7', 'message_tfidf_8', 'message_tfidf_9']
+2025-08-20 02:14:16,167 - INFO - Aligned input for prediction: [{'message_tfidf_8': 0.20412414523193154, 'message_tfidf_1': 0.20412414523193154, 'message_tfidf_0': 0.20412414523193154, 'message_tfidf_6': 0.4082482904638631, 'message_tfidf_3': 0.20412414523193154, 'message_tfidf_5': 0.20412414523193154, 'message_tfidf_2': 0.20412414523193154, 'message_tfidf_7': 0.4082482904638631, 'message_tfidf_4': 0.20412414523193154, 'message_tfidf_9': 0.6123724356957946}]
+2025-08-20 02:14:16,169 - INFO - Raw prediction: 0
+2025-08-20 02:14:16,171 - INFO - Final prediction result: {'question': "Free entry in 2 a wkly comp to win FA Cup final tkts 21st May 2005. Text FA to 87121 to receive entry question(std txt rate)T&C's apply 08452810075over18's spam or ham\n\n", 'inputs': {'message': "Free entry in 2 a wkly comp to win FA Cup final tkts 21st May 2005. Text FA to 87121 to receive entry question(std txt rate)T&C's apply 08452810075over18's spam or ham\n\n"}, 'prediction_encoded': 0, 'prediction_label': np.int64(0), 'label_mapping': None}
+2025-08-20 02:14:32,495 - INFO - Generated explanation for prediction
+2025-08-20 02:17:59,725 - INFO - Starting query analysis
+2025-08-20 02:18:06,696 - INFO - Identified ML problem type: classification
+2025-08-20 02:18:06,741 - INFO - Starting dynamic data cleaning process
+2025-08-20 02:18:06,782 - INFO - Dynamic data cleaning process completed successfully
+2025-08-20 02:18:06,857 - INFO - Generating validation report...
+2025-08-20 02:18:06,878 - DEBUG - {'shape': (5157, 2), 'columns': ['category', 'message'], 'null_counts': {'category': 0, 'message': 0}, 'duplicate_rows': 0, 'dtypes': {'category': 'object', 'message': 'object'}, 'numeric_summary': {}, 'categorical_summary': {'category': {'count': 5157, 'unique': 2, 'top': 'ham', 'freq': 4516}, 'message': {'count': 5157, 'unique': 5157, 'top': 'Rofl. Its true to its name', 'freq': 1}}, 'datetime_summary': {}}
+2025-08-20 02:18:16,890 - INFO - [Routing Decision] Cleaned status = yes
+2025-08-20 02:18:16,943 - INFO - Determining target column
+2025-08-20 02:18:23,662 - INFO - Chosen target column: category
+2025-08-20 02:18:23,663 - INFO - Applied LabelEncoder to target column. Mapping: {'ham': 0, 'spam': 1}
+2025-08-20 02:18:23,707 - INFO - Detected column types: {'numeric': [], 'categorical': [], 'text': ['message'], 'datetime': [], 'boolean': []}
+2025-08-20 02:18:23,825 - INFO - Extracted features columns: ['message_tfidf_0', 'message_tfidf_1', 'message_tfidf_2', 'message_tfidf_3', 'message_tfidf_4', 'message_tfidf_5', 'message_tfidf_6', 'message_tfidf_7', 'message_tfidf_8', 'message_tfidf_9']
+2025-08-20 02:18:34,540 - INFO - Final features after LLM enhancement: ['message_tfidf_8', 'message_tfidf_1', 'message_tfidf_0', 'message_tfidf_6', 'message_tfidf_3', 'message_tfidf_5', 'message_tfidf_2', 'message_tfidf_7', 'message_tfidf_4', 'message_tfidf_9']
+2025-08-20 02:18:45,151 - INFO - Generated ML config
+2025-08-20 02:18:45,249 - INFO - Starting model fitting
+2025-08-20 02:18:50,152 - INFO - Model training completed successfully
+2025-08-20 02:18:50,255 - INFO - Computing model metrics
+2025-08-20 02:18:50,256 - DEBUG - Task type: classification
+2025-08-20 02:18:50,257 - DEBUG - Evaluation data shape: (5157, 10), (5157,)
+2025-08-20 02:18:50,263 - INFO - Metrics computed successfully: {'accuracy': 0.8786115958890828, 'precision': 0.8495136268534016, 'recall': 0.8786115958890828, 'f1-score': 0.8321277524825444}
+2025-08-20 02:18:50,361 - INFO - Generating prediction from user query
+2025-08-20 02:18:50,366 - INFO - Extracted features columns: ['message_tfidf_0', 'message_tfidf_1', 'message_tfidf_2', 'message_tfidf_3', 'message_tfidf_4', 'message_tfidf_5', 'message_tfidf_6', 'message_tfidf_7', 'message_tfidf_8', 'message_tfidf_9']
+2025-08-20 02:18:50,369 - INFO - Aligned input for prediction: [{'message_tfidf_8': 0.20412414523193154, 'message_tfidf_1': 0.20412414523193154, 'message_tfidf_0': 0.20412414523193154, 'message_tfidf_6': 0.4082482904638631, 'message_tfidf_3': 0.20412414523193154, 'message_tfidf_5': 0.20412414523193154, 'message_tfidf_2': 0.20412414523193154, 'message_tfidf_7': 0.4082482904638631, 'message_tfidf_4': 0.20412414523193154, 'message_tfidf_9': 0.6123724356957946}]
+2025-08-20 02:18:50,370 - INFO - Raw prediction: 0
+2025-08-20 02:18:50,372 - INFO - Final prediction result: {'question': "Free entry in 2 a wkly comp to win FA Cup final tkts 21st May 2005. Text FA to 87121 to receive entry question(std txt rate)T&C's apply 08452810075over18's spam or ham\n\n", 'inputs': {'message': "Free entry in 2 a wkly comp to win FA Cup final tkts 21st May 2005. Text FA to 87121 to receive entry question(std txt rate)T&C's apply 08452810075over18's spam or ham\n\n"}, 'prediction_encoded': 0, 'prediction_label': '0', 'label_mapping': None}
+2025-08-20 02:19:12,962 - INFO - Generated explanation for prediction
+2025-08-20 02:20:36,963 - INFO - Starting query analysis
+2025-08-20 02:20:39,061 - INFO - Identified ML problem type: classification
+2025-08-20 02:20:39,110 - INFO - Starting dynamic data cleaning process
+2025-08-20 02:20:39,156 - INFO - Dynamic data cleaning process completed successfully
+2025-08-20 02:20:39,237 - INFO - Generating validation report...
+2025-08-20 02:20:39,263 - DEBUG - {'shape': (5157, 2), 'columns': ['category', 'message'], 'null_counts': {'category': 0, 'message': 0}, 'duplicate_rows': 0, 'dtypes': {'category': 'object', 'message': 'object'}, 'numeric_summary': {}, 'categorical_summary': {'category': {'count': 5157, 'unique': 2, 'top': 'ham', 'freq': 4516}, 'message': {'count': 5157, 'unique': 5157, 'top': 'Rofl. Its true to its name', 'freq': 1}}, 'datetime_summary': {}}
+2025-08-20 02:20:40,189 - INFO - [Routing Decision] Cleaned status = yes
+2025-08-20 02:20:40,314 - INFO - Determining target column
+2025-08-20 02:20:41,245 - INFO - Chosen target column: category
+2025-08-20 02:20:41,248 - INFO - Applied LabelEncoder to target column. Mapping: {'ham': 0, 'spam': 1}
+2025-08-20 02:20:41,354 - INFO - Detected column types: {'numeric': [], 'categorical': [], 'text': ['message'], 'datetime': [], 'boolean': []}
+2025-08-20 02:20:41,618 - INFO - Extracted features columns: ['message_tfidf_0', 'message_tfidf_1', 'message_tfidf_2', 'message_tfidf_3', 'message_tfidf_4', 'message_tfidf_5', 'message_tfidf_6', 'message_tfidf_7', 'message_tfidf_8', 'message_tfidf_9']
+2025-08-20 02:20:42,719 - INFO - Final features after LLM enhancement: ['message_tfidf_8', 'message_tfidf_1', 'message_tfidf_0', 'message_tfidf_6', 'message_tfidf_3', 'message_tfidf_5', 'message_tfidf_2', 'message_tfidf_7', 'message_tfidf_4', 'message_tfidf_9']
+2025-08-20 02:20:45,277 - INFO - Generated ML config
+2025-08-20 02:20:45,508 - INFO - Starting model fitting
+2025-08-20 02:20:46,590 - INFO - Model training completed successfully
+2025-08-20 02:20:46,821 - INFO - Computing model metrics
+2025-08-20 02:20:46,822 - DEBUG - Task type: classification
+2025-08-20 02:20:46,822 - DEBUG - Evaluation data shape: (5157, 10), (5157,)
+2025-08-20 02:20:46,838 - INFO - Metrics computed successfully: {'accuracy': 0.8786115958890828, 'precision': 0.8495136268534016, 'recall': 0.8786115958890828, 'f1-score': 0.8321277524825444}
+2025-08-20 02:20:47,079 - INFO - Generating prediction from user query
+2025-08-20 02:20:47,086 - INFO - Extracted features columns: ['message_tfidf_0', 'message_tfidf_1', 'message_tfidf_2', 'message_tfidf_3', 'message_tfidf_4', 'message_tfidf_5', 'message_tfidf_6', 'message_tfidf_7', 'message_tfidf_8', 'message_tfidf_9']
+2025-08-20 02:20:47,088 - INFO - Aligned input for prediction: [{'message_tfidf_8': 0.20412414523193154, 'message_tfidf_1': 0.20412414523193154, 'message_tfidf_0': 0.20412414523193154, 'message_tfidf_6': 0.4082482904638631, 'message_tfidf_3': 0.20412414523193154, 'message_tfidf_5': 0.20412414523193154, 'message_tfidf_2': 0.20412414523193154, 'message_tfidf_7': 0.4082482904638631, 'message_tfidf_4': 0.20412414523193154, 'message_tfidf_9': 0.6123724356957946}]
+2025-08-20 02:20:47,099 - INFO - Raw prediction: 0
+2025-08-20 02:20:47,567 - INFO - Starting query analysis
+2025-08-20 02:20:48,251 - INFO - Identified ML problem type: classification
+2025-08-20 02:20:48,299 - INFO - Starting dynamic data cleaning process
+2025-08-20 02:20:48,339 - INFO - Dynamic data cleaning process completed successfully
+2025-08-20 02:20:48,417 - INFO - Generating validation report...
+2025-08-20 02:20:48,439 - DEBUG - {'shape': (5157, 2), 'columns': ['category', 'message'], 'null_counts': {'category': 0, 'message': 0}, 'duplicate_rows': 0, 'dtypes': {'category': 'object', 'message': 'object'}, 'numeric_summary': {}, 'categorical_summary': {'category': {'count': 5157, 'unique': 2, 'top': 'ham', 'freq': 4516}, 'message': {'count': 5157, 'unique': 5157, 'top': 'Rofl. Its true to its name', 'freq': 1}}, 'datetime_summary': {}}
+2025-08-20 02:20:49,795 - INFO - [Routing Decision] Cleaned status = yes
+2025-08-20 02:20:49,908 - INFO - Determining target column
+2025-08-20 02:20:50,721 - INFO - Chosen target column: category
+2025-08-20 02:20:50,725 - INFO - Applied LabelEncoder to target column. Mapping: {'ham': 0, 'spam': 1}
+2025-08-20 02:20:50,844 - INFO - Detected column types: {'numeric': [], 'categorical': [], 'text': ['message'], 'datetime': [], 'boolean': []}
+2025-08-20 02:20:51,094 - INFO - Extracted features columns: ['message_tfidf_0', 'message_tfidf_1', 'message_tfidf_2', 'message_tfidf_3', 'message_tfidf_4', 'message_tfidf_5', 'message_tfidf_6', 'message_tfidf_7', 'message_tfidf_8', 'message_tfidf_9']
+2025-08-20 02:20:52,350 - INFO - Final features after LLM enhancement: ['message_tfidf_8', 'message_tfidf_1', 'message_tfidf_0', 'message_tfidf_6', 'message_tfidf_3', 'message_tfidf_5', 'message_tfidf_2', 'message_tfidf_7', 'message_tfidf_4', 'message_tfidf_9']
+2025-08-20 02:20:54,972 - INFO - Generated ML config
+2025-08-20 02:20:55,190 - INFO - Starting model fitting
+2025-08-20 02:20:56,147 - INFO - Model training completed successfully
+2025-08-20 02:20:56,274 - INFO - Computing model metrics
+2025-08-20 02:20:56,275 - DEBUG - Task type: classification
+2025-08-20 02:20:56,275 - DEBUG - Evaluation data shape: (5157, 10), (5157,)
+2025-08-20 02:20:56,285 - INFO - Metrics computed successfully: {'accuracy': 0.8786115958890828, 'precision': 0.8495136268534016, 'recall': 0.8786115958890828, 'f1-score': 0.8321277524825444}
+2025-08-20 02:20:56,379 - INFO - Generating prediction from user query
+2025-08-20 02:20:56,381 - INFO - Extracted features columns: ['message_tfidf_0', 'message_tfidf_1', 'message_tfidf_2', 'message_tfidf_3', 'message_tfidf_4', 'message_tfidf_5', 'message_tfidf_6', 'message_tfidf_7', 'message_tfidf_8', 'message_tfidf_9']
+2025-08-20 02:20:56,383 - INFO - Aligned input for prediction: [{'message_tfidf_8': 0.20412414523193154, 'message_tfidf_1': 0.20412414523193154, 'message_tfidf_0': 0.20412414523193154, 'message_tfidf_6': 0.4082482904638631, 'message_tfidf_3': 0.20412414523193154, 'message_tfidf_5': 0.20412414523193154, 'message_tfidf_2': 0.20412414523193154, 'message_tfidf_7': 0.4082482904638631, 'message_tfidf_4': 0.20412414523193154, 'message_tfidf_9': 0.6123724356957946}]
+2025-08-20 02:20:56,384 - INFO - Raw prediction: 0
