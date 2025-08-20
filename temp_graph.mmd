@@ -1,0 +1,37 @@
+---
+config:
+  flowchart:
+    curve: linear
+---
+graph TD;
+	__start__([<p>__start__</p>]):::first
+	Data_Cleaning_Agent(Data_Cleaning_Agent)
+	Data_Validating_Agnet(Data_Validating_Agnet)
+	AI_Data_Cleaner(AI_Data_Cleaner)
+	Query_Analysing_Agent(Query_Analysing_Agent)
+	Target_Column(Target_Column)
+	Schema_Inspection(Schema_Inspection)
+	Feature_Extracting_Agent(Feature_Extracting_Agent)
+	Feature_Selection_Agent(Feature_Selection_Agent)
+	Config_Generation(Config_Generation)
+	Model_Training_Agent(Model_Training_Agent)
+	Metrics_Evaluation_Agent(Metrics_Evaluation_Agent)
+	Predicting_Agent(Predicting_Agent)
+	__end__([<p>__end__</p>]):::last
+	AI_Data_Cleaner --> Target_Column;
+	Config_Generation --> Model_Training_Agent;
+	Data_Cleaning_Agent --> Data_Validating_Agnet;
+	Data_Validating_Agnet -.-> AI_Data_Cleaner;
+	Data_Validating_Agnet -.-> Target_Column;
+	Feature_Extracting_Agent --> Feature_Selection_Agent;
+	Feature_Selection_Agent --> Config_Generation;
+	Metrics_Evaluation_Agent --> Predicting_Agent;
+	Model_Training_Agent --> Metrics_Evaluation_Agent;
+	Query_Analysing_Agent --> Data_Cleaning_Agent;
+	Schema_Inspection --> Feature_Extracting_Agent;
+	Target_Column --> Schema_Inspection;
+	__start__ --> Query_Analysing_Agent;
+	Predicting_Agent --> __end__;
+	classDef default fill:#f2f0ff,line-height:1.2
+	classDef first fill-opacity:0
+	classDef last fill:#bfb6fc

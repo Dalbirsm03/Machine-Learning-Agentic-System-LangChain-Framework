@@ -2,7 +2,7 @@ from configparser import ConfigParser
 
 class Config:
 
-    def __init__(self,config_path = "C:/Users/Dalbir/Downloads/Machine-Learning-Agentic-System-LangChain-Framework/ML Agent Main/UI/config.ini"):
+    def __init__(self,config_path = "C:/Users/Dalbir/Downloads/Machine-Learning-Agentic-System-LangChain-Framework/ML_Agent/UI/config.ini"):
         self.config = ConfigParser()
         self.config.read(config_path)
     
