@@ -30,6 +30,15 @@ class Query_Analyzer_Node:
         self.logger.info(f"Identified ML problem type: {response}")
         return {"ml_problem_type": response}
 
+    def route_by_problem_type(self, state: State):
+        """Route based on ML problem type"""
+        problem_type = state['ml_problem_type']
+        self.logger.info(f"Routing decision: {problem_type}")
+        
+        if problem_type == "clustering":
+            return "unsupervised_branch"
+        else:
+            return "supervised_branch"
 
     def target_column(self, state: State):
         self.logger.info("Determining target column")
@@ -67,23 +76,36 @@ class Query_Analyzer_Node:
 
         target_series = df[target_col]
 
-        # Encode target if categorical
+        # Handle categorical targets
         if target_series.dtype == object or str(target_series.dtype).startswith("category"):
             le_target = LabelEncoder()
             target_encoded = le_target.fit_transform(target_series.astype(str))
-
+            
+            # Store in state
             state['target_label_encoder'] = le_target
-            state['target_label_mapping'] = {
-                str(cls): int(idx) for cls, idx in zip(le_target.classes_, le_target.transform(le_target.classes_))
+            state['target_label_mapping'] = dict(zip(
+                range(len(le_target.classes_)), 
+                le_target.classes_
+            ))
+            
+            self.logger.info(f"Applied LabelEncoder to target column. Classes: {le_target.classes_}")
+            self.logger.info(f"Label mapping: {state['target_label_mapping']}")
+            
+            # CRITICAL: Return all the values for LangGraph state merging
+            return {
+                "target_column": target_col,
+                "target_encoded": target_encoded,
+                "target_label_encoder": le_target,
+                "target_label_mapping": state['target_label_mapping']
             }
-
-            self.logger.info(f"Applied LabelEncoder to target column. Mapping: {state['target_label_mapping']}")
         else:
-            target_encoded = target_series.to_numpy()  # store as np.ndarray for consistency
+            target_encoded = target_series.to_numpy()
+            state['target_label_encoder'] = None
+            state['target_label_mapping'] = None
 
-        state['target_encoded'] = target_encoded
-
-        return {
-            "target_column": target_col,
-            "target_encoded": target_encoded
-        }
+            return {
+                "target_column": target_col,
+                "target_encoded": target_encoded,
+                "target_label_encoder": None,
+                "target_label_mapping": None
+            }

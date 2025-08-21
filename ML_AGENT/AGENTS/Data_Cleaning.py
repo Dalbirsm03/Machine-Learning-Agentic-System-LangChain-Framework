@@ -214,6 +214,6 @@ class Data_Cleaning_Node:
     def validate_route(self, state: State):
         logger.info(f"[Routing Decision] Cleaned status = {state['data_valid']}")
         if state["data_valid"] == 'yes':
-            return "Target_Column"
+            return "Query_Analyzing_Agent"
         else:
-            return "AI_Data_Cleaner"
+            return "AI_Data_Cleaner_Agent"

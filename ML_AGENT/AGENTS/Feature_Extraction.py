@@ -43,7 +43,7 @@ class Feature_Extraction_Node:
         return {"column_types": col_types}
 
     def extract_features(self, state: State):
-        tfidf_max_features = 15
+        tfidf_max_features = 40
         target_column = state['target_column']
         df = state['cleaned_data']
         col_types = state['column_types']
@@ -64,10 +64,11 @@ class Feature_Extraction_Node:
                     dtype_category = k
                     break
 
+            # FIXED: Added proper if-elif structure and indentation
             if dtype_category == "categorical":
-                le = LabelEncoder()
-                extracted_features[col] = le.fit_transform(df[col].astype(str))
-                state["feature_encoders"][col] = le
+                # Use one-hot encoding for categorical features
+                one_hot_df = pd.get_dummies(df[col], prefix=col, dummy_na=False)
+                extracted_features = pd.concat([extracted_features, one_hot_df], axis=1)
 
             elif dtype_category == "text":
                 if col not in state["feature_encoders"]:
@@ -84,7 +85,6 @@ class Feature_Extraction_Node:
                     index=df.index
                 )
                 extracted_features = pd.concat([extracted_features, tfidf_df], axis=1)
-
 
             elif dtype_category == "datetime":
                 extracted_features[f"{col}_year"] = df[col].dt.year
