@@ -15,7 +15,7 @@ def main():
             os.environ["LANGSMITH_API_KEY"] = langsmith_api_key
             os.environ["LANGSMITH_TRACING_V2"] = "true"
             os.environ["LANGSMITH_ENDPOINT"] = "https://api.smith.langchain.com"
-            os.environ["LANGSMITH_PROJECT"] = "ml_agent"
+            os.environ["LANGSMITH_PROJECT"] = "ML_AGENT"
             try:
                 Client()
                 st.success("✅ LangSmith connected!")

@@ -21,3 +21,6 @@ setuptools
 tabulate
 graphviz
 scikit-learn
+fastapi
+uvicorn
+python-multipart

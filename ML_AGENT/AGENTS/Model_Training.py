@@ -58,7 +58,7 @@ class Model_Training_Node:
             model = local_vars["model"]
 
             state["trained_model"] = model
-            self.logger.info("Model training completed successfully")
+            self.logger.debug(f"Model training completed successfully{model}")
             return {"trained_model": model}
 
         except Exception as e:
