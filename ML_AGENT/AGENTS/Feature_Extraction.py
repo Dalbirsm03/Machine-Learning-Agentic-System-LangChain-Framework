@@ -14,7 +14,7 @@ class Feature_Extraction_Node:
     def detect_column_types(self, state: State):
         df = state['cleaned_data']
         n_rows = len(df)
-        text_threshold = max(0.05, 15 / n_rows)
+        text_threshold = max(0.05, 15 / float(n_rows))
         target_column = state['target_column']
 
         col_types = {'numeric': [], 'categorical': [], 'text': [], 'datetime': [], 'boolean': []}
@@ -32,7 +32,7 @@ class Feature_Extraction_Node:
                 col_types['datetime'].append(col)
             elif dtype == 'object':
                 avg_len = df[col].astype(str).map(len).mean()
-                if df[col].nunique() / n_rows > text_threshold or avg_len > 20:
+                if float(df[col].nunique()) / float(n_rows) > text_threshold or avg_len > 20:
                     col_types['text'].append(col)
                 else:
                     col_types['categorical'].append(col)
@@ -87,16 +87,21 @@ class Feature_Extraction_Node:
                 extracted_features = pd.concat([extracted_features, tfidf_df], axis=1)
 
             elif dtype_category == "datetime":
-                extracted_features[f"{col}_year"] = df[col].dt.year
-                extracted_features[f"{col}_month"] = df[col].dt.month
-                extracted_features[f"{col}_day"] = df[col].dt.day
-                extracted_features[f"{col}_weekday"] = df[col].dt.weekday
+                # Convert datetime to numeric features
+                extracted_features[f"{col}_year"] = pd.to_numeric(df[col].dt.year, errors='coerce')
+                extracted_features[f"{col}_month"] = pd.to_numeric(df[col].dt.month, errors='coerce')
+                extracted_features[f"{col}_day"] = pd.to_numeric(df[col].dt.day, errors='coerce')
+                extracted_features[f"{col}_weekday"] = pd.to_numeric(df[col].dt.weekday, errors='coerce')
 
             elif dtype_category == "numeric":
-                extracted_features[col] = df[col]
+                extracted_features[col] = pd.to_numeric(df[col], errors='coerce')
 
             elif dtype_category == "boolean":
-                extracted_features[col] = df[col].astype(int)
+                extracted_features[col] = pd.to_numeric(df[col].astype(int), errors='coerce')
+
+        # Ensure all columns are numeric and handle NaN values
+        extracted_features = extracted_features.fillna(0)
+        extracted_features = extracted_features.astype(float)
 
         self.logger.info(f"Extracted features columns: {list(extracted_features.columns)}")
         return {"extracted_features": extracted_features}

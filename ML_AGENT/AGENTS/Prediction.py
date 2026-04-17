@@ -116,11 +116,25 @@ class Prediction_Node:
         try:
             explain_prompt = PromptTemplate(
                 template=(
-                    "The prediction result is {prediction}. Explain this in short, simple single bullet pointsike answering the questions to user query {query}. "
-                    "The model accuracy is {accuracy}. Also explain the model accuracy in simple terms and one shortest point for each. "
-                    "If class mapping is available, use it to explain: {mapping}"
+                    "You are a Senior Data Scientist providing an executive summary. "
+                    "The user asked: '{query}'\n\n"
+                    
+                    "### 1. Strategic Prediction\n"
+                    "- The model has computed a predicted value of: **{prediction}**.\n"
+                    "- Contextualized Answer: [Provide a 1-sentence direct answer to the user's query based on this value].\n\n"
+                    
+                    "### 2. Model Reliability & Performance\n"
+                    "The model is operating with the following metrics: {accuracy}.\n"
+                    "- **Precision/R² Score**: [Explain what this means for the reliability of this specific prediction].\n"
+                    "- **Error Margin (MAE/RMSE)**: [Explain the typical variance in simple currency/unit terms].\n\n"
+                    
+                    "### 3. Technical Context\n"
+                    "- **Vehicle/Category Identification**: [If class mapping {mapping} exists, explain which specific brand or category this prediction belongs to; otherwise, mention the data features used].\n"
+                    "- **Key Driver**: Briefly mention the most influential factor (e.g., Year or Present Price) that led to this result.\n\n"
+                    
+                    "Rules: Use professional, high-level language. Keep every bullet point under 15 words. Bold key terms."
                 ),
-                input_variables=["prediction", "accuracy", "mapping","query"]
+                input_variables=["prediction", "accuracy", "mapping", "query"]
             )
             explain_chain = explain_prompt | self.llm
             response = explain_chain.invoke({

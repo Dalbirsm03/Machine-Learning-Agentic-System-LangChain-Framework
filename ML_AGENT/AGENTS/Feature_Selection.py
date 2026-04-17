@@ -12,12 +12,24 @@ class Feature_Selection_Node:
 
     def select_features(self, state: State):
         X = state['extracted_features']
-        y = state['cleaned_data'][state['target_column']]
+        y = state['target_encoded'] 
         task_type = state['ml_problem_type']
         user_query = state["question"]
         target_column = state["target_column"]
         all_columns = list(state["cleaned_data"].columns)
+        available_extracted_features = list(X.columns) 
 
+
+        # Ensure X contains only numeric columns
+        X = X.fillna(0)  # Handle any NaN values
+        X = X.astype(float)  # Convert all columns to numeric type
+        
+        # Ensure y is numeric for classification
+        if task_type == "classification" and y.dtype == 'object':
+            from sklearn.preprocessing import LabelEncoder
+            le = LabelEncoder()
+            y = le.fit_transform(y)
+        
         if task_type == "classification":
             scores, _ = f_classif(X, y)
         else:
@@ -32,7 +44,7 @@ class Feature_Selection_Node:
             You are an ML expert.
             - User query: {user_query}
             - Target column: {target_column}
-            - All available columns: {all_columns}
+            - All available columns: {available_features}
             - Auto-selected features from statistical tests: {auto_selected}
 
             Task:
@@ -40,18 +52,29 @@ class Feature_Selection_Node:
 
             Return strictly a JSON list of feature names.
             """,
-            input_variables=["user_query", "target_column", "all_columns", "auto_selected"]
+            input_variables=["user_query", "target_column", "available_features", "auto_selected"]
         )
 
         chain = prompt | self.llm | JsonOutputParser()
         llm_suggested = chain.invoke({
             "user_query": user_query,
             "target_column": target_column,
-            "all_columns": all_columns,
+            "available_features": available_extracted_features, # Pass the actual feature names
             "auto_selected": auto_selected
         })
 
-        final_features = list(set(auto_selected) | set(llm_suggested))
+        # Filter LLM suggested features to ensure they actually exist in X
+        llm_suggested_filtered = [f for f in llm_suggested if f in X.columns]
+
+        final_features = list(set(auto_selected) | set(llm_suggested_filtered))
+        
+        # Final fallback in case LLM and auto-selection both failed to yield valid features
+        if not final_features and available_extracted_features:
+            self.logger.warning("No features selected, falling back to all available extracted features.")
+            final_features = available_extracted_features
+        elif not final_features: # If even after fallback there are no features, raise error or return empty
+            raise ValueError("No valid features could be selected for the model.")
+
         X_selected = X[final_features]
 
         self.logger.info(f"Final features after LLM enhancement: {final_features}")

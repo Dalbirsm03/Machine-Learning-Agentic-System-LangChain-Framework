@@ -71,6 +71,11 @@ class Clustering_Node:
             raise ValueError("LLM did not return a list")
 
         X = df[selected_features]
+        
+        # Convert to numeric and handle non-numeric columns
+        X = X.apply(pd.to_numeric, errors='coerce')
+        X = X.fillna(X.mean())  # Fill NaN values with column mean
+        
         scaler = StandardScaler()
         X_scaled = scaler.fit_transform(X)
 
@@ -182,53 +187,39 @@ Rules:
     def cluster_profile_llm(self, state: State):
         df = state["df"]
         query = state["question"]
+        features = state["features"]
 
-        prompt = PromptTemplate(
-            template="""
-            You are an expert Python data analyst.
-
-            The dataframe has the following columns: {features}
-            The user asked: {user_query}
-
-            Generate Python code that creates a cluster profile:
-            - Group by the 'cluster' column
-            - Calculate mean, std, count for numeric columns
-            - For categorical columns, calculate counts and percentages
-            - Use only pandas
-            - Assign the final result to a variable named 'profile' (do not print or return)
-            - The code should be ready to execute directly on a dataframe named 'df'
-
-            Do not add explanations or placeholders.
-            """,
-            input_variables=["features", "user_query"]
-        )
-
-        chain = prompt | self.llm | PythonOutputParser()
-        code = chain.invoke({
-            "features": state["features"],
-            "user_query": query
-        })
-
-        local_vars = {"df": df.copy(), "pd": pd, "np": np}
-        exec(code, {}, local_vars)
-
-        profile = local_vars.get("profile", None)
-
+        numeric_features = df[features].select_dtypes(include=[np.number]).columns.tolist()
+        
+        if numeric_features:
+            profile_stats = df.groupby('cluster')[numeric_features].agg(['mean', 'count'])
+            profile_stats.columns = ['_'.join(col).strip() for col in profile_stats.columns.values]
+            profile_summary_str = profile_stats.to_string()
+        else:
+            profile_summary_str = df['cluster'].value_counts().to_string()
         prompt_summary = PromptTemplate(
-        template = """
-        You are an expert data analyst. 
-        Based on the user query: {question} and the cluster profile: {profile}, 
-        generate a **short, concise summary in bullet points only**. 
-        Rules:
-        .Each cluster should have max 3 to 4  lines points
-        - Focus only on key insights.
-        - Do not write paragraphs or explanations.
-        - Use simple, clear language suitable for quick reading.
-        """,
+            template="""
+            You are an expert data analyst. 
+            The user performed clustering and asked: {question}
+            
+            Here is the statistical profile of the generated clusters:
+            {profile}
+
+            Task:
+            1. Identify which cluster ID corresponds to the user's terms (e.g., 'High-Prestige' usually means high price, 'High-Utility' means high mileage).
+            2. Provide a short, concise summary in bullet points.
+            
+            Rules:
+            - Each cluster should have 3 to 4 bullet points.
+            - Use the Cluster ID in the heading (e.g., Cluster 0: High-Prestige Segment).
+            - Focus on key insights (averages vs dataset averages).
+            - Do not write paragraphs.
+            """,
             input_variables=['question', 'profile']
         )
-        chain = prompt_summary | self.llm
-        response = chain.invoke({"question": query, "profile": profile})
         
-        self.logger.info("Profile Generated")
+        chain = prompt_summary | self.llm | StrOutputParser()
+        response = chain.invoke({"question": query, "profile": profile_summary_str})
+        
+        self.logger.info("Profile Interpretation Generated")
         return {"final_output": response}
