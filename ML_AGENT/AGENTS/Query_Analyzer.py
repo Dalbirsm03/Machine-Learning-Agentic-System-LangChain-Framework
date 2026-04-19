@@ -58,7 +58,7 @@ class Query_Analyzer_Node:
             )
             target_chain = target_prompt | self.llm
             resp = target_chain.invoke({'query': query, 'columns': columns})
-            suggested_column = resp.content.strip()
+            suggested_column = resp.content.strip().strip("'\"")
             state['suggested_target'] = suggested_column
         else:
             suggested_column = state['suggested_target']

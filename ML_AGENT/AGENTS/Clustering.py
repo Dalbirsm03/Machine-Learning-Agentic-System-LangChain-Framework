@@ -51,7 +51,12 @@ class Clustering_Node:
     The user asked: {question}
 
     Here are the available columns: {columns}
-
+    TASK:
+        1. Identify the specific columns mentioned in the User Query.
+        2. If the user mentions specific columns (e.g., "based on price and year"), return ONLY those column names.
+        3. If the user is vague (e.g., "segment the data"), pick ONLY the 3 most relevant numeric columns.
+        4. NEVER return more than 4 columns.
+        5. Ensure the column names match the "Available Columns" list exactly.
     Return ONLY comma-separated column names that should be used for clustering.
     Do not use quotes, brackets, or code blocks.
     Example: alcohol,density
@@ -129,6 +134,7 @@ class Clustering_Node:
 You are an expert Python visualization developer specializing in clustering plots. 
 
 Based on the user query {query} and the columns in the dataframe {columns}, selected features {selected_features} and no of cluster{clusters}, generate a Python function generate_visualizations(df) that:
+Strict rule:- Dont use all columnd form the dataframe, stick with the columns which is selected and asked in query.
 1. Imports all necessary libraries inside the function.
 2. Generates visualizations for multiple features:
    - If 2 numeric columns: scatter plot with clusters colored differently.
