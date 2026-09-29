@@ -1,6 +1,7 @@
 from fastapi import FastAPI, File, UploadFile, HTTPException
 from pydantic import BaseModel
 import pandas as pd
+import os
 import io
 import base64
 from PIL import Image
@@ -41,8 +42,19 @@ def analyze_data(request: QueryRequest):
     if uploaded_data is None:
         raise HTTPException(status_code=400, detail="No data uploaded")
     
-    # Set up LLM (using your existing setup)
-    user_controls = {"llm_type": "Google Gemini"}
+    # Load the API credentials and model from the server environment.
+    google_api_key = os.getenv("GOOGLE_API_KEY")
+    if not google_api_key:
+        raise HTTPException(
+            status_code=503,
+            detail="Set the GOOGLE_API_KEY environment variable before starting the API.",
+        )
+
+    user_controls = {
+        "llm_type": "Google Gemini",
+        "GOOGLE_API_KEY": google_api_key,
+        "select_gemini_model": os.getenv("GEMINI_MODEL", "gemini-3-flash-preview"),
+    }
     llm = GeminiLLM(user_contols_input=user_controls).get_llm_model()
     
     # Run ML Graph
